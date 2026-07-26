@@ -1,4 +1,4 @@
-import { Secret } from "@dafthunk/types";
+import { Secret } from "@workflowhub/types";
 import { ColumnDef } from "@tanstack/react-table";
 import MoreHorizontal from "lucide-react/icons/more-horizontal";
 import PlusCircle from "lucide-react/icons/plus-circle";

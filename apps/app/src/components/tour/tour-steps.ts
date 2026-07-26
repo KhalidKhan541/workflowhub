@@ -43,7 +43,7 @@ export const TOUR_STEPS: TourStep[] = [
     id: "documentation",
     title: "Documentation",
     content:
-      "Explore our documentation to learn more about Dafthunk features, nodes, and best practices. You're all set!",
+      "Explore our documentation to learn more about WorkflowHub features, nodes, and best practices. You're all set!",
     targetSelector: '[data-tour="documentation-link"]',
     spotlightPadding: 2,
   },

@@ -1,4 +1,4 @@
-import { type Field, isBlobFieldType } from "@dafthunk/types";
+import { type Field, isBlobFieldType } from "@workflowhub/types";
 import { useMemo, useState } from "react";
 
 import { useAuth } from "@/components/auth-context";

@@ -3,8 +3,8 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { PhotonImage } from "@cf-wasm/photon";
-import type { NodeContext } from "@dafthunk/runtime";
-import type { Node } from "@dafthunk/types";
+import type { NodeContext } from "@workflowhub/runtime";
+import type { Node } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 
 import { SvgToPngNode } from "./svg-to-png-node";

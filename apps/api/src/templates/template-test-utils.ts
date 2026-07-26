@@ -1,4 +1,4 @@
-import type { WorkflowTemplate } from "@dafthunk/types";
+import type { WorkflowTemplate } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 
 /**

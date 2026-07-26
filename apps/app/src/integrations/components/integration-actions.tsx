@@ -1,4 +1,4 @@
-import type { Integration } from "@dafthunk/types";
+import type { Integration } from "@workflowhub/types";
 import MoreHorizontal from "lucide-react/icons/more-horizontal";
 
 import { Button } from "@/components/ui/button";

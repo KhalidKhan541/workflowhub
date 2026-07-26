@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { NearestPointOnLineNode } from "./nearest-point-on-line-node";
 

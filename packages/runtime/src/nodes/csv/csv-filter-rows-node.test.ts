@@ -1,5 +1,5 @@
-import type { NodeContext } from "@dafthunk/runtime";
-import type { Node, Table } from "@dafthunk/types";
+import type { NodeContext } from "@workflowhub/runtime";
+import type { Node, Table } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 import { CsvFilterRowsNode } from "./csv-filter-rows-node";
 

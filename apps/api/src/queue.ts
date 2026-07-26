@@ -1,4 +1,4 @@
-import type { QueueMessage, Workflow } from "@dafthunk/types";
+import type { QueueMessage, Workflow } from "@workflowhub/types";
 import type { Bindings } from "./context";
 import { createDatabase } from "./db";
 import {

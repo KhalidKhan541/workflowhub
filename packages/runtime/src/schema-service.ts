@@ -6,7 +6,7 @@
  * Schema to validate and coerce data at runtime.
  */
 
-import type { Schema } from "@dafthunk/types";
+import type { Schema } from "@workflowhub/types";
 
 export interface SchemaService {
   /**

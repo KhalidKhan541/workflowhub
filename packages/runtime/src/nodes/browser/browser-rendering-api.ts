@@ -1,5 +1,5 @@
-import type { NodeContext } from "@dafthunk/runtime";
-import type { NodeExecution } from "@dafthunk/types";
+import type { NodeContext } from "@workflowhub/runtime";
+import type { NodeExecution } from "@workflowhub/types";
 import { calculateBrowserUsage } from "../../utils/usage";
 
 interface BrowserRenderingNode {

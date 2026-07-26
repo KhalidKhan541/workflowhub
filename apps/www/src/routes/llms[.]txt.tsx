@@ -1,9 +1,9 @@
 const websiteUrl = import.meta.env.VITE_WEBSITE_URL;
 
 export function loader() {
-  const body = `# Dafthunk
+  const body = `# WorkflowHub
 
-> Dafthunk is an open source, MIT licensed visual workflow automation platform
+> WorkflowHub is an open source, MIT licensed visual workflow automation platform
 > that runs on Cloudflare's serverless infrastructure (Workers, Workflows, D1,
 > R2, Durable Objects). Build workflows by connecting 470+ nodes — AI models,
 > browser automation, data processing, media, and third-party integrations — in
@@ -20,10 +20,10 @@ export function loader() {
 
 ## Comparisons
 
-- [Alternatives overview](${websiteUrl}/alternatives): how Dafthunk compares to other workflow tools
-- [Dafthunk vs n8n](${websiteUrl}/alternatives/n8n): MIT license vs fair-code, serverless vs containers
-- [Dafthunk vs Zapier](${websiteUrl}/alternatives/zapier)
-- [Dafthunk vs Make](${websiteUrl}/alternatives/make)
+- [Alternatives overview](${websiteUrl}/alternatives): how WorkflowHub compares to other workflow tools
+- [WorkflowHub vs n8n](${websiteUrl}/alternatives/n8n): MIT license vs fair-code, serverless vs containers
+- [WorkflowHub vs Zapier](${websiteUrl}/alternatives/zapier)
+- [WorkflowHub vs Make](${websiteUrl}/alternatives/make)
 
 ## Product
 
@@ -33,7 +33,7 @@ export function loader() {
 
 ## Source
 
-- [GitHub repository](https://github.com/dafthunk-com/dafthunk): full source, MIT licensed
+- [GitHub repository](https://github.com/workflowhub-com/workflowhub): full source, MIT licensed
 `;
 
   return new Response(body, {

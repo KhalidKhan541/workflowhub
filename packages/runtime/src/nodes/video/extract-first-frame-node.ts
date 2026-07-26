@@ -2,8 +2,8 @@ import {
   MultiStepNode,
   type MultiStepNodeContext,
   type VideoParameter,
-} from "@dafthunk/runtime";
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+} from "@workflowhub/runtime";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 import { z } from "zod";
 
 interface ContainerJob {

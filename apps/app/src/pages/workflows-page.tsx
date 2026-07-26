@@ -3,7 +3,7 @@ import type {
   WorkflowRuntime,
   WorkflowTrigger,
   WorkflowWithMetadata,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import type { LucideIcon } from "lucide-react";
 import ClipboardList from "lucide-react/icons/clipboard-list";
 import Clock from "lucide-react/icons/clock";

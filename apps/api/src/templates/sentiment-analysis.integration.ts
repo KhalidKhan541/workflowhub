@@ -1,8 +1,8 @@
 import { env } from "cloudflare:test";
-import { CloudflareModelNode } from "@dafthunk/runtime/nodes/cloudflare/cloudflare-model-node";
-import { TextInputNode } from "@dafthunk/runtime/nodes/input/text-input-node";
-import { JsonOutputNode } from "@dafthunk/runtime/nodes/output/json-output-node";
-import type { Parameter } from "@dafthunk/types";
+import { CloudflareModelNode } from "@workflowhub/runtime/nodes/cloudflare/cloudflare-model-node";
+import { TextInputNode } from "@workflowhub/runtime/nodes/input/text-input-node";
+import { JsonOutputNode } from "@workflowhub/runtime/nodes/output/json-output-node";
+import type { Parameter } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 import type { Bindings } from "../context";
 import { sentimentAnalysisTemplate } from "./sentiment-analysis";

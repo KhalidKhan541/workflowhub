@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { MultiLineStringNode } from "./multilinestring-node";
 
@@ -117,10 +117,10 @@ describe("MultiLineStringNode", () => {
     expect(result.status).toBe("completed");
     expect(result.outputs?.multiLineString).toBeDefined();
     expect(result.outputs?.multiLineString.type).toBe("Feature");
-    // @dafthunk/geo multiLineString ignores bbox option
+    // @workflowhub/geo multiLineString ignores bbox option
   });
 
-  it("returns MultiLineString with string ID option (ignored by @dafthunk/geo)", async () => {
+  it("returns MultiLineString with string ID option (ignored by @workflowhub/geo)", async () => {
     const context = createMockContext({
       coordinates: [
         [
@@ -137,7 +137,7 @@ describe("MultiLineStringNode", () => {
     expect(result.outputs?.multiLineString.type).toBe("Feature");
   });
 
-  it("returns MultiLineString with number ID option (ignored by @dafthunk/geo)", async () => {
+  it("returns MultiLineString with number ID option (ignored by @workflowhub/geo)", async () => {
     const context = createMockContext({
       coordinates: [
         [
@@ -154,7 +154,7 @@ describe("MultiLineStringNode", () => {
     expect(result.outputs?.multiLineString.type).toBe("Feature");
   });
 
-  it("returns MultiLineString with properties (bbox and id ignored by @dafthunk/geo)", async () => {
+  it("returns MultiLineString with properties (bbox and id ignored by @workflowhub/geo)", async () => {
     const context = createMockContext({
       coordinates: [
         [

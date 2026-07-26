@@ -1,5 +1,5 @@
-import { angle } from "@dafthunk/geo";
-import type { NodeContext } from "@dafthunk/runtime";
+import { angle } from "@workflowhub/geo";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { AngleNode } from "./angle-node";
 

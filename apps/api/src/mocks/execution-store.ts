@@ -6,7 +6,7 @@
  * rather than persistence.
  */
 
-import type { WorkflowExecution } from "@dafthunk/types";
+import type { WorkflowExecution } from "@workflowhub/types";
 
 import type {
   ExecutionRow,

@@ -5,8 +5,8 @@
  * Handles parameter processing, execution creation, and persistence.
  */
 
-import type { BlobParameter } from "@dafthunk/runtime";
-import type { Node, WorkflowExecution, WorkflowRuntime } from "@dafthunk/types";
+import type { BlobParameter } from "@workflowhub/runtime";
+import type { Node, WorkflowExecution, WorkflowRuntime } from "@workflowhub/types";
 import type { Bindings } from "../context";
 import { createDatabase, stampOnboardingStage } from "../db";
 import { getAgentByName } from "../durable-objects/agent-utils";

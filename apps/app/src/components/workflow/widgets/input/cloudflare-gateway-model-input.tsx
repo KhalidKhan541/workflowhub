@@ -1,7 +1,7 @@
 import {
   CLOUDFLARE_GATEWAY_UPLOAD_INPUT_NAME,
   type CloudflareGatewayModelSchema,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import LoaderCircle from "lucide-react/icons/loader-circle";
 import RotateCw from "lucide-react/icons/rotate-cw";
 import { useCallback, useState } from "react";

@@ -11,8 +11,8 @@
  */
 
 import type { WorkflowEvent, WorkflowStep } from "cloudflare:workers";
-import type { RuntimeParams } from "@dafthunk/runtime";
-import type { WorkflowExecution } from "@dafthunk/types";
+import type { RuntimeParams } from "@workflowhub/runtime";
+import type { WorkflowExecution } from "@workflowhub/types";
 import { AgentWorkflow } from "agents/workflows";
 import type { Bindings } from "../context";
 import { createDatabase, stampOnboardingStage } from "../db";

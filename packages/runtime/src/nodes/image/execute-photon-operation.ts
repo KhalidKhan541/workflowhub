@@ -1,6 +1,6 @@
 import { PhotonImage } from "@cf-wasm/photon";
-import type { ImageParameter } from "@dafthunk/runtime";
-import type { NodeExecution } from "@dafthunk/types";
+import type { ImageParameter } from "@workflowhub/runtime";
+import type { NodeExecution } from "@workflowhub/types";
 
 interface PhotonNode {
   createSuccessResult: (

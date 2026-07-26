@@ -1,4 +1,4 @@
-import type { Node } from "@dafthunk/types";
+import type { Node } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 
 import {
@@ -10,7 +10,7 @@ import { SearchRedditNode } from "./search-reddit-node";
 
 describe("SearchRedditNode", () => {
   it.skipIf(skipIfNoRedditToken())(
-    "should search posts in r/dafthunk_test",
+    "should search posts in r/WorkflowHub_test",
     async () => {
       const node = new SearchRedditNode({
         nodeId: "search-reddit",

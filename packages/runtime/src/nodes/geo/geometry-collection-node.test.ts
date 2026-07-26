@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { GeometryCollectionNode } from "./geometry-collection-node";
 
@@ -128,11 +128,11 @@ describe("GeometryCollectionNode", () => {
     expect(result.status).toBe("completed");
     expect(result.outputs?.geometryCollection).toBeDefined();
     expect(result.outputs?.geometryCollection.type).toBe("Feature");
-    // @dafthunk/geo geometryCollection ignores bbox option
+    // @workflowhub/geo geometryCollection ignores bbox option
   });
 
-  it("returns GeometryCollection with string ID option (ignored by @dafthunk/geo)", async () => {
-    // @dafthunk/geo geometryCollection ignores id option
+  it("returns GeometryCollection with string ID option (ignored by @workflowhub/geo)", async () => {
+    // @workflowhub/geo geometryCollection ignores id option
     const context = createMockContext({
       geometries: [
         {
@@ -148,8 +148,8 @@ describe("GeometryCollectionNode", () => {
     expect(result.outputs?.geometryCollection.type).toBe("Feature");
   });
 
-  it("returns GeometryCollection with number ID option (ignored by @dafthunk/geo)", async () => {
-    // @dafthunk/geo geometryCollection ignores id option
+  it("returns GeometryCollection with number ID option (ignored by @workflowhub/geo)", async () => {
+    // @workflowhub/geo geometryCollection ignores id option
     const context = createMockContext({
       geometries: [
         {
@@ -165,8 +165,8 @@ describe("GeometryCollectionNode", () => {
     expect(result.outputs?.geometryCollection.type).toBe("Feature");
   });
 
-  it("returns GeometryCollection with properties, bbox, and ID (bbox and id ignored by @dafthunk/geo)", async () => {
-    // @dafthunk/geo geometryCollection ignores bbox and id options
+  it("returns GeometryCollection with properties, bbox, and ID (bbox and id ignored by @workflowhub/geo)", async () => {
+    // @workflowhub/geo geometryCollection ignores bbox and id options
     const context = createMockContext({
       geometries: [
         {

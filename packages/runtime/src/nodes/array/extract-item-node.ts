@@ -1,5 +1,5 @@
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 
 /**
  * Extract Item node implementation that extracts a single item from a repeated input

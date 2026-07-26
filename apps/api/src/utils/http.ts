@@ -1,4 +1,4 @@
-import { BlobParameter, HttpRequest } from "@dafthunk/runtime";
+import { BlobParameter, HttpRequest } from "@workflowhub/runtime";
 
 export interface SimulateHttpRequestParams {
   url?: string;

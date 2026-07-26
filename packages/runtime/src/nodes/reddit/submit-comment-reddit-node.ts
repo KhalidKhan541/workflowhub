@@ -1,5 +1,5 @@
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 
 /**
  * Reddit Submit Comment node implementation
@@ -105,7 +105,7 @@ export class SubmitCommentRedditNode extends ExecutableNode {
         headers: {
           Authorization: `Bearer ${accessToken}`,
           "Content-Type": "application/x-www-form-urlencoded",
-          "User-Agent": "Dafthunk/1.0",
+          "User-Agent": "WorkflowHub/1.0",
         },
         body: formData,
       });

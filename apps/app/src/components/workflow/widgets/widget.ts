@@ -1,4 +1,4 @@
-import type { ParameterValue } from "@dafthunk/types";
+import type { ParameterValue } from "@workflowhub/types";
 import { useCallback, useEffect, useRef } from "react";
 
 import type { WorkflowParameter } from "../workflow-types";

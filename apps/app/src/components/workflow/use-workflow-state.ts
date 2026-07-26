@@ -1,4 +1,4 @@
-import type { ObjectReference, WorkflowTrigger } from "@dafthunk/types";
+import type { ObjectReference, WorkflowTrigger } from "@workflowhub/types";
 import type {
   Connection,
   IsValidConnection,

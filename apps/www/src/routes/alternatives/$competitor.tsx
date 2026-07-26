@@ -7,13 +7,13 @@ const websiteUrl = import.meta.env.VITE_WEBSITE_URL;
 
 interface Differentiator {
   title: string;
-  dafthunk: string;
+  WorkflowHub: string;
   competitor: string;
 }
 
 interface FeatureMatrixRow {
   feature: string;
-  dafthunk: string;
+  WorkflowHub: string;
   competitor: string;
 }
 
@@ -72,10 +72,10 @@ export function loader({ params }: LoaderFunctionArgs) {
 }
 
 export const meta: MetaFunction<typeof loader> = ({ loaderData }) => {
-  if (!loaderData) return [{ title: "Not Found - Dafthunk" }];
+  if (!loaderData) return [{ title: "Not Found - WorkflowHub" }];
 
   const { alternative } = loaderData;
-  const title = `${alternative.name} Alternative: MIT, Serverless | Dafthunk`;
+  const title = `${alternative.name} Alternative: MIT, Serverless | WorkflowHub`;
   const description = alternative.metaDescription;
   const url = `${websiteUrl}/alternatives/${alternative.id}`;
 
@@ -87,7 +87,7 @@ export const meta: MetaFunction<typeof loader> = ({ loaderData }) => {
     { property: "og:title", content: title },
     { property: "og:description", content: description },
     { property: "og:image", content: `${websiteUrl}/og-image.webp` },
-    { property: "og:site_name", content: "Dafthunk" },
+    { property: "og:site_name", content: "WorkflowHub" },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:url", content: url },
     { name: "twitter:title", content: title },
@@ -128,7 +128,7 @@ export default function AlternativePage({
       {
         "@type": "ListItem",
         position: 3,
-        name: `Dafthunk vs ${alternative.name}`,
+        name: `WorkflowHub vs ${alternative.name}`,
         item: `${websiteUrl}/alternatives/${alternative.id}`,
       },
     ],
@@ -168,7 +168,7 @@ export default function AlternativePage({
 
         <section className="mb-32" aria-label="Hero">
           <h1 className="text-7xl font-light text-gray-900 mb-10 leading-[1.1]">
-            Dafthunk vs {alternative.name}
+            WorkflowHub vs {alternative.name}
           </h1>
           <p className="text-2xl text-gray-600 leading-relaxed max-w-4xl">
             {alternative.intro ?? alternative.tagline}
@@ -199,7 +199,7 @@ export default function AlternativePage({
             id="differentiators-heading"
             className="text-6xl font-light text-gray-900 mb-12"
           >
-            Where Dafthunk is different
+            Where WorkflowHub is different
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
@@ -207,7 +207,7 @@ export default function AlternativePage({
                 <tr>
                   <th className="pb-6 pr-6 w-1/5" />
                   <th className="pb-6 px-6 text-3xl font-light text-gray-900 w-2/5">
-                    Dafthunk
+                    WorkflowHub
                   </th>
                   <th className="pb-6 pl-6 text-3xl font-light text-gray-900 w-2/5">
                     {alternative.name}
@@ -223,7 +223,7 @@ export default function AlternativePage({
                       </h3>
                     </td>
                     <td className="py-6 px-6 text-xl text-gray-600 leading-relaxed">
-                      {diff.dafthunk}
+                      {diff.WorkflowHub}
                     </td>
                     <td className="py-6 pl-6 text-xl text-gray-600 leading-relaxed">
                       {diff.competitor}
@@ -293,7 +293,7 @@ export default function AlternativePage({
             id="cta-heading"
             className="text-6xl font-light text-gray-900 mb-8 leading-[1.1]"
           >
-            Try Dafthunk
+            Try WorkflowHub
           </h2>
           <p className="text-2xl text-gray-600 mb-10 leading-relaxed max-w-3xl">
             Start on our hosted SaaS and build your first workflow in about four
@@ -308,7 +308,7 @@ export default function AlternativePage({
               Start for free
             </a>
             <a
-              href="https://github.com/dafthunk-com/dafthunk"
+              href="https://github.com/WorkflowHub-com/WorkflowHub"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-lg bg-white border border-gray-300 text-gray-900 px-8 py-4 rounded-lg hover:bg-gray-50 transition-colors"

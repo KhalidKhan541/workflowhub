@@ -1,4 +1,4 @@
-import type { CreateWorkflowRequest } from "@dafthunk/types";
+import type { CreateWorkflowRequest } from "@workflowhub/types";
 import { useEffect, useRef } from "react";
 import { useNavigate, useParams } from "react-router";
 

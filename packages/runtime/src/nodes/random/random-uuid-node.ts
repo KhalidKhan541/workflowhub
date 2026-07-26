@@ -1,5 +1,5 @@
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 import { v1 as uuidv1, v4 as uuidv4, v7 as uuidv7 } from "uuid";
 
 /**

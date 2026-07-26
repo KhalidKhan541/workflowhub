@@ -2,7 +2,7 @@ import {
   DashboardStats,
   DashboardStatsResponse,
   ExecutionStatus,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { Hono } from "hono";
 
 import { jwtMiddleware } from "../auth";

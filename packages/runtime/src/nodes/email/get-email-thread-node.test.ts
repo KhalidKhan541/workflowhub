@@ -2,8 +2,8 @@ import type {
   MailboxService,
   MailboxThreadMessage,
   NodeContext,
-} from "@dafthunk/runtime";
-import type { Node } from "@dafthunk/types";
+} from "@workflowhub/runtime";
+import type { Node } from "@workflowhub/types";
 import { describe, expect, it, vi } from "vitest";
 
 import { GetEmailThreadNode } from "./get-email-thread-node";
@@ -19,7 +19,7 @@ const sampleMessages: MailboxThreadMessage[] = [
     id: "m1",
     direction: "inbound",
     fromEmail: "user@example.com",
-    toEmail: "bot@mail.dafthunk.com",
+    toEmail: "bot@mail.workflowhub.com",
     subject: "Hello",
     snippet: "Hi there",
     rfc822MessageId: "<m1@example.com>",
@@ -47,7 +47,7 @@ describe("GetEmailThreadNode", () => {
       mailboxService,
       emailMessage: {
         from: "user@example.com",
-        to: "bot@mail.dafthunk.com",
+        to: "bot@mail.workflowhub.com",
         raw: "",
         threadId: "thread-1",
         headers: {},

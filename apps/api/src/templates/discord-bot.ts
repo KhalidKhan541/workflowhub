@@ -1,7 +1,7 @@
-import { AgentClaudeSonnet4Node } from "@dafthunk/runtime/nodes/agent/agent-claude-sonnet-4-node";
-import { BotReceiveDiscordMessageNode } from "@dafthunk/runtime/nodes/discord/bot-receive-discord-message-node";
-import { BotSendMessageDiscordNode } from "@dafthunk/runtime/nodes/discord/bot-send-message-discord-node";
-import type { WorkflowTemplate } from "@dafthunk/types";
+import { AgentClaudeSonnet4Node } from "@workflowhub/runtime/nodes/agent/agent-claude-sonnet-4-node";
+import { BotReceiveDiscordMessageNode } from "@workflowhub/runtime/nodes/discord/bot-receive-discord-message-node";
+import { BotSendMessageDiscordNode } from "@workflowhub/runtime/nodes/discord/bot-send-message-discord-node";
+import type { WorkflowTemplate } from "@workflowhub/types";
 
 export const discordBotTemplate: WorkflowTemplate = {
   id: "discord-bot",

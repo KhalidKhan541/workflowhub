@@ -1,5 +1,5 @@
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
-import type { NodeExecution, NodeType, Table } from "@dafthunk/types";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
+import type { NodeExecution, NodeType, Table } from "@workflowhub/types";
 
 type FilterOperator =
   | "equals"

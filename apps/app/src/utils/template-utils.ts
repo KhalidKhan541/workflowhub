@@ -1,4 +1,4 @@
-import type { Node as NodeType, WorkflowTemplate } from "@dafthunk/types";
+import type { Node as NodeType, WorkflowTemplate } from "@workflowhub/types";
 import type { Edge, Node } from "@xyflow/react";
 
 import type {

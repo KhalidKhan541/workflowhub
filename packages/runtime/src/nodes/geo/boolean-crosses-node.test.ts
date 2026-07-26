@@ -1,5 +1,5 @@
-import { booleanCrosses } from "@dafthunk/geo";
-import type { NodeContext } from "@dafthunk/runtime";
+import { booleanCrosses } from "@workflowhub/geo";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { BooleanCrossesNode } from "./boolean-crosses-node";
 

@@ -1,4 +1,4 @@
-import type { ObjectReference } from "@dafthunk/types";
+import type { ObjectReference } from "@workflowhub/types";
 import AsteriskIcon from "lucide-react/icons/asterisk";
 import BoxIcon from "lucide-react/icons/box";
 import BracesIcon from "lucide-react/icons/braces";

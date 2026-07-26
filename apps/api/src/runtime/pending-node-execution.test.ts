@@ -30,11 +30,11 @@ import {
   Runtime,
   type RuntimeDependencies,
   type RuntimeParams,
-} from "@dafthunk/runtime";
-import { TextInputNode } from "@dafthunk/runtime/nodes/input/text-input-node";
-import { WaitForFormNode } from "@dafthunk/runtime/nodes/logic/wait-for-form-node";
-import { StringToUpperCaseNode } from "@dafthunk/runtime/nodes/text/string-to-upper-case-node";
-import type { Workflow, WorkflowExecution } from "@dafthunk/types";
+} from "@workflowhub/runtime";
+import { TextInputNode } from "@workflowhub/runtime/nodes/input/text-input-node";
+import { WaitForFormNode } from "@workflowhub/runtime/nodes/logic/wait-for-form-node";
+import { StringToUpperCaseNode } from "@workflowhub/runtime/nodes/text/string-to-upper-case-node";
+import type { Workflow, WorkflowExecution } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 
 import type { Bindings } from "../context";

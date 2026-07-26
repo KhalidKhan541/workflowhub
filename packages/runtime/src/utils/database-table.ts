@@ -3,7 +3,7 @@ import {
   type FieldType,
   IDENTIFIER_PATTERN,
   type Schema,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 /**
  * Result row from PRAGMA table_info()

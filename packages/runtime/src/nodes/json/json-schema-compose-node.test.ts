@@ -1,5 +1,5 @@
-import type { NodeContext } from "@dafthunk/runtime";
-import type { Node, Schema } from "@dafthunk/types";
+import type { NodeContext } from "@workflowhub/runtime";
+import type { Node, Schema } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 import { JsonSchemaComposeNode } from "./json-schema-compose-node";
 

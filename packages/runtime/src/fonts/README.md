@@ -34,7 +34,7 @@ The TTF binaries are **not committed** (this directory's `*/` subfolders are
 gitignored). They are fetched on demand from the `@expo-google-fonts/*` packages:
 
 ```bash
-pnpm --filter '@dafthunk/runtime' fonts:fetch   # download TTFs into src/fonts/
+pnpm --filter '@workflowhub/runtime' fonts:fetch   # download TTFs into src/fonts/
 ```
 
 From there they are uploaded to the **RESSOURCES** R2 bucket under the
@@ -42,8 +42,8 @@ From there they are uploaded to the **RESSOURCES** R2 bucket under the
 `svg-to-png-node`). They are never bundled into the Worker. Seed R2 with:
 
 ```bash
-pnpm --filter '@dafthunk/api' fonts:seed        # local (runs fonts:fetch first)
-pnpm --filter '@dafthunk/api' fonts:prod:seed   # production
+pnpm --filter '@workflowhub/api' fonts:seed        # local (runs fonts:fetch first)
+pnpm --filter '@workflowhub/api' fonts:prod:seed   # production
 ```
 
 To add a font: add an entry to `FONT_REGISTRY` (`utils/fonts.ts`) and to the

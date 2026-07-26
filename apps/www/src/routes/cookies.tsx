@@ -3,9 +3,9 @@ import { Layout } from "../components/layout";
 const websiteUrl = import.meta.env.VITE_WEBSITE_URL;
 
 export function meta() {
-  const title = "Cookie Policy - Dafthunk";
+  const title = "Cookie Policy - WorkflowHub";
   const description =
-    "Cookie Policy for Dafthunk: which essential, payment, and optional analytics cookies we use, why we use them, and how to control them in your browser.";
+    "Cookie Policy for WorkflowHub: which essential, payment, and optional analytics cookies we use, why we use them, and how to control them in your browser.";
   const url = `${websiteUrl}/cookies`;
   const ogImage = `${websiteUrl}/og-image.webp`;
 
@@ -17,7 +17,7 @@ export function meta() {
     { property: "og:title", content: title },
     { property: "og:description", content: description },
     { property: "og:image", content: ogImage },
-    { property: "og:site_name", content: "Dafthunk" },
+    { property: "og:site_name", content: "WorkflowHub" },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:url", content: url },
     { name: "twitter:title", content: title },
@@ -211,10 +211,10 @@ export default function Cookies() {
               <p className="text-xl text-gray-600 leading-relaxed">
                 <strong>Email:</strong>{" "}
                 <a
-                  href="mailto:contact@dafthunk.com"
+                  href="mailto:contact@workflowhub.com"
                   className="text-gray-900 underline hover:no-underline"
                 >
-                  contact@dafthunk.com
+                  contact@workflowhub.com
                 </a>
               </p>
             </div>

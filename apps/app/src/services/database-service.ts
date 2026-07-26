@@ -7,7 +7,7 @@ import type {
   ListDatabasesResponse,
   UpdateDatabaseRequest,
   UpdateDatabaseResponse,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import useSWR from "swr";
 
 import { useAuth } from "@/components/auth-context";

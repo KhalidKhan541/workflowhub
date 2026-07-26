@@ -28,7 +28,7 @@ const STEP_TITLES: Record<Step, string> = {
 };
 
 const STEP_DESCRIPTIONS: Record<Step, string> = {
-  name: "Choose a display name to identify this WhatsApp account in Dafthunk.",
+  name: "Choose a display name to identify this WhatsApp account in WorkflowHub.",
   "app-secret":
     "Copy the App Secret from your Meta app. Navigate to Apps > App Settings > Basic in the Meta Developer Portal.",
   "api-credentials":
@@ -157,7 +157,7 @@ export function WhatsAppAccountCreateDialog({
                 placeholder="My WhatsApp Bot"
               />
               <p className="text-xs text-muted-foreground">
-                A display name for this account in Dafthunk. This is not visible
+                A display name for this account in WorkflowHub. This is not visible
                 to your WhatsApp users.
               </p>
             </div>

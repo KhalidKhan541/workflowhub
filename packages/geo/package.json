@@ -1,5 +1,5 @@
 {
-  "name": "@dafthunk/geo",
+  "name": "@workflowhub/geo",
   "version": "0.1.0",
   "private": true,
   "exports": {
@@ -13,7 +13,7 @@
     "format": "biome format --write"
   },
   "dependencies": {
-    "@dafthunk/types": "workspace:*",
+    "@workflowhub/types": "workspace:*",
     "d3-delaunay": "^6.0.4",
     "polyclip-ts": "^0.16.8"
   },

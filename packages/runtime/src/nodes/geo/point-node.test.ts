@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { beforeEach, describe, expect, it } from "vitest";
 import { PointNode } from "./point-node";
 

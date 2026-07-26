@@ -1,11 +1,11 @@
 ---
 name: integration-generator
-description: Generate new OAuth integration providers for Dafthunk with backend providers, type definitions, frontend configurations, and integration nodes
+description: Generate new OAuth integration providers for WorkflowHub with backend providers, type definitions, frontend configurations, and integration nodes
 ---
 
 # Integration Generator
 
-Generate OAuth integration providers for Dafthunk: research provider APIs, create backend OAuth provider, add type definitions, configure frontend, and optionally create integration nodes.
+Generate OAuth integration providers for WorkflowHub: research provider APIs, create backend OAuth provider, add type definitions, configure frontend, and optionally create integration nodes.
 
 ## Step 1: Research Provider and Register OAuth App
 
@@ -227,7 +227,7 @@ Navigate to integrations page, click "Connect {Provider}", complete OAuth flow, 
 **File:** `packages/runtime/src/nodes/{provider-id}/{action}-{provider-id}-node.ts`
 
 ```typescript
-import { NodeExecution, NodeType } from "@dafthunk/types";
+import { NodeExecution, NodeType } from "@workflowhub/types";
 import { ExecutableNode, NodeContext } from "../../runtime/node-types";
 
 export class {Action}{Provider}Node extends ExecutableNode {

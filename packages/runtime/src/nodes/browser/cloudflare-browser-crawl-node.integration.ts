@@ -1,6 +1,6 @@
 import { env } from "cloudflare:test";
-import type { MultiStepNodeContext } from "@dafthunk/runtime";
-import type { Node } from "@dafthunk/types";
+import type { MultiStepNodeContext } from "@workflowhub/runtime";
+import type { Node } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 import { CloudflareBrowserCrawlNode } from "./cloudflare-browser-crawl-node";
 

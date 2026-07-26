@@ -1,6 +1,6 @@
-import { TextInputNode } from "@dafthunk/runtime/nodes/input/text-input-node";
-import { ImageOutputNode } from "@dafthunk/runtime/nodes/output/image-output-node";
-import type { WorkflowTemplate } from "@dafthunk/types";
+import { TextInputNode } from "@workflowhub/runtime/nodes/input/text-input-node";
+import { ImageOutputNode } from "@workflowhub/runtime/nodes/output/image-output-node";
+import type { WorkflowTemplate } from "@workflowhub/types";
 
 import { createCloudflareModelNode } from "./cloudflare-model-template";
 

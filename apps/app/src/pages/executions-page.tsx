@@ -1,8 +1,8 @@
-import type { ExecutionStatusType } from "@dafthunk/types";
+import type { ExecutionStatusType } from "@workflowhub/types";
 import {
   type ListExecutionsResponse,
   WorkflowExecution,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { ColumnDef } from "@tanstack/react-table";
 import { format } from "date-fns";
 import CalendarIcon from "lucide-react/icons/calendar";

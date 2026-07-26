@@ -2,7 +2,7 @@
  * Runtime module - Cloudflare-specific implementations
  *
  * Core abstractions (Runtime, RuntimeDependencies, RuntimeParams, etc.)
- * should be imported directly from @dafthunk/runtime.
+ * should be imported directly from @workflowhub/runtime.
  *
  * This module provides:
  * - CloudflareCreditService: Compute usage tracking backed by Stripe

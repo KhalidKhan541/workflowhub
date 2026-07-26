@@ -1,5 +1,5 @@
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 
 interface RedditCommentRaw {
   id: string;
@@ -194,7 +194,7 @@ export class ListCommentsRedditNode extends ExecutableNode {
         method: "GET",
         headers: {
           Authorization: `Bearer ${accessToken}`,
-          "User-Agent": "Dafthunk/1.0",
+          "User-Agent": "WorkflowHub/1.0",
         },
       });
 

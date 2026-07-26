@@ -51,7 +51,7 @@ describe("mailbox inbound pipeline (staging + DO)", () => {
     const rfcId = "<first@example.com>";
     const bytes = rawEmail({
       from: "Alice <alice@example.com>",
-      to: "bot@mail.dafthunk.com",
+      to: "bot@mail.workflowhub.com",
       subject: "Need help with billing",
       messageId: rfcId,
       body: "Hi, I have a question.",
@@ -64,7 +64,7 @@ describe("mailbox inbound pipeline (staging + DO)", () => {
       messageId,
       {
         from: "alice@example.com",
-        to: "bot@mail.dafthunk.com",
+        to: "bot@mail.workflowhub.com",
       }
     );
 
@@ -99,14 +99,14 @@ describe("mailbox inbound pipeline (staging + DO)", () => {
       bindings,
       rawEmail({
         from: "alice@example.com",
-        to: "bot@mail.dafthunk.com",
+        to: "bot@mail.workflowhub.com",
         subject: "Question",
         messageId: firstRfc,
         body: "First message",
       }),
       EMAIL_ID,
       firstId,
-      { from: "alice@example.com", to: "bot@mail.dafthunk.com" }
+      { from: "alice@example.com", to: "bot@mail.workflowhub.com" }
     );
     const { threadId } = await mailbox.ingestInbound({
       emailId: EMAIL_ID,
@@ -120,7 +120,7 @@ describe("mailbox inbound pipeline (staging + DO)", () => {
       bindings,
       rawEmail({
         from: "alice@example.com",
-        to: "bot@mail.dafthunk.com",
+        to: "bot@mail.workflowhub.com",
         subject: "Re: Question",
         messageId: "<reply@example.com>",
         inReplyTo: firstRfc,
@@ -128,7 +128,7 @@ describe("mailbox inbound pipeline (staging + DO)", () => {
       }),
       EMAIL_ID,
       replyId,
-      { from: "alice@example.com", to: "bot@mail.dafthunk.com" }
+      { from: "alice@example.com", to: "bot@mail.workflowhub.com" }
     );
     const second = await mailbox.ingestInbound({
       emailId: EMAIL_ID,

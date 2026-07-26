@@ -32,11 +32,11 @@ export function LoginForm({ className, returnTo, ...props }: LoginFormProps) {
             <a href="/" className="flex items-center gap-3">
               <img
                 src="/icon.svg"
-                alt="Dafthunk"
+                alt="WorkflowHub"
                 className="h-8 w-8 dark:invert"
               />
               <span className="text-2xl font-semibold text-foreground">
-                dafthunk
+                WorkflowHub
               </span>
             </a>
           </CardTitle>

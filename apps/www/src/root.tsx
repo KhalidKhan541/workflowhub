@@ -34,19 +34,19 @@ export function Layout({ children }: { children: React.ReactNode }) {
       {
         "@type": "Organization",
         "@id": `${websiteUrl}/#organization`,
-        name: "Dafthunk",
+        name: "WorkflowHub",
         url: websiteUrl,
         logo: {
           "@type": "ImageObject",
           url: `${websiteUrl}/logo-black.png`,
         },
         sameAs: [
-          "https://github.com/dafthunk-com/dafthunk",
+          "https://github.com/WorkflowHub-com/WorkflowHub",
           "https://discord.gg/Z6xHWA9sPN",
         ],
         contactPoint: {
           "@type": "ContactPoint",
-          email: "contact@dafthunk.com",
+          email: "contact@workflowhub.com",
           contactType: "Customer Service",
         },
       },
@@ -54,7 +54,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         "@type": "WebSite",
         "@id": `${websiteUrl}/#website`,
         url: websiteUrl,
-        name: "Dafthunk",
+        name: "WorkflowHub",
         description:
           "Open source, serverless visual workflow automation with AI on Cloudflare. MIT licensed.",
         publisher: {
@@ -64,7 +64,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       {
         "@type": "SoftwareApplication",
         "@id": `${websiteUrl}/#application`,
-        name: "Dafthunk",
+        name: "WorkflowHub",
         applicationCategory: "BusinessApplication",
         applicationSubCategory: "Workflow Automation",
         operatingSystem: "Web",
@@ -88,7 +88,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           "MIT licensed, self-host on your own Cloudflare account",
         ],
         license: "https://opensource.org/licenses/MIT",
-        codeRepository: "https://github.com/dafthunk-com/dafthunk",
+        codeRepository: "https://github.com/WorkflowHub-com/WorkflowHub",
       },
     ],
   };
@@ -169,11 +169,11 @@ export function ErrorBoundary() {
   const status = isRouteError ? error.status : 500;
   const isNotFound = status === 404;
   const title = isNotFound
-    ? "Page not found - Dafthunk"
-    : "Something went wrong - Dafthunk";
+    ? "Page not found - WorkflowHub"
+    : "Something went wrong - WorkflowHub";
   const description = isNotFound
-    ? "Page not found. Explore Dafthunk: open source, serverless visual workflow automation with AI on Cloudflare. Browse nodes, use cases, and alternatives."
-    : "Unexpected error. Head back to Dafthunk: open source, serverless visual workflow automation with AI on Cloudflare. Browse nodes, use cases, alternatives.";
+    ? "Page not found. Explore WorkflowHub: open source, serverless visual workflow automation with AI on Cloudflare. Browse nodes, use cases, and alternatives."
+    : "Unexpected error. Head back to WorkflowHub: open source, serverless visual workflow automation with AI on Cloudflare. Browse nodes, use cases, alternatives.";
   const heading = isNotFound ? "Page not found" : "Something went wrong";
   const message = isNotFound
     ? "The page you are looking for doesn't exist or has moved."
@@ -192,7 +192,7 @@ export function ErrorBoundary() {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={ogImage} />
-        <meta property="og:site_name" content="Dafthunk" />
+        <meta property="og:site_name" content="WorkflowHub" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />

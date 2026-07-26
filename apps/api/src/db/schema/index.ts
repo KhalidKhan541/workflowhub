@@ -86,6 +86,9 @@ export const IntegrationProvider = {
   LINKEDIN: "linkedin",
   X: "x",
   WORDPRESS: "wordpress",
+  AIRTABLE: "airtable",
+  SLACK: "slack",
+  NOTION: "notion",
 } as const;
 
 export type IntegrationProviderType =

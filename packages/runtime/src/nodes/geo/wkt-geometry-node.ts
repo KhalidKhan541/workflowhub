@@ -1,10 +1,10 @@
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
 import type {
   Geometry,
   GeometryCollection,
   NodeExecution,
   NodeType,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import wellknown from "wellknown";
 
 export class WktGeometryNode extends ExecutableNode {

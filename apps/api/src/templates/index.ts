@@ -1,4 +1,4 @@
-import type { WorkflowTemplate } from "@dafthunk/types";
+import type { WorkflowTemplate } from "@workflowhub/types";
 
 import { shape3dTemplate } from "./3d-shape";
 import { aiCalculatorTemplate } from "./ai-calculator";

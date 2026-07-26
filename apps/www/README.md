@@ -1,6 +1,6 @@
-# Dafthunk Marketing Website
+# WorkflowHub Marketing Website
 
-The marketing website for Dafthunk, built with React Router v7 and deployed on Cloudflare Workers.
+The marketing website for WorkflowHub, built with React Router v7 and deployed on Cloudflare Workers.
 
 ## Development
 
@@ -34,9 +34,9 @@ Configure build-time secrets in the Cloudflare dashboard:
 
 | Variable                 | Description                                    |
 | ------------------------ | ---------------------------------------------- |
-| `VITE_API_HOST`          | API URL (e.g., `https://api.dafthunk.com`)     |
-| `VITE_APP_URL`           | App URL (e.g., `https://app.dafthunk.com`)     |
-| `VITE_WEBSITE_URL`       | Website URL (e.g., `https://www.dafthunk.com`) |
+| `VITE_API_HOST`          | API URL (e.g., `https://api.workflowhub.com`)     |
+| `VITE_APP_URL`           | App URL (e.g., `https://app.workflowhub.com`)     |
+| `VITE_WEBSITE_URL`       | Website URL (e.g., `https://www.workflowhub.com`) |
 | `VITE_CONTACT_EMAIL`     | Contact email                                  |
 | `VITE_GA_MEASUREMENT_ID` | Google Analytics 4 Measurement ID (optional)   |
 

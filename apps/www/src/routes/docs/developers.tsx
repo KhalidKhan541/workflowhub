@@ -3,9 +3,9 @@ import { DocsLayout } from "../../components/docs/docs-layout";
 const websiteUrl = import.meta.env.VITE_WEBSITE_URL;
 
 export function meta() {
-  const title = "Developers Guide - Dafthunk Documentation";
+  const title = "Developers Guide - WorkflowHub Documentation";
   const description =
-    "Set up the Dafthunk codebase locally, contribute pull requests, and learn the technology stack: React, Hono, Cloudflare Workers, D1, and React Flow.";
+    "Set up the WorkflowHub codebase locally, contribute pull requests, and learn the technology stack: React, Hono, Cloudflare Workers, D1, and React Flow.";
   const url = `${websiteUrl}/docs/developers`;
   const ogImage = `${websiteUrl}/og-image.webp`;
 
@@ -17,7 +17,7 @@ export function meta() {
     { property: "og:title", content: title },
     { property: "og:description", content: description },
     { property: "og:image", content: ogImage },
-    { property: "og:site_name", content: "Dafthunk" },
+    { property: "og:site_name", content: "WorkflowHub" },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:url", content: url },
     { name: "twitter:title", content: title },
@@ -57,15 +57,15 @@ export default function DocsDevelopers() {
       />
       <h1>Developers Guide</h1>
       <p className="lead">
-        Welcome to the Dafthunk developer guide. This guide is designed to help
+        Welcome to the WorkflowHub developer guide. This guide is designed to help
         you understand our architecture, set up your development environment,
-        and start contributing to Dafthunk. Dafthunk is an open-source project
+        and start contributing to WorkflowHub. WorkflowHub is an open-source project
         and you are welcome to contribute to it.
       </p>
 
       <h2 id="getting-started">Getting Started</h2>
       <p>
-        To start developing Dafthunk, you'll need to set up the project locally.
+        To start developing WorkflowHub, you'll need to set up the project locally.
         Our codebase is hosted on GitHub. For detailed instructions on cloning
         the repository, installing dependencies (using pnpm), and running the
         development servers for both the web application and the API, please
@@ -75,7 +75,7 @@ export default function DocsDevelopers() {
       <ol>
         <li>
           Clone the repository:{" "}
-          <code>git clone https://github.com/dafthunk-com/dafthunk.git</code>
+          <code>git clone https://github.com/WorkflowHub-com/WorkflowHub.git</code>
         </li>
         <li>
           Install all dependencies: <code>pnpm install</code>
@@ -92,7 +92,7 @@ export default function DocsDevelopers() {
       <p>
         If you find a bug, please{" "}
         <a
-          href="https://github.com/dafthunk-com/dafthunk/issues"
+          href="https://github.com/WorkflowHub-com/WorkflowHub/issues"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -108,7 +108,7 @@ export default function DocsDevelopers() {
         Have an idea for a new feature or an improvement to an existing one?
         Feel free to{" "}
         <a
-          href="https://github.com/dafthunk-com/dafthunk/issues"
+          href="https://github.com/WorkflowHub-com/WorkflowHub/issues"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -126,7 +126,7 @@ export default function DocsDevelopers() {
         <li>Make your changes, adhering to our coding standards.</li>
         <li>Commit your changes with clear and descriptive messages.</li>
         <li>Push your branch to your fork.</li>
-        <li>Open a pull request against the Dafthunk repository.</li>
+        <li>Open a pull request against the WorkflowHub repository.</li>
       </ol>
       <p>
         Please ensure your PR description clearly explains the changes and why
@@ -135,7 +135,7 @@ export default function DocsDevelopers() {
 
       <h2 id="technology-stack">Technology Stack</h2>
       <p>
-        Dafthunk leverages a modern technology stack to deliver a high-quality
+        WorkflowHub leverages a modern technology stack to deliver a high-quality
         experience. Here's an overview:
       </p>
       <table>

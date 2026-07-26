@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { CenterMeanNode } from "./center-mean-node";
 
@@ -50,7 +50,7 @@ describe("CenterMeanNode", () => {
   });
 
   it("returns center for single polygon", async () => {
-    // @dafthunk/geo centerMean includes the closing vertex, so polygon
+    // @workflowhub/geo centerMean includes the closing vertex, so polygon
     // [0,0],[0,2],[2,2],[2,0],[0,0] averages to [0.8, 0.8] not [1, 1]
     const polygon = {
       type: "Feature",
@@ -151,7 +151,7 @@ describe("CenterMeanNode", () => {
   });
 
   it("returns center for feature collection of polygons", async () => {
-    // @dafthunk/geo centerMean includes closing vertices
+    // @workflowhub/geo centerMean includes closing vertices
     const featureCollection = {
       type: "FeatureCollection",
       features: [
@@ -263,7 +263,7 @@ describe("CenterMeanNode", () => {
   });
 
   it("returns center for geometry object", async () => {
-    // @dafthunk/geo centerMean includes closing vertices
+    // @workflowhub/geo centerMean includes closing vertices
     const polygon = {
       type: "Polygon",
       coordinates: [
@@ -293,7 +293,7 @@ describe("CenterMeanNode", () => {
   });
 
   it("returns center for large coordinates", async () => {
-    // @dafthunk/geo centerMean includes closing vertices: (100+100+200+200+100)/5=140
+    // @workflowhub/geo centerMean includes closing vertices: (100+100+200+200+100)/5=140
     const polygon = {
       type: "Feature",
       properties: {},
@@ -327,7 +327,7 @@ describe("CenterMeanNode", () => {
   });
 
   it("returns center for complex polygon", async () => {
-    // @dafthunk/geo centerMean includes closing vertices: 10 coords total, mean=1.3
+    // @workflowhub/geo centerMean includes closing vertices: 10 coords total, mean=1.3
     const polygon = {
       type: "Feature",
       properties: {},

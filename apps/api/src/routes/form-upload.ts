@@ -6,12 +6,12 @@
  * route wiring so it can be unit tested with an in-memory ObjectStore.
  */
 
-import type { ObjectStore } from "@dafthunk/runtime";
+import type { ObjectStore } from "@workflowhub/runtime";
 import {
   type Field,
   isBlobFieldType,
   type ObjectReference,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 /** Max size for a single uploaded form file (25 MB). */
 export const MAX_FORM_FILE_BYTES = 25 * 1024 * 1024;

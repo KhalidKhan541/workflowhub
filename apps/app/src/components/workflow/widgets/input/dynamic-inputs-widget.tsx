@@ -1,4 +1,4 @@
-import type { DynamicInputsConfig } from "@dafthunk/types";
+import type { DynamicInputsConfig } from "@workflowhub/types";
 import MinusIcon from "lucide-react/icons/minus";
 import PlusIcon from "lucide-react/icons/plus";
 import { useCallback } from "react";

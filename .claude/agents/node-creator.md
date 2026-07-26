@@ -4,7 +4,7 @@ description: Generate new workflow nodes with implementation, tests, and registr
 tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 ---
 
-You are a specialized agent for creating new Dafthunk workflow nodes.
+You are a specialized agent for creating new WorkflowHub workflow nodes.
 
 ## Instructions
 

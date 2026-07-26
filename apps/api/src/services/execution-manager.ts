@@ -5,8 +5,8 @@
  * Handles interaction with Cloudflare Workflows and execution persistence.
  */
 
-import type { BlobParameter } from "@dafthunk/runtime";
-import type { WorkflowExecution, WorkflowState } from "@dafthunk/types";
+import type { BlobParameter } from "@workflowhub/runtime";
+import type { WorkflowExecution, WorkflowState } from "@workflowhub/types";
 import type { Bindings } from "../context";
 import { createDatabase } from "../db/index";
 import {
@@ -153,7 +153,7 @@ export class ExecutionManager {
 
     // Construct a simulated URL that matches production format
     const basePath = `/${orgId}/workflows/${workflowId}/execute/dev`;
-    const simulatedUrl = `https://api.dafthunk.com${basePath}${queryString}`;
+    const simulatedUrl = `https://api.workflowhub.com${basePath}${queryString}`;
 
     const result: WorkflowExecutorParameters = {
       url: simulatedUrl,

@@ -1,4 +1,4 @@
-import type { Queue, QueueService } from "@dafthunk/runtime";
+import type { Queue, QueueService } from "@workflowhub/runtime";
 
 /**
  * No-op queue for testing.

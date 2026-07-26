@@ -7,7 +7,7 @@ import type {
   DatasetSearchOptions,
   DatasetSearchResult,
   DatasetService,
-} from "@dafthunk/runtime";
+} from "@workflowhub/runtime";
 
 import type { Bindings } from "../context";
 import { createDatabase, getDataset } from "../db";

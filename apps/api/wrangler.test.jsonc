@@ -1,12 +1,12 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "dafthunk-api-test",
+  "name": "workflowhub-api-test",
   "compatibility_date": "2024-10-22",
   "compatibility_flags": ["nodejs_compat"],
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "dafthunk-test",
+      "database_name": "workflowhub-test",
       "database_id": "test-db-id",
       "preview_database_id": "test-db-id",
       "migrations_dir": "./src/db/migrations"
@@ -37,7 +37,7 @@
   ],
   "workflows": [
     {
-      "name": "dafthunk-api-test",
+      "name": "workflowhub-api-test",
       "binding": "EXECUTE",
       "class_name": "Runtime"
     }
@@ -67,11 +67,11 @@
   "analytics_engine_datasets": [
     {
       "binding": "COMPUTE",
-      "dataset": "dafthunk-compute-test"
+      "dataset": "workflowhub_compute_test"
     },
     {
       "binding": "EXECUTIONS",
-      "dataset": "dafthunk-executions-test"
+      "dataset": "workflowhub_executions_test"
     }
   ],
   "unsafe": {
@@ -107,8 +107,8 @@
   },
   "worker_loaders": [{ "binding": "LOADER" }],
   "vars": {
-    "WEB_HOST": "https://test.dafthunk.com",
-    "WEBSITE_URL": "https://www.dafthunk.com",
+    "WEB_HOST": "https://test.workflowhub.com",
+    "WEBSITE_URL": "https://www.workflowhub.com",
     "CLOUDFLARE_ENV": "test",
     "CLOUDFLARE_ACCOUNT_ID": "test-account-id",
     "CLOUDFLARE_API_TOKEN": "test-api-token"

@@ -5,7 +5,7 @@ import type {
   WorkflowExecution,
   WorkflowRuntime,
   WorkflowTrigger,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import type { Edge, Node } from "@xyflow/react";
 import { useCallback, useEffect, useRef, useState } from "react";
 

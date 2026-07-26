@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { BboxClipNode } from "./bbox-clip-node";
 
@@ -54,7 +54,7 @@ describe("BboxClipNode", () => {
       expect(result.outputs?.clipped.geometry.type).toBe("Polygon");
     });
 
-    it("should error with simple point geometry (unsupported by @dafthunk/geo)", async () => {
+    it("should error with simple point geometry (unsupported by @workflowhub/geo)", async () => {
       const context = createMockContext({
         geojson: {
           type: "Point",
@@ -67,7 +67,7 @@ describe("BboxClipNode", () => {
       expect(result.status).toBe("error");
     });
 
-    it("should error with LineString geometry (unsupported by @dafthunk/geo)", async () => {
+    it("should error with LineString geometry (unsupported by @workflowhub/geo)", async () => {
       const context = createMockContext({
         geojson: {
           type: "LineString",
@@ -195,7 +195,7 @@ describe("BboxClipNode", () => {
       expect(result.outputs?.clipped.type).toBe("Feature");
     });
 
-    it("should error with MultiPoint geometry (unsupported by @dafthunk/geo)", async () => {
+    it("should error with MultiPoint geometry (unsupported by @workflowhub/geo)", async () => {
       const context = createMockContext({
         geojson: {
           type: "MultiPoint",
@@ -211,7 +211,7 @@ describe("BboxClipNode", () => {
       expect(result.status).toBe("error");
     });
 
-    it("should error with MultiLineString geometry (unsupported by @dafthunk/geo)", async () => {
+    it("should error with MultiLineString geometry (unsupported by @workflowhub/geo)", async () => {
       const context = createMockContext({
         geojson: {
           type: "MultiLineString",
@@ -263,7 +263,7 @@ describe("BboxClipNode", () => {
       expect(result.outputs?.clipped.type).toBe("Feature");
     });
 
-    it("should error with FeatureCollection (unsupported by @dafthunk/geo)", async () => {
+    it("should error with FeatureCollection (unsupported by @workflowhub/geo)", async () => {
       const context = createMockContext({
         geojson: {
           type: "FeatureCollection",

@@ -1,5 +1,5 @@
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 
 /**
  * GitHub Create/Update File node implementation
@@ -137,7 +137,7 @@ export class CreateUpdateFileGithubNode extends ExecutableNode {
           headers: {
             Authorization: `Bearer ${accessToken}`,
             Accept: "application/vnd.github.v3+json",
-            "User-Agent": "Dafthunk/1.0",
+            "User-Agent": "WorkflowHub/1.0",
           },
         }
       );
@@ -187,7 +187,7 @@ export class CreateUpdateFileGithubNode extends ExecutableNode {
             Authorization: `Bearer ${accessToken}`,
             Accept: "application/vnd.github.v3+json",
             "Content-Type": "application/json",
-            "User-Agent": "Dafthunk/1.0",
+            "User-Agent": "WorkflowHub/1.0",
           },
           body: JSON.stringify(payload),
         }

@@ -182,7 +182,7 @@ const generatePhotonTest = (nodeConfig) => {
     expect(result.outputs?.image.data.length).toBeGreaterThan(0);`;
 
   return `import { expect, it, describe } from "vitest";
-import { Node } from "@dafthunk/types";
+import { Node } from "@workflowhub/types";
 import { ${className} } from "./${nodeName}-node";
 import { NodeContext } from "../types";
 import { testImageData } from "../../../test/fixtures/image-fixtures";

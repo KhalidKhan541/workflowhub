@@ -1,4 +1,4 @@
-import type { ObjectReference, ToolReference } from "@dafthunk/types";
+import type { ObjectReference, ToolReference } from "@workflowhub/types";
 import { Handle, Position } from "@xyflow/react";
 import { AsteriskIcon } from "lucide-react";
 // @ts-ignore - https://github.com/lucide-icons/lucide/issues/2867#issuecomment-2847105863

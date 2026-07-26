@@ -13,7 +13,7 @@
  * In production: Uses WorkflowRuntime with full node catalog and integrations.
  */
 import { env } from "cloudflare:test";
-import type { RuntimeParams } from "@dafthunk/runtime";
+import type { RuntimeParams } from "@workflowhub/runtime";
 import {
   type RuntimeFactory,
   testConcurrentErrors,
@@ -31,7 +31,7 @@ import {
   testSuccessfulExecution,
   testTopologicalOrdering,
   testWorkflowValidation,
-} from "@dafthunk/runtime";
+} from "@workflowhub/runtime";
 import type { Bindings } from "../context";
 
 /**
@@ -45,7 +45,7 @@ class WorkflowsRuntimeAdapter {
   async run(
     params: RuntimeParams,
     instanceId: string
-  ): Promise<import("@dafthunk/types").WorkflowExecution> {
+  ): Promise<import("@workflowhub/types").WorkflowExecution> {
     // Import introspection API (only available in test environment)
     const { introspectWorkflowInstance } = await import("cloudflare:test");
 

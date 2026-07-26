@@ -1,5 +1,5 @@
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
-import type { Field, NodeExecution, NodeType, Table } from "@dafthunk/types";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
+import type { Field, NodeExecution, NodeType, Table } from "@workflowhub/types";
 
 export class CsvParseNode extends ExecutableNode {
   public static readonly nodeType: NodeType = {

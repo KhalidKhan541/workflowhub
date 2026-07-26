@@ -1,4 +1,4 @@
-import type { Invitation } from "@dafthunk/types";
+import type { Invitation } from "@workflowhub/types";
 import type { ColumnDef } from "@tanstack/react-table";
 import Clock from "lucide-react/icons/clock";
 import MoreHorizontal from "lucide-react/icons/more-horizontal";

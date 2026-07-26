@@ -1,4 +1,4 @@
-import { DatabaseQueryResponse } from "@dafthunk/types";
+import { DatabaseQueryResponse } from "@workflowhub/types";
 import Play from "lucide-react/icons/play";
 import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router";

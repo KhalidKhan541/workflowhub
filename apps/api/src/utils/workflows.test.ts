@@ -1,4 +1,4 @@
-import type { Edge, Node, Parameter, Workflow } from "@dafthunk/types";
+import type { Edge, Node, Parameter, Workflow } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 
 import {

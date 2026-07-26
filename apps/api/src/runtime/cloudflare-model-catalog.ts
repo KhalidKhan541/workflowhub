@@ -1,7 +1,7 @@
 import {
   type CloudflareModelOpenApiSchema,
   mapCloudflareSchema,
-} from "@dafthunk/runtime/utils/cloudflare-schema";
+} from "@workflowhub/runtime/utils/cloudflare-schema";
 import {
   CF_LOCKED_KEY,
   CF_META_KEY,
@@ -14,7 +14,7 @@ import {
   type NodeType,
   type Parameter,
   shortName,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 import type { Bindings } from "../context";
 import { cachedJson } from "../utils/edge-cache";
@@ -45,7 +45,7 @@ const NODE_TYPES_BUNDLE_TTL = 60 * 60; // 1h — derived purely from the above
 const MODELS_LIST_PAGE_SIZE = 200;
 
 /** Synthetic host used as the Cache API key namespace. */
-const CACHE_HOST = "https://cache.dafthunk.internal";
+const CACHE_HOST = "https://cache.WorkflowHub.internal";
 
 /**
  * Error thrown when the upstream Cloudflare API returns a non-success status.
@@ -402,7 +402,7 @@ export function buildModelNodeType(
   );
 
   // Models that publish a `response_format` input accept OpenAI-style
-  // structured output. Surface a Dafthunk `schema` input alongside it: the
+  // structured output. Surface a WorkflowHub `schema` input alongside it: the
   // runtime translates a picked Schema → `response_format: { type:
   // "json_schema", json_schema: ... }` so users get the friendly schema
   // picker without losing the raw json escape hatch.
@@ -414,7 +414,7 @@ export function buildModelNodeType(
         name: "schema",
         type: "schema",
         description:
-          "Constrain the model's output to a Dafthunk schema (sets response_format).",
+          "Constrain the model's output to a WorkflowHub schema (sets response_format).",
         hidden: true,
       }
     : null;

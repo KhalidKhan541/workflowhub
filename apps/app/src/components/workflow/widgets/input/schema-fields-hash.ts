@@ -1,4 +1,4 @@
-import type { Field } from "@dafthunk/types";
+import type { Field } from "@workflowhub/types";
 
 /**
  * Metadata key under which a copy node (schema-compose / schema-extract)

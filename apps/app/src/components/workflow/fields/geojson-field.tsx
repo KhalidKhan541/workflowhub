@@ -1,4 +1,4 @@
-import { type GeoJSONSvgOptions, geojsonToSvg } from "@dafthunk/utils";
+import { type GeoJSONSvgOptions, geojsonToSvg } from "@workflowhub/utils";
 import { useMemo } from "react";
 
 import { Button } from "@/components/ui/button";

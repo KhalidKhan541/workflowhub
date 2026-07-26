@@ -7,7 +7,7 @@ import type {
   WorkflowRuntime,
   WorkflowState,
   WorkflowTrigger,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 import { getApiBaseUrl } from "@/config/api";
 

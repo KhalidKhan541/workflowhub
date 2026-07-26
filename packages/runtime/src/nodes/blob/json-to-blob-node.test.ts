@@ -1,5 +1,5 @@
-import type { BlobParameter, NodeContext } from "@dafthunk/runtime";
-import type { Node } from "@dafthunk/types";
+import type { BlobParameter, NodeContext } from "@workflowhub/runtime";
+import type { Node } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 import { JsonToBlobNode } from "./json-to-blob-node";
 

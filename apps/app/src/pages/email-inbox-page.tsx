@@ -1,7 +1,7 @@
 import type {
   MailboxMessageSummary,
   MailboxThreadSummary,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import Inbox from "lucide-react/icons/inbox";
 import Paperclip from "lucide-react/icons/paperclip";
 import type { RefObject } from "react";

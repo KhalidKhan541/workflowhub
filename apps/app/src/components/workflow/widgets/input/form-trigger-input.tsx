@@ -1,4 +1,4 @@
-import type { Field, FieldType, GetSchemaResponse } from "@dafthunk/types";
+import type { Field, FieldType, GetSchemaResponse } from "@workflowhub/types";
 import Copy from "lucide-react/icons/copy";
 import ExternalLink from "lucide-react/icons/external-link";
 import LoaderCircle from "lucide-react/icons/loader-circle";

@@ -9,7 +9,7 @@ import type {
   ListFeedbackCriteriaResponse,
   UpdateFeedbackCriterionRequest,
   UpsertFeedbackRequest,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { zValidator } from "@hono/zod-validator";
 import { and, desc, eq, gte, lte } from "drizzle-orm";
 import { Hono } from "hono";

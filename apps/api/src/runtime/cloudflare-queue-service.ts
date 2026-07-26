@@ -1,5 +1,5 @@
-import type { QueueService, Queue as RuntimeQueue } from "@dafthunk/runtime";
-import type { QueueMessage } from "@dafthunk/types";
+import type { QueueService, Queue as RuntimeQueue } from "@workflowhub/runtime";
+import type { QueueMessage } from "@workflowhub/types";
 
 import type { Bindings } from "../context";
 import { createDatabase, getQueue } from "../db";

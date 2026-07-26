@@ -1,4 +1,4 @@
-import type { Node } from "@dafthunk/types";
+import type { Node } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 
 import { GetSubredditRedditNode } from "./get-subreddit-reddit-node";
@@ -10,7 +10,7 @@ import {
 
 describe("GetSubredditRedditNode", () => {
   it.skipIf(skipIfNoRedditToken())(
-    "should get subreddit info for r/dafthunk_test",
+    "should get subreddit info for r/WorkflowHub_test",
     async () => {
       const node = new GetSubredditRedditNode({
         nodeId: "get-subreddit-reddit",

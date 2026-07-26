@@ -1,5 +1,5 @@
-import type { NodeContext } from "@dafthunk/runtime";
-import type { Node, Schema } from "@dafthunk/types";
+import type { NodeContext } from "@workflowhub/runtime";
+import type { Node, Schema } from "@workflowhub/types";
 import { describe, expect, it, vi } from "vitest";
 
 import { CloudflareModelNode } from "./cloudflare-model-node";
@@ -50,7 +50,7 @@ function makeContext(
 }
 
 describe("CloudflareModelNode — response_format translation", () => {
-  it("translates a Dafthunk Schema input into the OpenAI-style response_format", async () => {
+  it("translates a WorkflowHub Schema input into the OpenAI-style response_format", async () => {
     const aiRun = vi.fn().mockResolvedValue({
       response: '{"name":"Ada","age":36}',
       usage: { prompt_tokens: 5, completion_tokens: 10 },
@@ -85,7 +85,7 @@ describe("CloudflareModelNode — response_format translation", () => {
       },
     });
 
-    // The Dafthunk-only `schema` key must NOT leak into the AI payload.
+    // The WorkflowHub-only `schema` key must NOT leak into the AI payload.
     expect("schema" in aiPayload).toBe(false);
   });
 

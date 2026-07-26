@@ -8,8 +8,8 @@
  * (worker runtime); `form_webhook` runs asynchronously (durable runtime).
  */
 
-import { validateRecord } from "@dafthunk/runtime/utils/schema-validation";
-import type { Field, NodeExecution, Schema, Workflow } from "@dafthunk/types";
+import { validateRecord } from "@workflowhub/runtime/utils/schema-validation";
+import type { Field, NodeExecution, Schema, Workflow } from "@workflowhub/types";
 import { type Context, Hono } from "hono";
 
 import type { ApiContext } from "../context";

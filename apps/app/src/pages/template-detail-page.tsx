@@ -1,4 +1,4 @@
-import type { CreateWorkflowRequest } from "@dafthunk/types";
+import type { CreateWorkflowRequest } from "@workflowhub/types";
 import { ReactFlowProvider } from "@xyflow/react";
 import Import from "lucide-react/icons/import";
 import { useEffect, useMemo, useState } from "react";

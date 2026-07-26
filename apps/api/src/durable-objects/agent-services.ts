@@ -5,11 +5,11 @@
  * the parts AgentRunner and EmailAgentRunner have in common.
  */
 
-import type { ToolDefinition, ToolReference } from "@dafthunk/runtime";
-import { NodeToolProvider } from "@dafthunk/runtime";
-import { createCodeModeToolDefinition } from "@dafthunk/runtime/utils/code-mode";
-import { schemaToJsonSchema } from "@dafthunk/runtime/utils/schema-to-json-schema";
-import type { Schema } from "@dafthunk/types";
+import type { ToolDefinition, ToolReference } from "@workflowhub/runtime";
+import { NodeToolProvider } from "@workflowhub/runtime";
+import { createCodeModeToolDefinition } from "@workflowhub/runtime/utils/code-mode";
+import { schemaToJsonSchema } from "@workflowhub/runtime/utils/schema-to-json-schema";
+import type { Schema } from "@workflowhub/types";
 
 import type { Bindings } from "../context";
 import { CloudflareCredentialService } from "../runtime/cloudflare-credential-service";

@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { BooleanTouchesNode } from "./boolean-touches-node";
 
@@ -89,7 +89,7 @@ describe("BooleanTouchesNode", () => {
   });
 
   it("returns false for point touching line in middle (only endpoints count)", async () => {
-    // @dafthunk/geo booleanTouches only considers line endpoints, not interior vertices
+    // @workflowhub/geo booleanTouches only considers line endpoints, not interior vertices
     const point = {
       type: "Feature",
       properties: {},
@@ -122,7 +122,7 @@ describe("BooleanTouchesNode", () => {
   });
 
   it("returns false for polygons touching at edge (no polygon-polygon handler)", async () => {
-    // @dafthunk/geo booleanTouches has no Polygon vs Polygon handler
+    // @workflowhub/geo booleanTouches has no Polygon vs Polygon handler
     const polygon1 = {
       type: "Feature",
       properties: {},
@@ -166,7 +166,7 @@ describe("BooleanTouchesNode", () => {
   });
 
   it("returns false for polygons touching at corner (no polygon-polygon handler)", async () => {
-    // @dafthunk/geo booleanTouches has no Polygon vs Polygon handler
+    // @workflowhub/geo booleanTouches has no Polygon vs Polygon handler
     const polygon1 = {
       type: "Feature",
       properties: {},
@@ -396,7 +396,7 @@ describe("BooleanTouchesNode", () => {
   });
 
   it("returns true for line with endpoint on polygon boundary", async () => {
-    // @dafthunk/geo: start [0.5,0] is on boundary, no interior points, so touches=true
+    // @workflowhub/geo: start [0.5,0] is on boundary, no interior points, so touches=true
     const line = {
       type: "Feature",
       properties: {},
@@ -435,7 +435,7 @@ describe("BooleanTouchesNode", () => {
   });
 
   it("returns false for lines touching at endpoint (no line-line handler)", async () => {
-    // @dafthunk/geo booleanTouches has no Line vs Line handler
+    // @workflowhub/geo booleanTouches has no Line vs Line handler
     const line1 = {
       type: "Feature",
       properties: {},
@@ -502,7 +502,7 @@ describe("BooleanTouchesNode", () => {
   });
 
   it("returns false for identical points (no point-point handler)", async () => {
-    // @dafthunk/geo booleanTouches has no Point vs Point handler
+    // @workflowhub/geo booleanTouches has no Point vs Point handler
     const point1 = {
       type: "Feature",
       properties: {},

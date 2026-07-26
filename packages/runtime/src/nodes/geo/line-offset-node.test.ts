@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { LineOffsetNode } from "./line-offset-node";
 
@@ -65,7 +65,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -85,7 +85,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -105,7 +105,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -125,7 +125,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -145,7 +145,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -166,7 +166,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -190,7 +190,7 @@ describe("LineOffsetNode", () => {
 
         expect(result.status).toBe("completed");
         expect(result.outputs?.offset).toBeDefined();
-        // @dafthunk/geo lineOffset returns Feature<LineString>
+        // @workflowhub/geo lineOffset returns Feature<LineString>
         expect(result.outputs?.offset.type).toBe("Feature");
       }
     });
@@ -211,7 +211,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -231,7 +231,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -253,7 +253,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -273,7 +273,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -293,7 +293,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -313,7 +313,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -333,7 +333,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -359,7 +359,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature
+      // @workflowhub/geo lineOffset returns Feature
       expect(result.outputs?.offset.type).toBe("Feature");
     });
   });
@@ -546,7 +546,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -567,7 +567,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -587,7 +587,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -607,7 +607,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -627,7 +627,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -649,7 +649,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -669,7 +669,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
 
@@ -689,7 +689,7 @@ describe("LineOffsetNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.offset).toBeDefined();
-      // @dafthunk/geo lineOffset returns Feature<LineString>
+      // @workflowhub/geo lineOffset returns Feature<LineString>
       expect(result.outputs?.offset.type).toBe("Feature");
     });
   });

@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { LineStringNode } from "./linestring-node";
 
@@ -67,8 +67,8 @@ describe("LineStringNode", () => {
       expect(result.error).toContain("Error creating LineString");
     });
 
-    it("should handle invalid coordinates (accepted by @dafthunk/geo without validation)", async () => {
-      // @dafthunk/geo lineString does not validate coordinates type
+    it("should handle invalid coordinates (accepted by @workflowhub/geo without validation)", async () => {
+      // @workflowhub/geo lineString does not validate coordinates type
       const context = createMockContext({
         coordinates: "not an array",
       });

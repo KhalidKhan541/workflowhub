@@ -9,7 +9,7 @@ import {
   UpdateDatasetRequest,
   UpdateDatasetResponse,
   UploadDatasetFileResponse,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { zValidator } from "@hono/zod-validator";
 import { Hono } from "hono";
 import { v7 as uuid } from "uuid";

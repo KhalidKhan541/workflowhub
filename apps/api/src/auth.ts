@@ -2,7 +2,7 @@ import type {
   JWTTokenPayload,
   OrganizationInfo,
   OrganizationRoleType,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { githubAuth } from "@hono/oauth-providers/github";
 import { googleAuth } from "@hono/oauth-providers/google";
 import { and, eq } from "drizzle-orm";

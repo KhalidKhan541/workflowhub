@@ -1,8 +1,8 @@
-import type { WorkflowTrigger } from "@dafthunk/types";
+import type { WorkflowTrigger } from "@workflowhub/types";
 import {
   isSubscriptionRequiredError,
   parseSubscriptionRequiredError,
-} from "@dafthunk/utils";
+} from "@workflowhub/utils";
 import type { Node as ReactFlowNode } from "@xyflow/react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 

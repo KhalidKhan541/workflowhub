@@ -8,7 +8,7 @@
  * runtime); `http_webhook` runs asynchronously (durable runtime).
  */
 
-import type { ExecuteWorkflowResponse, Node } from "@dafthunk/types";
+import type { ExecuteWorkflowResponse, Node } from "@workflowhub/types";
 import { Hono } from "hono";
 
 import type { ApiContext } from "../context";

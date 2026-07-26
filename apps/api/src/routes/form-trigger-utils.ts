@@ -5,7 +5,7 @@
  * its configuration. Kept separate from the route so it can be unit tested.
  */
 
-import type { Node } from "@dafthunk/types";
+import type { Node } from "@workflowhub/types";
 
 /** Form trigger node type → public form mode (sync vs async). */
 const FORM_TRIGGER_MODE: Record<string, "request" | "webhook"> = {

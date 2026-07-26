@@ -1,6 +1,6 @@
-import type { NodeContext } from "@dafthunk/runtime";
-import { ExecutableNode } from "@dafthunk/runtime";
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+import type { NodeContext } from "@workflowhub/runtime";
+import { ExecutableNode } from "@workflowhub/runtime";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 import type { TokenPricing } from "../../utils/usage";
 import { executeGeminiModel } from "./execute-gemini-model";
 

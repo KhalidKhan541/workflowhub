@@ -1,7 +1,7 @@
-import { AgentQwen330BA3BFp8Node } from "@dafthunk/runtime/nodes/agent/agent-qwen3-30b-a3b-fp8-node";
-import { TextInputNode } from "@dafthunk/runtime/nodes/input/text-input-node";
-import { TextOutputNode } from "@dafthunk/runtime/nodes/output/text-output-node";
-import type { WorkflowTemplate } from "@dafthunk/types";
+import { AgentQwen330BA3BFp8Node } from "@workflowhub/runtime/nodes/agent/agent-qwen3-30b-a3b-fp8-node";
+import { TextInputNode } from "@workflowhub/runtime/nodes/input/text-input-node";
+import { TextOutputNode } from "@workflowhub/runtime/nodes/output/text-output-node";
+import type { WorkflowTemplate } from "@workflowhub/types";
 
 /** Autonomous-agent pattern from Anthropic's Building Effective Agents. */
 export const wikiResearchAgentTemplate: WorkflowTemplate = {

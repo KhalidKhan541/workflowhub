@@ -9,7 +9,7 @@ import type {
   ListFeedbackCriteriaResponse,
   UpdateFeedbackCriterionRequest,
   UpsertFeedbackRequest,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import useSWR from "swr";
 import useSWRMutation from "swr/mutation";
 

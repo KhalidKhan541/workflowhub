@@ -1,4 +1,4 @@
-import type { Parameter } from "@dafthunk/types";
+import type { Parameter } from "@workflowhub/types";
 import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";

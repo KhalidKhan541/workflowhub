@@ -1,9 +1,9 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import {
   BaseNodeRegistry,
   BaseToolRegistry,
   NodeToolProvider,
-} from "@dafthunk/runtime";
+} from "@workflowhub/runtime";
 
 /**
  * Cloudflare-specific tool registry implementation

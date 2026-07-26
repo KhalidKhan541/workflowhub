@@ -256,8 +256,8 @@ adminOnboardingRoutes.get("/users/:id/executions-summary", async (c) => {
     const env = c.env.CLOUDFLARE_ENV || "development";
     const dataset =
       env === "production"
-        ? "dafthunk_executions_production"
-        : "dafthunk_executions_development";
+        ? "WorkflowHub_executions_production"
+        : "WorkflowHub_executions_development";
 
     // CF Analytics Engine SQL requires `COUNT()` with zero arguments —
     // `COUNT(*)` is rejected with `COUNT() function must have 0 arguments`.

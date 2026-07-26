@@ -3,7 +3,7 @@ import {
   type NodeExecution,
   type NodeType,
   type Schema,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 import { createFormToken } from "../../form-token";
 import type { NodeContext } from "../../node-types";

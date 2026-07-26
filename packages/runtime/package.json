@@ -1,5 +1,5 @@
 {
-  "name": "@dafthunk/runtime",
+  "name": "@workflowhub/runtime",
   "version": "0.1.0",
   "private": true,
   "exports": {
@@ -22,9 +22,9 @@
     "@cf-wasm/resvg": "^0.3.4",
     "@cloudflare/ai-utils": "^1.0.1",
     "@cloudflare/sandbox": "^0.7.21",
-    "@dafthunk/geo": "workspace:*",
-    "@dafthunk/types": "workspace:*",
-    "@dafthunk/utils": "workspace:*",
+    "@workflowhub/geo": "workspace:*",
+    "@workflowhub/types": "workspace:*",
+    "@workflowhub/utils": "workspace:*",
     "@gltf-transform/core": "^4.3.0",
     "@google/genai": "^1.52.0",
     "@mapbox/martini": "^0.2.0",

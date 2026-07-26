@@ -5,7 +5,7 @@
  * Provides empty secrets and integrations for testing workflows that don't need them.
  */
 
-import type { CredentialService, IntegrationInfo } from "@dafthunk/runtime";
+import type { CredentialService, IntegrationInfo } from "@workflowhub/runtime";
 
 /**
  * Minimal mock that avoids database access

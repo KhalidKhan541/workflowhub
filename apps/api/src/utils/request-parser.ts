@@ -4,7 +4,7 @@
  * Preserves raw request body as BlobParameter for untransformed HTTP representation.
  */
 
-import type { BlobParameter } from "@dafthunk/runtime";
+import type { BlobParameter } from "@workflowhub/runtime";
 import type { Context } from "hono";
 
 export interface ParsedRequest {

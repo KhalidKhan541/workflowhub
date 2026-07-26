@@ -1,5 +1,5 @@
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 
 /**
  * GitHub List User Repositories node implementation
@@ -124,7 +124,7 @@ export class ListUserRepositoriesGithubNode extends ExecutableNode {
         headers: {
           Authorization: `Bearer ${accessToken}`,
           Accept: "application/vnd.github.v3+json",
-          "User-Agent": "Dafthunk/1.0",
+          "User-Agent": "WorkflowHub/1.0",
         },
       });
 

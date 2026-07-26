@@ -3,7 +3,7 @@ import "@xyflow/react/dist/style.css";
 import type {
   DatabaseSchemaColumn,
   DatabaseSchemaTable,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import dagre from "@dagrejs/dagre";
 import type { Edge, Node, NodeProps } from "@xyflow/react";
 import {

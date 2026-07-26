@@ -230,8 +230,8 @@ async function fetchExecutionsSeries(
 
   const dataset =
     (env.CLOUDFLARE_ENV || "development") === "production"
-      ? "dafthunk_executions_production"
-      : "dafthunk_executions_development";
+      ? "WorkflowHub_executions_production"
+      : "WorkflowHub_executions_development";
 
   // Use `toStartOfInterval` (the canonical CF AE bucketing function shown
   // in the docs) instead of `formatDateTime` + `toDateTime`, which both

@@ -196,7 +196,7 @@ export function buildThreadedMime(args: {
   date: Date;
   replyTo?: string | null;
 }): string {
-  const boundary = `dafthunk-${uuidv7()}`;
+  const boundary = `WorkflowHub-${uuidv7()}`;
   const headers: string[] = [
     `From: ${args.from}`,
     `To: ${args.to}`,

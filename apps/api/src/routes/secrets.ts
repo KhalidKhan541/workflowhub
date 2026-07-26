@@ -6,7 +6,7 @@ import {
   ListSecretsResponse,
   UpdateSecretRequest,
   UpdateSecretResponse,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { zValidator } from "@hono/zod-validator";
 import { Hono } from "hono";
 import { z } from "zod";

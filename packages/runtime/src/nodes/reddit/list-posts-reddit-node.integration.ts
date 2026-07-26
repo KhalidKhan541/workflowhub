@@ -1,4 +1,4 @@
-import type { Node } from "@dafthunk/types";
+import type { Node } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 
 import { ListPostsRedditNode } from "./list-posts-reddit-node";
@@ -10,7 +10,7 @@ import {
 
 describe("ListPostsRedditNode", () => {
   it.skipIf(skipIfNoRedditToken())(
-    "should list posts from r/dafthunk_test",
+    "should list posts from r/WorkflowHub_test",
     async () => {
       const node = new ListPostsRedditNode({
         nodeId: "list-posts-reddit",

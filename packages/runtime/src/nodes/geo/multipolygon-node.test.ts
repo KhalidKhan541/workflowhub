@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { MultiPolygonNode } from "./multipolygon-node";
 
@@ -128,10 +128,10 @@ describe("MultiPolygonNode", () => {
     expect(result.status).toBe("completed");
     expect(result.outputs?.multiPolygon).toBeDefined();
     expect(result.outputs?.multiPolygon.type).toBe("Feature");
-    // @dafthunk/geo multiPolygon ignores bbox option
+    // @workflowhub/geo multiPolygon ignores bbox option
   });
 
-  it("returns MultiPolygon with string ID option (ignored by @dafthunk/geo)", async () => {
+  it("returns MultiPolygon with string ID option (ignored by @workflowhub/geo)", async () => {
     const context = createMockContext({
       coordinates: [
         [
@@ -152,7 +152,7 @@ describe("MultiPolygonNode", () => {
     expect(result.outputs?.multiPolygon.type).toBe("Feature");
   });
 
-  it("returns MultiPolygon with number ID option (ignored by @dafthunk/geo)", async () => {
+  it("returns MultiPolygon with number ID option (ignored by @workflowhub/geo)", async () => {
     const context = createMockContext({
       coordinates: [
         [
@@ -173,7 +173,7 @@ describe("MultiPolygonNode", () => {
     expect(result.outputs?.multiPolygon.type).toBe("Feature");
   });
 
-  it("returns MultiPolygon with properties (bbox and id ignored by @dafthunk/geo)", async () => {
+  it("returns MultiPolygon with properties (bbox and id ignored by @workflowhub/geo)", async () => {
     const context = createMockContext({
       coordinates: [
         [

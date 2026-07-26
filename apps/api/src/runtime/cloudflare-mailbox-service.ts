@@ -14,7 +14,7 @@ import type {
   MailboxThreadMessage,
   SendThreadedArgs,
   SendThreadedResult,
-} from "@dafthunk/runtime";
+} from "@workflowhub/runtime";
 import { v7 as uuidv7 } from "uuid";
 
 import type { Bindings } from "../context";

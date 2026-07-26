@@ -1,4 +1,4 @@
-import type { ExecuteNodeResponse, ParameterValue } from "@dafthunk/types";
+import type { ExecuteNodeResponse, ParameterValue } from "@workflowhub/types";
 
 import { makeOrgRequest } from "./utils";
 

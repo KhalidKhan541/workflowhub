@@ -4,9 +4,9 @@ import {
   type CloudflareGatewayModelMeta,
   cloudflareGatewayModelUrl,
   encodeCloudflareGatewayModelMeta,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
-export type { CloudflareGatewayModelMeta } from "@dafthunk/types";
+export type { CloudflareGatewayModelMeta } from "@workflowhub/types";
 export {
   CFG_META_KEY,
   CLOUDFLARE_GATEWAY_MODEL_NODE_TYPE,

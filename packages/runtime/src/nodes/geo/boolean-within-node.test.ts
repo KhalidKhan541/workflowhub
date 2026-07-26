@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { BooleanWithinNode } from "./boolean-within-node";
 
@@ -130,7 +130,7 @@ describe("BooleanWithinNode", () => {
   });
 
   it("returns true for point on polygon boundary", async () => {
-    // @dafthunk/geo includes boundary points as "within"
+    // @workflowhub/geo includes boundary points as "within"
     const point = {
       type: "Feature",
       properties: {},

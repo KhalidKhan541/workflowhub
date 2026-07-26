@@ -1,5 +1,5 @@
-import type { ObjectMetadata, ObjectStore } from "@dafthunk/runtime";
-import type { ObjectReference } from "@dafthunk/types";
+import type { ObjectMetadata, ObjectStore } from "@workflowhub/runtime";
+import type { ObjectReference } from "@workflowhub/types";
 import { AwsClient } from "aws4fetch";
 import { v7 as uuid } from "uuid";
 

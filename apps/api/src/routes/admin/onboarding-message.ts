@@ -1,6 +1,6 @@
 import Anthropic, { APIError } from "@anthropic-ai/sdk";
-import { getAnthropicConfig } from "@dafthunk/runtime/utils/ai-gateway";
-import type { WorkflowTemplate } from "@dafthunk/types";
+import { getAnthropicConfig } from "@workflowhub/runtime/utils/ai-gateway";
+import type { WorkflowTemplate } from "@workflowhub/types";
 import { desc, eq } from "drizzle-orm";
 import { Hono } from "hono";
 import { z } from "zod";
@@ -247,7 +247,7 @@ function buildPrompt(
   isDormant: boolean
 ): { system: string; user: string } {
   const stuckSystem = [
-    "You are Bertil, the solo founder of Dafthunk, a visual workflow automation",
+    "You are Bertil, the solo founder of WorkflowHub, a visual workflow automation",
     "platform built on Cloudflare. You are writing a brief, considerate email",
     "to a user who signed up but has not yet activated. The aim is to offer",
     "help, not push them. Aim for 70 to 110 words. Prose only, no bulleted",
@@ -268,8 +268,8 @@ function buildPrompt(
     "Subject line:",
     "- Keep it neutral and slightly formal, not a chatty check-in. Avoid",
     "  'Checking in', 'Just wanted to', exclamation points, and emoji. A",
-    "  noun phrase about the topic works well (e.g., 'Your Dafthunk",
-    "  workflow', 'Getting started with Dafthunk', 'A hand with your",
+    "  noun phrase about the topic works well (e.g., 'Your WorkflowHub",
+    "  workflow', 'Getting started with WorkflowHub', 'A hand with your",
     "  workflow').",
     "",
     "Hard rules:",
@@ -290,23 +290,23 @@ function buildPrompt(
   ].join("\n");
 
   // Dormant users signed up a long time ago and almost certainly don't
-  // remember Dafthunk specifically — past sessions, errors, even the
+  // remember WorkflowHub specifically — past sessions, errors, even the
   // platform's value prop are gone from memory. Treat this as a soft
   // re-introduction, not a nudge: mirror the welcome email's tone (warm,
-  // one open question, a one-sentence reminder of what Dafthunk is, a
+  // one open question, a one-sentence reminder of what WorkflowHub is, a
   // concrete starting point). Past support snippets are omitted upstream.
   const dormantSystem = [
-    "You are Bertil, the solo founder of Dafthunk, a visual workflow automation",
+    "You are Bertil, the solo founder of WorkflowHub, a visual workflow automation",
     "platform built on Cloudflare. You are writing to a user who signed up",
     `${ctx.daysSinceAdvance} days ago and never came back. They almost`,
-    "certainly do not remember Dafthunk. Treat this as a fresh, low-key",
+    "certainly do not remember WorkflowHub. Treat this as a fresh, low-key",
     "re-introduction, not a check-in. The aim is to leave the door open,",
     "not to chase. Aim for 70 to 110 words. Prose only, no bulleted lists.",
     "",
     "Structure (three short paragraphs, no headings):",
     "1. Greeting + acknowledgment: 'Hello <first name>,' on its own line,",
     "   then one sentence noting the gap matter-of-factly.",
-    "2. One-line reminder + open offer: one short sentence on what Dafthunk",
+    "2. One-line reminder + open offer: one short sentence on what WorkflowHub",
     "   is (a visual way to build serverless workflows on Cloudflare), then",
     "   one sentence offering help if they want to try something. If a",
     "   relevant template is suggested, mention it by NAME only (no URL; a",
@@ -317,8 +317,8 @@ function buildPrompt(
     "Subject line:",
     "- Keep it neutral and slightly formal, not a chatty check-in. Avoid",
     "  'Checking in', 'Long time no see', exclamation points, and emoji. A",
-    "  short noun phrase works well (e.g., 'Dafthunk', 'Welcome back to",
-    "  Dafthunk', 'A note from Dafthunk').",
+    "  short noun phrase works well (e.g., 'WorkflowHub', 'Welcome back to",
+    "  WorkflowHub', 'A note from WorkflowHub').",
     "",
     "Hard rules:",
     "- Do NOT reference 'what you were originally trying to automate' or any",

@@ -2,8 +2,8 @@ import {
   type BlobParameter,
   ExecutableNode,
   type NodeContext,
-} from "@dafthunk/runtime";
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+} from "@workflowhub/runtime";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 
 export class BlobToJsonNode extends ExecutableNode {
   public static readonly nodeType: NodeType = {

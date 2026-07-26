@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { PolygonizeNode } from "./polygonize-node";
 
@@ -25,7 +25,7 @@ describe("PolygonizeNode", () => {
   });
 
   it("returns error for single Feature<LineString> input (requires FeatureCollection)", async () => {
-    // @dafthunk/geo polygonize requires FeatureCollection<LineString>
+    // @workflowhub/geo polygonize requires FeatureCollection<LineString>
     const context = createMockContext({
       lines: {
         type: "Feature",
@@ -89,7 +89,7 @@ describe("PolygonizeNode", () => {
   });
 
   it("returns error for MultiLineString input (requires FeatureCollection)", async () => {
-    // @dafthunk/geo polygonize requires FeatureCollection<LineString>
+    // @workflowhub/geo polygonize requires FeatureCollection<LineString>
     const context = createMockContext({
       lines: {
         type: "Feature",
@@ -120,7 +120,7 @@ describe("PolygonizeNode", () => {
   });
 
   it("returns error for single Feature<LineString> with integer coordinates (requires FeatureCollection)", async () => {
-    // @dafthunk/geo polygonize requires FeatureCollection<LineString>
+    // @workflowhub/geo polygonize requires FeatureCollection<LineString>
     const context = createMockContext({
       lines: {
         type: "Feature",
@@ -142,7 +142,7 @@ describe("PolygonizeNode", () => {
   });
 
   it("returns error for raw LineString geometry input (requires FeatureCollection)", async () => {
-    // @dafthunk/geo polygonize requires FeatureCollection<LineString>
+    // @workflowhub/geo polygonize requires FeatureCollection<LineString>
     const context = createMockContext({
       lines: {
         type: "LineString",
@@ -218,7 +218,7 @@ describe("PolygonizeNode", () => {
   });
 
   it("returns error for single Feature that doesn't form a polygon (requires FeatureCollection)", async () => {
-    // @dafthunk/geo polygonize requires FeatureCollection<LineString>
+    // @workflowhub/geo polygonize requires FeatureCollection<LineString>
     const context = createMockContext({
       lines: {
         type: "Feature",

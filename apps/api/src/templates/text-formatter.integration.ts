@@ -1,7 +1,7 @@
 import { env } from "cloudflare:test";
-import { TextInputNode } from "@dafthunk/runtime/nodes/input/text-input-node";
-import { VarStringTemplateNode } from "@dafthunk/runtime/nodes/text/var-string-template-node";
-import type { Parameter } from "@dafthunk/types";
+import { TextInputNode } from "@workflowhub/runtime/nodes/input/text-input-node";
+import { VarStringTemplateNode } from "@workflowhub/runtime/nodes/text/var-string-template-node";
+import type { Parameter } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 import type { Bindings } from "../context";
 import { textFormatterTemplate } from "./text-formatter";

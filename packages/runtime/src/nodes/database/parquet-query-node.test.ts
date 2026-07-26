@@ -1,4 +1,4 @@
-import type { Node } from "@dafthunk/types";
+import type { Node } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 import type { NodeContext } from "../../node-types";
 import { ParquetQueryNode } from "./parquet-query-node";

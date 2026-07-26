@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { IntersectNode } from "./intersect-node";
 
@@ -24,7 +24,7 @@ describe("IntersectNode", () => {
     outputs: [],
   });
 
-  // @dafthunk/geo intersect requires Feature<Polygon>, not raw geometry
+  // @workflowhub/geo intersect requires Feature<Polygon>, not raw geometry
   const polygon1 = {
     type: "Feature",
     properties: {},

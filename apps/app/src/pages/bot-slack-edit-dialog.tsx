@@ -1,4 +1,4 @@
-import type { BotResponse } from "@dafthunk/types";
+import type { BotResponse } from "@workflowhub/types";
 import { useState } from "react";
 import { useAuth } from "@/components/auth-context";
 import { Button } from "@/components/ui/button";

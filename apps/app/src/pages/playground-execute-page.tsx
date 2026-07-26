@@ -1,4 +1,4 @@
-import type { ExecuteNodeResponse, ParameterValue } from "@dafthunk/types";
+import type { ExecuteNodeResponse, ParameterValue } from "@workflowhub/types";
 import { DynamicIcon, iconNames } from "lucide-react/dynamic.mjs";
 import CircleHelp from "lucide-react/icons/circle-help";
 import Play from "lucide-react/icons/play";

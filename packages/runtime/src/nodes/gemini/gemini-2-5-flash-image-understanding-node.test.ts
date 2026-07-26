@@ -1,5 +1,5 @@
-import type { NodeContext } from "@dafthunk/runtime";
-import type { Node } from "@dafthunk/types";
+import type { NodeContext } from "@workflowhub/runtime";
+import type { Node } from "@workflowhub/types";
 import { describe, expect, it, vi } from "vitest";
 import { Gemini25FlashImageUnderstandingNode } from "./gemini-2-5-flash-image-understanding-node";
 

@@ -1,6 +1,6 @@
-import type { ImageParameter } from "@dafthunk/runtime";
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+import type { ImageParameter } from "@workflowhub/runtime";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 import { z } from "zod";
 import { zodErrorMessage } from "../../utils/zod";
 
@@ -155,7 +155,7 @@ export class SharePostRedditNode extends ExecutableNode {
         headers: {
           Authorization: `Bearer ${accessToken}`,
           "Content-Type": "application/x-www-form-urlencoded",
-          "User-Agent": "Dafthunk/1.0",
+          "User-Agent": "WorkflowHub/1.0",
         },
         body: new URLSearchParams({
           filepath: filename,
@@ -284,7 +284,7 @@ export class SharePostRedditNode extends ExecutableNode {
         headers: {
           Authorization: `Bearer ${accessToken}`,
           "Content-Type": "application/x-www-form-urlencoded",
-          "User-Agent": "Dafthunk/1.0",
+          "User-Agent": "WorkflowHub/1.0",
         },
         body: formData,
       });

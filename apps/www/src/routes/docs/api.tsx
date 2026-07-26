@@ -11,7 +11,7 @@ import {
 import { highlight, type SupportedLanguage } from "../../lib/shiki";
 
 const websiteUrl = import.meta.env.VITE_WEBSITE_URL;
-const API_BASE_URL = "https://api.dafthunk.com";
+const API_BASE_URL = "https://api.workflowhub.com";
 
 const SAMPLE_URLS = {
   endpointExecute: `${API_BASE_URL}/http/my-workflow-id`,
@@ -226,9 +226,9 @@ export function headers() {
 }
 
 export function meta() {
-  const title = "API Reference - Dafthunk Documentation";
+  const title = "API Reference - WorkflowHub Documentation";
   const description =
-    "Complete REST API reference for Dafthunk: authentication, endpoint execution, status polling, object retrieval, queue publishing, and database query.";
+    "Complete REST API reference for WorkflowHub: authentication, endpoint execution, status polling, object retrieval, queue publishing, and database query.";
   const url = `${websiteUrl}/docs/api`;
   const ogImage = `${websiteUrl}/og-image.webp`;
 
@@ -240,7 +240,7 @@ export function meta() {
     { property: "og:title", content: title },
     { property: "og:description", content: description },
     { property: "og:image", content: ogImage },
-    { property: "og:site_name", content: "Dafthunk" },
+    { property: "og:site_name", content: "WorkflowHub" },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:url", content: url },
     { name: "twitter:title", content: title },
@@ -286,7 +286,7 @@ export default function DocsApi({ loaderData }: { loaderData: LoaderData }) {
       />
       <h1>API Reference</h1>
       <p className="lead">
-        Complete API documentation for integrating Dafthunk workflows into your
+        Complete API documentation for integrating WorkflowHub workflows into your
         applications, with examples in multiple programming languages.
       </p>
 
@@ -297,7 +297,7 @@ export default function DocsApi({ loaderData }: { loaderData: LoaderData }) {
       <h2 id="authentication">Authentication</h2>
       <p>
         API requests are authenticated using API keys. You can generate and
-        manage your API keys from the Dafthunk dashboard under{" "}
+        manage your API keys from the WorkflowHub dashboard under{" "}
         <strong>Settings → API Keys</strong>. Once you create a new API key,
         give it a descriptive name and ensure you copy and store it securely, as
         it won't be shown again.
@@ -496,7 +496,7 @@ export default function DocsApi({ loaderData }: { loaderData: LoaderData }) {
       <h3>Execute Query</h3>
       <p>
         Execute a SQL query against a database. Databases are created in the
-        Dafthunk dashboard under <strong>Databases</strong>.
+        WorkflowHub dashboard under <strong>Databases</strong>.
       </p>
       <p>
         <strong>Route:</strong>{" "}

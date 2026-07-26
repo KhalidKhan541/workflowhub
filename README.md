@@ -1,4 +1,4 @@
-# Dafthunk
+# WorkflowHub
 
 > Break it, fix it, prompt it, automatic, automatic, ...
 
@@ -8,7 +8,7 @@ A workflow execution platform built on top of the fantastic Cloudflare infrastru
 
 ## 🔍 Overview
 
-[Daf·thunk](https://en.wikipedia.org/wiki/Thunk) is a powerful, visual workflow automation platform that allows you to create, manage, and execute workflows directly in your browser. Built on Cloudflare's infrastructure, it leverages Cloudflare Workers and Workflows for serverless execution, Cloudflare AI for intelligent processing, and Cloudflare D1, R2, and KV for persistent storage.
+WorkflowHub is a powerful, visual workflow automation platform that allows you to create, manage, and execute workflows directly in your browser. Built on Cloudflare's infrastructure, it leverages Cloudflare Workers and Workflows for serverless execution, Cloudflare AI for intelligent processing, and Cloudflare D1, R2, and KV for persistent storage.
 
 The platform features a visual workflow editor built with [React Flow](https://reactflow.dev/), allowing you to create complex workflows by connecting various node types, including AI-powered nodes for text processing, image classification, and more. Think digital LEGO, but with less risk to your bare feet at 2 AM.
 
@@ -65,8 +65,8 @@ Our collection of carefully selected technologies, guaranteed to be outdated by 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/dafthunk-com/dafthunk.git
-   cd dafthunk
+   git clone https://github.com/WorkflowHub-com/WorkflowHub.git
+   cd WorkflowHub
    ```
 
 2. Install dependencies:
@@ -103,7 +103,7 @@ Our collection of carefully selected technologies, guaranteed to be outdated by 
    **GitHub OAuth**:
    - Go to [GitHub Settings > Developer settings > OAuth Apps](https://github.com/settings/applications/new)
    - Create new OAuth App with:
-     - Application Name: `Dafthunk Dev`
+     - Application Name: `WorkflowHub Dev`
      - Homepage URL: `http://localhost:3000`
      - Authorization callback URL: `http://localhost:3002/auth/login/github`
    - Copy the Client ID and generate a new client secret
@@ -174,7 +174,7 @@ Our collection of carefully selected technologies, guaranteed to be outdated by 
    - Go to [Reddit App Preferences](https://www.reddit.com/prefs/apps)
    - Click "create another app..." at the bottom
    - Fill in the form:
-     - Name: Dafthunk (or your app name)
+     - Name: WorkflowHub (or your app name)
      - App type: `web app`
      - Redirect URI: `http://localhost:3002/oauth/reddit/connect`
    - Click "create app"
@@ -204,7 +204,7 @@ Our collection of carefully selected technologies, guaranteed to be outdated by 
    - Go to [GitHub Developer Settings](https://github.com/settings/developers)
    - Click "New OAuth App"
    - Fill in the form:
-     - Application name: Dafthunk (or your app name)
+     - Application name: WorkflowHub (or your app name)
      - Homepage URL: `http://localhost:3000`
      - Authorization callback URL: `http://localhost:3002/oauth/github/connect`
    - Click "Register application"
@@ -342,16 +342,16 @@ pnpm knip
 
 ```bash
 # API development
-pnpm --filter '@dafthunk/api' dev
-pnpm --filter '@dafthunk/api' deploy
+pnpm --filter '@workflowhub/api' dev
+pnpm --filter '@workflowhub/api' deploy
 
 # Web development
-pnpm --filter '@dafthunk/web' dev
-pnpm --filter '@dafthunk/web' build
-pnpm --filter '@dafthunk/web' deploy
+pnpm --filter '@workflowhub/web' dev
+pnpm --filter '@workflowhub/web' build
+pnpm --filter '@workflowhub/web' deploy
 
 # Types package
-pnpm --filter '@dafthunk/types' build
+pnpm --filter '@workflowhub/types' build
 ```
 
 ### 🗄️ Database
@@ -362,13 +362,13 @@ The project uses Cloudflare D1 (SQLite) as the database with Drizzle ORM. Migrat
 
 ```bash
 # Apply migrations to local database
-pnpm --filter '@dafthunk/api' db:migrate
+pnpm --filter '@workflowhub/api' db:migrate
 
 # Reset local database (dangerous!)
-pnpm --filter '@dafthunk/api' db:reset
+pnpm --filter '@workflowhub/api' db:reset
 
 # Generate new migrations
-pnpm --filter '@dafthunk/api' db:generate
+pnpm --filter '@workflowhub/api' db:generate
 ```
 
 To run queries against the development database:
@@ -381,10 +381,10 @@ npx wrangler d1 execute DB --local --command "SELECT name FROM sqlite_master WHE
 
 ```bash
 # Apply migrations to production
-pnpm --filter '@dafthunk/api' db:prod:migrate
+pnpm --filter '@workflowhub/api' db:prod:migrate
 
 # Reset production database (proceed with extreme caution!)
-pnpm --filter '@dafthunk/api' db:prod:reset
+pnpm --filter '@workflowhub/api' db:prod:reset
 ```
 
 To run queries against the production database:
@@ -434,9 +434,9 @@ Presigned URLs allow temporary, secure access to R2 objects without exposing you
 1. Go to https://dash.cloudflare.com/ → R2 Object Storage → Manage R2 API Tokens
 2. Click "Create API token"
 3. Configure the token:
-   - **Token name**: `dafthunk-presigned-urls`
+   - **Token name**: `workflowhub-presigned-urls`
    - **Permissions**: Object Read & Write
-   - **Specify bucket(s)**: Select your R2 buckets (`dafthunk-ressources-production`)
+   - **Specify bucket(s)**: Select your R2 buckets (`workflowhub-ressources-production`)
    - **TTL**: Optional, set an expiration if desired
 4. Click "Create API Token"
 5. Copy the **Access Key ID** and **Secret Access Key** (you'll only see them once)
@@ -461,13 +461,13 @@ See [apps/www/README.md](apps/www/README.md) for website-specific configuration 
 
 ```bash
 # Deploy API to Cloudflare Workers
-pnpm --filter '@dafthunk/api' deploy
+pnpm --filter '@workflowhub/api' deploy
 
 # Deploy web app to Cloudflare Pages
-pnpm --filter '@dafthunk/web' deploy
+pnpm --filter '@workflowhub/web' deploy
 
 # Deploy marketing website to Cloudflare Workers
-pnpm --filter '@dafthunk/www' deploy
+pnpm --filter '@workflowhub/www' deploy
 ```
 
 ## 🤝 Contributing

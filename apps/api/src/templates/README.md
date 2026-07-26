@@ -19,7 +19,7 @@ templates/
 Create `{template-name}.ts`:
 
 ```ts
-import type { WorkflowTemplate } from "@dafthunk/types";
+import type { WorkflowTemplate } from "@workflowhub/types";
 
 import { SomeNode } from "../nodes/category/some-node";
 import { TextInputNode } from "../nodes/input/text-input-node";
@@ -141,7 +141,7 @@ edges: [
 ## Example Template
 
 ```ts
-import type { WorkflowTemplate } from "@dafthunk/types";
+import type { WorkflowTemplate } from "@workflowhub/types";
 
 import { TextInputNode } from "../nodes/input/text-input-node";
 import { TextPreviewNode } from "../nodes/preview/text-preview-node";

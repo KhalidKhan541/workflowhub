@@ -1,5 +1,5 @@
 {
-  "name": "dafthunk",
+  "name": "workflowhub",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
@@ -11,10 +11,10 @@
     "lint": "pnpm run typecheck && pnpm --parallel lint && pnpm run knip",
     "typecheck": "pnpm --parallel typecheck",
     "check": "pnpm --parallel check",
-    "test": "pnpm --parallel --filter '@dafthunk/api' --filter '@dafthunk/runtime' --filter '@dafthunk/geo' --filter '@dafthunk/www' test",
+    "test": "pnpm --parallel --filter '@workflowhub/api' --filter '@workflowhub/runtime' --filter '@workflowhub/geo' --filter '@workflowhub/www' test",
     "build": "pnpm build:packages && pnpm build:apps",
-    "build:packages": "pnpm --filter '@dafthunk/types' build",
-    "build:apps": "pnpm --filter '@dafthunk/app' build && pnpm --filter '@dafthunk/www' build",
+    "build:packages": "pnpm --filter '@workflowhub/types' build",
+    "build:apps": "pnpm --filter '@workflowhub/app' build && pnpm --filter '@workflowhub/www' build",
     "start": "pnpm --parallel start",
     "knip": "NODE_NO_WARNINGS=1 knip --include-libs 2>/dev/null || true",
     "knip:fix": "knip --include-libs --fix --allow-remove-files"

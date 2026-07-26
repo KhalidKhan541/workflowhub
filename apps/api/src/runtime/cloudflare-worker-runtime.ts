@@ -6,12 +6,12 @@
  * where results are returned inline to the caller.
  */
 
-import { WorkerRuntime } from "@dafthunk/runtime";
+import { WorkerRuntime } from "@workflowhub/runtime";
 
 import type { Bindings } from "../context";
 import { buildDependencies } from "./cloudflare-runtime-dependencies";
 
-export { WorkerRuntime } from "@dafthunk/runtime";
+export { WorkerRuntime } from "@workflowhub/runtime";
 
 export function createWorkerRuntime(env: Bindings): WorkerRuntime<Bindings> {
   const noopMonitoring = { async sendUpdate() {} };

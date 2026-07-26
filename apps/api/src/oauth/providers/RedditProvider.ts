@@ -43,7 +43,7 @@ export class RedditProvider extends OAuthProvider<RedditToken, RedditUser> {
   ): Record<string, string> {
     return {
       "Content-Type": "application/x-www-form-urlencoded",
-      "User-Agent": "web:dafthunk:v1.0.0 (by /u/dafthunk)",
+      "User-Agent": "web:WorkflowHub:v1.0.0 (by /u/WorkflowHub)",
       Authorization: `Basic ${btoa(`${clientId}:${clientSecret}`)}`,
     };
   }
@@ -82,7 +82,7 @@ export class RedditProvider extends OAuthProvider<RedditToken, RedditUser> {
   protected getUserInfoHeaders(accessToken: string): Record<string, string> {
     return {
       Authorization: `Bearer ${accessToken}`,
-      "User-Agent": "Dafthunk/1.0",
+      "User-Agent": "WorkflowHub/1.0",
     };
   }
 

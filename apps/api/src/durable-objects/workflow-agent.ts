@@ -23,7 +23,7 @@
  * name required by Agent internals. Direct idFromName/get access will fail.
  */
 
-import type { RuntimeParams } from "@dafthunk/runtime";
+import type { RuntimeParams } from "@workflowhub/runtime";
 import type {
   ClientMessage,
   WorkflowExecuteMessage,
@@ -32,7 +32,7 @@ import type {
   WorkflowInitMessage,
   WorkflowState,
   WorkflowUpdateMessage,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { Agent } from "agents";
 import type { Connection, ConnectionContext } from "partyserver";
 

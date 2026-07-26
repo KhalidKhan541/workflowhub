@@ -1,4 +1,4 @@
-import type { Node, Workflow as WorkflowType } from "@dafthunk/types";
+import type { Node, Workflow as WorkflowType } from "@workflowhub/types";
 import { and, desc, eq, inArray } from "drizzle-orm";
 
 import type { Bindings } from "../context";

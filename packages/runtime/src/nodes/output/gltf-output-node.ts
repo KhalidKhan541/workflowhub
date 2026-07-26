@@ -2,8 +2,8 @@ import {
   ExecutableNode,
   type GltfParameter,
   type NodeContext,
-} from "@dafthunk/runtime";
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+} from "@workflowhub/runtime";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 
 /**
  * GltfOutput node implementation

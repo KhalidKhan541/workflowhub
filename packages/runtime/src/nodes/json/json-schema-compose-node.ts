@@ -1,10 +1,10 @@
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
 import type {
   FieldType,
   NodeExecution,
   NodeType,
   Schema,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 const FIELD_TYPE_TO_PARAMETER_TYPE: Record<FieldType, string> = {
   string: "string",

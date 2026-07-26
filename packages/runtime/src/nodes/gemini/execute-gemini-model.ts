@@ -1,5 +1,5 @@
-import type { NodeContext, ToolReference } from "@dafthunk/runtime";
-import type { NodeExecution, Schema } from "@dafthunk/types";
+import type { NodeContext, ToolReference } from "@workflowhub/runtime";
+import type { NodeExecution, Schema } from "@workflowhub/types";
 import { GoogleGenAI } from "@google/genai";
 import { getGoogleAIConfig } from "../../utils/ai-gateway";
 import { schemaToJsonSchema } from "../../utils/schema-to-json-schema";

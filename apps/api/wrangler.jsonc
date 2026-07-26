@@ -4,7 +4,7 @@
  */
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "dafthunk-api",
+  "name": "workflowhub-api",
   "main": "src/index.ts",
   "compatibility_date": "2025-11-17",
   "compatibility_flags": ["nodejs_compat"],
@@ -40,33 +40,34 @@
       "namespace": "default"
     }
   ],
-  "containers": [
-    {
-      "class_name": "FFmpegContainer",
-      "image": "./containers/ffmpeg/Dockerfile",
-      "max_instances": 5,
-      "instance_type": "standard-1"
-    },
-    {
-      "class_name": "Sandbox",
-      "image": "./containers/duckdb/Dockerfile",
-      "max_instances": 5,
-      "instance_type": "standard-1"
-    },
-    {
-      "class_name": "LanguageSandbox",
-      "image": "./Dockerfile",
-      "max_instances": 5,
-      "instance_type": "standard-1"
-    }
-  ],
+  // Containers disabled for Windows development (not supported on Windows)
+  // "containers": [
+  //   {
+  //     "class_name": "FFmpegContainer",
+  //     "image": "./containers/ffmpeg/Dockerfile",
+  //     "max_instances": 5,
+  //     "instance_type": "standard-1"
+  //   },
+  //   {
+  //     "class_name": "Sandbox",
+  //     "image": "./containers/duckdb/Dockerfile",
+  //     "max_instances": 5,
+  //     "instance_type": "standard-1"
+  //   },
+  //   {
+  //     "class_name": "LanguageSandbox",
+  //     "image": "./Dockerfile",
+  //     "max_instances": 5,
+  //     "instance_type": "standard-1"
+  //   }
+  // ],
   "worker_loaders": [{ "binding": "LOADER" }],
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "dafthunk-development",
-      "database_id": "05b1b8e5-d566-47b8-9085-161de45bbd25",
-      "preview_database_id": "05b1b8e5-d566-47b8-9085-161de45bbd25",
+      "database_name": "workflowhub-development",
+      "database_id": "8362b573-781b-4a3b-9520-61a7233bbc3e",
+      "preview_database_id": "8362b573-781b-4a3b-9520-61a7233bbc3e",
       "migrations_dir": "./src/db/migrations"
     }
   ],
@@ -79,23 +80,23 @@
   "r2_buckets": [
     {
       "binding": "RESSOURCES",
-      "bucket_name": "dafthunk-ressources-development",
-      "preview_bucket_name": "dafthunk-ressources-development"
+      "bucket_name": "workflowhub-ressources-development",
+      "preview_bucket_name": "workflowhub-ressources-development"
     },
     {
       "binding": "DATASETS",
-      "bucket_name": "dafthunk-datasets-development",
-      "preview_bucket_name": "dafthunk-datasets-development"
+      "bucket_name": "workflowhub-datasets-development",
+      "preview_bucket_name": "workflowhub-datasets-development"
     },
     {
       "binding": "INBOXES",
-      "bucket_name": "dafthunk-inboxes-development",
-      "preview_bucket_name": "dafthunk-inboxes-development"
+      "bucket_name": "workflowhub-inboxes-development",
+      "preview_bucket_name": "workflowhub-inboxes-development"
     }
   ],
   "workflows": [
     {
-      "name": "dafthunk-api",
+      "name": "workflowhub-api",
       "binding": "EXECUTE",
       "class_name": "Runtime"
     }
@@ -104,12 +105,12 @@
     "producers": [
       {
         "binding": "WORKFLOW_QUEUE",
-        "queue": "dafthunk-workflow-queue"
+        "queue": "workflowhub-workflow-queue"
       }
     ],
     "consumers": [
       {
-        "queue": "dafthunk-workflow-queue",
+        "queue": "workflowhub-workflow-queue",
         "max_batch_size": 10,
         "max_batch_timeout": 30
       }
@@ -121,7 +122,7 @@
   "analytics_engine_datasets": [
     {
       "binding": "EXECUTIONS",
-      "dataset": "dafthunk_executions_development"
+      "dataset": "workflowhub_executions_development"
     }
   ],
   "send_email": [
@@ -135,17 +136,17 @@
       {
         "name": "DATABASE",
         "class_name": "DatabaseDO",
-        "script_name": "dafthunk-api"
+        "script_name": "workflowhub-api"
       },
       {
         "name": "AGENT_RUNNER",
         "class_name": "AgentRunner",
-        "script_name": "dafthunk-api"
+        "script_name": "workflowhub-api"
       },
       {
         "name": "WORKFLOW_AGENT",
         "class_name": "WorkflowAgent",
-        "script_name": "dafthunk-api"
+        "script_name": "workflowhub-api"
       },
       {
         "name": "FFMPEG_CONTAINER",
@@ -162,12 +163,12 @@
       {
         "name": "MAILBOX",
         "class_name": "MailboxDO",
-        "script_name": "dafthunk-api"
+        "script_name": "workflowhub-api"
       },
       {
         "name": "EMAIL_AGENT_RUNNER",
         "class_name": "EmailAgentRunner",
-        "script_name": "dafthunk-api"
+        "script_name": "workflowhub-api"
       }
     ]
   },
@@ -260,19 +261,19 @@
    * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
    */
   "vars": {
-    "WEB_HOST": "https://app.dafthunk.com",
-    "WEBSITE_URL": "https://www.dafthunk.com",
-    "EMAIL_DOMAIN": "mail.dafthunk.com",
-    "SEND_EMAIL_FROM": "noreply@mail.dafthunk.com",
+    "WEB_HOST": "http://localhost:3001",
+    "WEBSITE_URL": "http://localhost:3002",
+    "EMAIL_DOMAIN": "mail.workflowhub.com",
+    "SEND_EMAIL_FROM": "noreply@mail.workflowhub.com",
     "SUPPORT_EMAIL_HANDLE": "bertil",
-    "SUPPORT_EMAIL_FROM": "bertil@dafthunk.com",
+    "SUPPORT_EMAIL_FROM": "bertil@workflowhub.com",
     // Placeholder for the future AutoRAG instance over the INBOXES bucket;
     // wire it up via the Cloudflare dashboard, then set this to the name.
     "INBOXES_AUTORAG": ""
   },
   "env": {
     "production": {
-      "name": "dafthunk-api",
+      "name": "workflowhub-api",
       "compatibility_date": "2024-10-22",
       "observability": {
         "enabled": true,
@@ -280,7 +281,7 @@
       },
       "workflows": [
         {
-          "name": "dafthunk-api",
+          "name": "workflowhub-api",
           "binding": "EXECUTE",
           "class_name": "Runtime"
         }
@@ -299,31 +300,32 @@
           "namespace": "default"
         }
       ],
-      "containers": [
-        {
-          "class_name": "FFmpegContainer",
-          "image": "./containers/ffmpeg/Dockerfile",
-          "max_instances": 5,
-          "instance_type": "standard-1"
-        },
-        {
-          "class_name": "Sandbox",
-          "image": "./containers/duckdb/Dockerfile",
-          "max_instances": 5,
-          "instance_type": "standard-1"
-        },
-        {
-          "class_name": "LanguageSandbox",
-          "image": "./Dockerfile",
-          "max_instances": 5,
-          "instance_type": "standard-1"
-        }
-      ],
+      // Containers disabled for Windows development
+      // "containers": [
+      //   {
+      //     "class_name": "FFmpegContainer",
+      //     "image": "./containers/ffmpeg/Dockerfile",
+      //     "max_instances": 5,
+      //     "instance_type": "standard-1"
+      //   },
+      //   {
+      //     "class_name": "Sandbox",
+      //     "image": "./containers/duckdb/Dockerfile",
+      //     "max_instances": 5,
+      //     "instance_type": "standard-1"
+      //   },
+      //   {
+      //     "class_name": "LanguageSandbox",
+      //     "image": "./Dockerfile",
+      //     "max_instances": 5,
+      //     "instance_type": "standard-1"
+      //   }
+      // ],
       "worker_loaders": [{ "binding": "LOADER" }],
       "d1_databases": [
         {
           "binding": "DB",
-          "database_name": "dafthunk-production",
+          "database_name": "workflowhub-production",
           "database_id": "1d40113a-d6ec-4a46-8ba8-7958ee15b79a",
           "preview_database_id": "1d40113a-d6ec-4a46-8ba8-7958ee15b79a",
           "migrations_dir": "./src/db/migrations"
@@ -338,21 +340,21 @@
       "r2_buckets": [
         {
           "binding": "RESSOURCES",
-          "bucket_name": "dafthunk-ressources-production"
+          "bucket_name": "workflowhub-ressources-production"
         },
         {
           "binding": "DATASETS",
-          "bucket_name": "dafthunk-datasets-production"
+          "bucket_name": "workflowhub-datasets-production"
         },
         {
           "binding": "INBOXES",
-          "bucket_name": "dafthunk-inboxes-production"
+          "bucket_name": "workflowhub-inboxes-production"
         }
       ],
       "analytics_engine_datasets": [
         {
           "binding": "EXECUTIONS",
-          "dataset": "dafthunk_executions_production"
+          "dataset": "workflowhub_executions_production"
         }
       ],
       "send_email": [
@@ -365,17 +367,17 @@
           {
             "name": "DATABASE",
             "class_name": "DatabaseDO",
-            "script_name": "dafthunk-api"
+            "script_name": "workflowhub-api"
           },
           {
             "name": "AGENT_RUNNER",
             "class_name": "AgentRunner",
-            "script_name": "dafthunk-api"
+            "script_name": "workflowhub-api"
           },
           {
             "name": "WORKFLOW_AGENT",
             "class_name": "WorkflowAgent",
-            "script_name": "dafthunk-api"
+            "script_name": "workflowhub-api"
           },
           {
             "name": "FFMPEG_CONTAINER",
@@ -392,12 +394,12 @@
           {
             "name": "MAILBOX",
             "class_name": "MailboxDO",
-            "script_name": "dafthunk-api"
+            "script_name": "workflowhub-api"
           },
           {
             "name": "EMAIL_AGENT_RUNNER",
             "class_name": "EmailAgentRunner",
-            "script_name": "dafthunk-api"
+            "script_name": "workflowhub-api"
           }
         ]
       },
@@ -486,12 +488,12 @@
         ]
       },
       "vars": {
-        "WEB_HOST": "https://app.dafthunk.com",
-        "WEBSITE_URL": "https://www.dafthunk.com",
-        "EMAIL_DOMAIN": "mail.dafthunk.com",
-        "SEND_EMAIL_FROM": "noreply@mail.dafthunk.com",
+        "WEB_HOST": "https://app.workflowhub.com",
+        "WEBSITE_URL": "https://www.workflowhub.com",
+        "EMAIL_DOMAIN": "mail.workflowhub.com",
+        "SEND_EMAIL_FROM": "noreply@mail.workflowhub.com",
         "SUPPORT_EMAIL_HANDLE": "bertil",
-        "SUPPORT_EMAIL_FROM": "bertil@dafthunk.com",
+        "SUPPORT_EMAIL_FROM": "bertil@workflowhub.com",
         // Placeholder for the future AutoRAG instance over the INBOXES bucket;
         // wire it up via the Cloudflare dashboard, then set this to the name.
         "INBOXES_AUTORAG": ""
@@ -500,12 +502,12 @@
         "producers": [
           {
             "binding": "WORKFLOW_QUEUE",
-            "queue": "dafthunk-workflow-queue"
+            "queue": "workflowhub-workflow-queue"
           }
         ],
         "consumers": [
           {
-            "queue": "dafthunk-workflow-queue",
+            "queue": "workflowhub-workflow-queue",
             "max_batch_size": 10,
             "max_batch_timeout": 30
           }

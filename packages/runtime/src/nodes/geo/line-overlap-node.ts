@@ -1,6 +1,6 @@
-import { lineOverlap } from "@dafthunk/geo";
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+import { lineOverlap } from "@workflowhub/geo";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 
 export class LineOverlapNode extends ExecutableNode {
   public static readonly nodeType: NodeType = {

@@ -4,7 +4,7 @@ import {
   type CloudflareModelMeta,
   type Node,
   type Parameter,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 /**
  * Llama 3.3 70B fp8-fast: the default Cloudflare Workers AI text-generation
@@ -36,7 +36,7 @@ interface CloudflareModelNodeOptions {
   outputs: Parameter[];
   /** Static input values to pre-fill (overrides any `value` on the matching Parameter). */
   inputValues?: Record<string, unknown>;
-  /** Set when the template wires Dafthunk tool refs into the `tools` input. */
+  /** Set when the template wires WorkflowHub tool refs into the `tools` input. */
   functionCalling?: boolean;
   /**
    * Display metadata mirroring what `buildModelNodeType` persists for

@@ -1,4 +1,4 @@
-import { ApiKey } from "@dafthunk/types";
+import { ApiKey } from "@workflowhub/types";
 import { ColumnDef } from "@tanstack/react-table";
 import Copy from "lucide-react/icons/copy";
 import MoreHorizontal from "lucide-react/icons/more-horizontal";

@@ -119,7 +119,7 @@ export const routes: AppRouteObject[] = [
     element: <LoginPage />,
     handle: {
       head: (
-        <HeadSeo title="Login - Dafthunk" description="Login to Dafthunk." />
+        <HeadSeo title="Login - WorkflowHub" description="Login to WorkflowHub." />
       ),
     },
   },
@@ -142,7 +142,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </AppLayout>
     ),
-    handle: { head: <HeadSeo title="Profile - Settings - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Profile - Settings - WorkflowHub" /> },
   },
   // Admin routes
   {
@@ -154,7 +154,7 @@ export const routes: AppRouteObject[] = [
         </AdminProtectedRoute>
       </AdminLayout>
     ),
-    handle: { head: <HeadSeo title="Admin Dashboard - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Admin Dashboard - WorkflowHub" /> },
   },
   {
     path: "/admin/users",
@@ -165,7 +165,7 @@ export const routes: AppRouteObject[] = [
         </AdminProtectedRoute>
       </AdminLayout>
     ),
-    handle: { head: <HeadSeo title="Users - Admin - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Users - Admin - WorkflowHub" /> },
   },
   {
     path: "/admin/onboarding",
@@ -177,7 +177,7 @@ export const routes: AppRouteObject[] = [
       </AdminLayout>
     ),
     handle: {
-      head: <HeadSeo title="Stuck in Funnel - Admin - Dafthunk" />,
+      head: <HeadSeo title="Stuck in Funnel - Admin - WorkflowHub" />,
     },
   },
   {
@@ -189,7 +189,7 @@ export const routes: AppRouteObject[] = [
         </AdminProtectedRoute>
       </AdminLayout>
     ),
-    handle: { head: <HeadSeo title="User Details - Admin - Dafthunk" /> },
+    handle: { head: <HeadSeo title="User Details - Admin - WorkflowHub" /> },
   },
   {
     path: "/admin/organizations",
@@ -200,7 +200,7 @@ export const routes: AppRouteObject[] = [
         </AdminProtectedRoute>
       </AdminLayout>
     ),
-    handle: { head: <HeadSeo title="Organizations - Admin - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Organizations - Admin - WorkflowHub" /> },
   },
   {
     path: "/admin/organizations/:organizationId",
@@ -212,7 +212,7 @@ export const routes: AppRouteObject[] = [
       </AdminLayout>
     ),
     handle: {
-      head: <HeadSeo title="Organization Details - Admin - Dafthunk" />,
+      head: <HeadSeo title="Organization Details - Admin - WorkflowHub" />,
     },
   },
   {
@@ -224,7 +224,7 @@ export const routes: AppRouteObject[] = [
         </AdminProtectedRoute>
       </AdminLayout>
     ),
-    handle: { head: <HeadSeo title="Workflows - Admin - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Workflows - Admin - WorkflowHub" /> },
   },
   {
     path: "/admin/workflows/:workflowId",
@@ -236,7 +236,7 @@ export const routes: AppRouteObject[] = [
       </AdminLayout>
     ),
     handle: {
-      head: <HeadSeo title="Workflow Details - Admin - Dafthunk" />,
+      head: <HeadSeo title="Workflow Details - Admin - WorkflowHub" />,
     },
   },
 
@@ -249,7 +249,7 @@ export const routes: AppRouteObject[] = [
         </AdminProtectedRoute>
       </AdminLayout>
     ),
-    handle: { head: <HeadSeo title="Executions - Admin - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Executions - Admin - WorkflowHub" /> },
   },
   {
     path: "/admin/executions/:executionId",
@@ -261,7 +261,7 @@ export const routes: AppRouteObject[] = [
       </AdminLayout>
     ),
     handle: {
-      head: <HeadSeo title="Execution Details - Admin - Dafthunk" />,
+      head: <HeadSeo title="Execution Details - Admin - WorkflowHub" />,
     },
   },
   {
@@ -273,7 +273,7 @@ export const routes: AppRouteObject[] = [
         </AdminProtectedRoute>
       </AdminLayout>
     ),
-    handle: { head: <HeadSeo title="Emails - Admin - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Emails - Admin - WorkflowHub" /> },
   },
   {
     path: "/admin/support",
@@ -284,7 +284,7 @@ export const routes: AppRouteObject[] = [
         </AdminProtectedRoute>
       </AdminLayout>
     ),
-    handle: { head: <HeadSeo title="Support - Admin - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Support - Admin - WorkflowHub" /> },
   },
   {
     path: "/admin/queues",
@@ -295,7 +295,7 @@ export const routes: AppRouteObject[] = [
         </AdminProtectedRoute>
       </AdminLayout>
     ),
-    handle: { head: <HeadSeo title="Queues - Admin - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Queues - Admin - WorkflowHub" /> },
   },
   {
     path: "/admin/datasets",
@@ -306,7 +306,7 @@ export const routes: AppRouteObject[] = [
         </AdminProtectedRoute>
       </AdminLayout>
     ),
-    handle: { head: <HeadSeo title="Datasets - Admin - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Datasets - Admin - WorkflowHub" /> },
   },
   {
     path: "/admin/databases",
@@ -317,7 +317,7 @@ export const routes: AppRouteObject[] = [
         </AdminProtectedRoute>
       </AdminLayout>
     ),
-    handle: { head: <HeadSeo title="Databases - Admin - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Databases - Admin - WorkflowHub" /> },
   },
   {
     path: "/org",
@@ -338,7 +338,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </AppLayout>
     ),
-    handle: { head: <HeadSeo title="Organizations - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Organizations - WorkflowHub" /> },
   },
   {
     path: "/settings/invitations",
@@ -355,7 +355,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </AppLayout>
     ),
-    handle: { head: <HeadSeo title="Invitations - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Invitations - WorkflowHub" /> },
   },
   {
     path: "/org/:organizationId/dashboard",
@@ -366,7 +366,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Dashboard - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Dashboard - WorkflowHub" /> },
   },
   {
     path: "/workflows",
@@ -381,7 +381,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Workflows - Workflows - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Workflows - Workflows - WorkflowHub" /> },
   },
   {
     path: "/templates",
@@ -396,7 +396,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Templates - Workflows - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Templates - Workflows - WorkflowHub" /> },
   },
   {
     path: "/templates/:templateId",
@@ -411,7 +411,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Template Details - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Template Details - WorkflowHub" /> },
   },
   {
     path: "/templates/:templateId/try",
@@ -428,7 +428,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Creating Workflow - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Creating Workflow - WorkflowHub" /> },
   },
   {
     path: "/executions",
@@ -443,7 +443,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Executions - Workflows - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Executions - Workflows - WorkflowHub" /> },
   },
   {
     path: "/datasets",
@@ -458,7 +458,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Datasets - Datasets - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Datasets - Datasets - WorkflowHub" /> },
   },
   {
     path: "/feedback",
@@ -473,7 +473,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Feedback - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Feedback - WorkflowHub" /> },
   },
   {
     path: "/api-keys",
@@ -492,7 +492,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="API Keys - Settings - Dafthunk" /> },
+    handle: { head: <HeadSeo title="API Keys - Settings - WorkflowHub" /> },
   },
   {
     path: "/billing",
@@ -507,7 +507,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Billing - Settings - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Billing - Settings - WorkflowHub" /> },
   },
   {
     path: "/org/:organizationId/members",
@@ -518,7 +518,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Members - Organization - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Members - Organization - WorkflowHub" /> },
   },
   {
     path: "/secrets",
@@ -533,7 +533,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Secrets - Settings - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Secrets - Settings - WorkflowHub" /> },
   },
   {
     path: "/integrations",
@@ -548,7 +548,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Integrations - Settings - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Integrations - Settings - WorkflowHub" /> },
   },
   {
     path: "/org/:organizationId/datasets/:datasetId",
@@ -559,7 +559,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Dataset Details - Datasets - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Dataset Details - Datasets - WorkflowHub" /> },
   },
   {
     path: "/databases",
@@ -574,7 +574,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Databases - Databases - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Databases - Databases - WorkflowHub" /> },
   },
   {
     path: "/org/:organizationId/databases/:id/console",
@@ -585,7 +585,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Console - Database - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Console - Database - WorkflowHub" /> },
   },
   {
     path: "/org/:organizationId/databases/:id/explorer",
@@ -596,7 +596,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Explorer - Database - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Explorer - Database - WorkflowHub" /> },
   },
   {
     path: "/schemas",
@@ -611,7 +611,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Schemas - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Schemas - WorkflowHub" /> },
   },
   {
     path: "/queues",
@@ -626,7 +626,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Queues - Queues - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Queues - Queues - WorkflowHub" /> },
   },
   {
     path: "/emails",
@@ -641,7 +641,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Emails - Emails - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Emails - Emails - WorkflowHub" /> },
   },
   {
     path: "/org/:organizationId/emails/:emailId",
@@ -652,7 +652,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Inbox - Emails - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Inbox - Emails - WorkflowHub" /> },
   },
   {
     path: "/bots",
@@ -683,7 +683,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Bots - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Bots - WorkflowHub" /> },
   },
   {
     path: "/org/:organizationId/bots/discord/:id",
@@ -694,7 +694,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Bot Details - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Bot Details - WorkflowHub" /> },
   },
   {
     path: "/org/:organizationId/bots/telegram/:id",
@@ -705,7 +705,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Bot Details - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Bot Details - WorkflowHub" /> },
   },
   {
     path: "/org/:organizationId/bots/slack/:id",
@@ -716,7 +716,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Bot Details - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Bot Details - WorkflowHub" /> },
   },
   {
     path: "/org/:organizationId/bots/whatsapp/:id",
@@ -727,7 +727,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Account Details - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Account Details - WorkflowHub" /> },
   },
 
   {
@@ -740,7 +740,7 @@ export const routes: AppRouteObject[] = [
       </OrgLayout>
     ),
     handle: {
-      head: <HeadSeo title="Execution Details - Workflows - Dafthunk" />,
+      head: <HeadSeo title="Execution Details - Workflows - WorkflowHub" />,
     },
   },
   {
@@ -760,7 +760,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Playground - Workflows - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Playground - Workflows - WorkflowHub" /> },
   },
   {
     path: "/org/:organizationId/playground/:nodeType",
@@ -771,7 +771,7 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Playground - Workflows - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Playground - Workflows - WorkflowHub" /> },
   },
   {
     path: "/org/:organizationId/workflows/:id",
@@ -782,34 +782,34 @@ export const routes: AppRouteObject[] = [
         </ProtectedRoute>
       </OrgLayout>
     ),
-    handle: { head: <HeadSeo title="Edit Workflow - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Edit Workflow - WorkflowHub" /> },
   },
   {
     path: "/form/:signedToken",
     element: <FormPage />,
     handle: {
-      head: <HeadSeo title="Form - Dafthunk" />,
+      head: <HeadSeo title="Form - WorkflowHub" />,
     },
   },
   {
     path: "/forms/:workflowId",
     element: <FormTriggerPage />,
     handle: {
-      head: <HeadSeo title="Form - Dafthunk" />,
+      head: <HeadSeo title="Form - WorkflowHub" />,
     },
   },
   {
     path: "/feedback/:signedToken",
     element: <FeedbackFormPage />,
     handle: {
-      head: <HeadSeo title="Feedback - Dafthunk" />,
+      head: <HeadSeo title="Feedback - WorkflowHub" />,
     },
   },
   {
     path: "/embed/templates/:templateId",
     element: <TemplatePreviewPage />,
     handle: {
-      head: <HeadSeo title="Template Preview - Dafthunk" />,
+      head: <HeadSeo title="Template Preview - WorkflowHub" />,
     },
   },
   {
@@ -819,6 +819,6 @@ export const routes: AppRouteObject[] = [
         <NotFoundPage />
       </AppLayout>
     ),
-    handle: { head: <HeadSeo title="Page Not Found - Dafthunk" /> },
+    handle: { head: <HeadSeo title="Page Not Found - WorkflowHub" /> },
   },
 ];

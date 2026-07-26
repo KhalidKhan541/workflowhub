@@ -40,8 +40,8 @@ import {
   Runtime,
   type RuntimeDependencies,
   type RuntimeParams,
-} from "@dafthunk/runtime";
-import type { WorkflowExecution } from "@dafthunk/types";
+} from "@workflowhub/runtime";
+import type { WorkflowExecution } from "@workflowhub/types";
 import type { Bindings } from "../context";
 import {
   buildPresignedUrlConfig,

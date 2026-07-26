@@ -1,5 +1,5 @@
-import { mapCloudflareGatewaySchema } from "@dafthunk/runtime/utils/cloudflare-gateway-schema";
-import type { CloudflareGatewayModelSchema } from "@dafthunk/types";
+import { mapCloudflareGatewaySchema } from "@workflowhub/runtime/utils/cloudflare-gateway-schema";
+import type { CloudflareGatewayModelSchema } from "@workflowhub/types";
 import { Hono } from "hono";
 
 import { jwtMiddleware } from "../auth";
@@ -14,7 +14,7 @@ cloudflareGatewayRoutes.use("*", jwtMiddleware);
  *
  * Cloudflare's unified (`author/model`) catalog has no programmatic search/
  * schema API — the per-model JSON Schemas are published as static documents on
- * the docs site. We fetch both and map them to Dafthunk Parameters so the
+ * the docs site. We fetch both and map them to WorkflowHub Parameters so the
  * editor can build the node's inputs and outputs.
  */
 cloudflareGatewayRoutes.get("/models/:author/:model/schema", async (c) => {

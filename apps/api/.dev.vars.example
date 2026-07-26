@@ -1,7 +1,7 @@
 WEB_HOST=http://localhost:3001
 WEBSITE_URL=http://localhost:3002
 
-EMAIL_DOMAIN=mail.dafthunk.com
+EMAIL_DOMAIN=mail.workflowhub.com
 
 CLOUDFLARE_ENV=development
 CLOUDFLARE_ACCOUNT_ID=CHANGE_ME
@@ -68,4 +68,4 @@ TWILIO_PHONE_NUMBER=CHANGE_ME
 
 # Cloudflare Email Service
 # Must be an address on a domain configured in Cloudflare Email Sending
-SEND_EMAIL_FROM=noreply@mail.dafthunk.com
+SEND_EMAIL_FROM=noreply@mail.workflowhub.com

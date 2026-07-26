@@ -1,7 +1,7 @@
 import type {
   Node as BackendNode,
   Parameter as BackendParameter,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import type { Node } from "@xyflow/react";
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";

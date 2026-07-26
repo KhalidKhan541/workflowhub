@@ -6,13 +6,13 @@ import {
   ToolCallTracker,
   type ToolReference,
   toUint8Array,
-} from "@dafthunk/runtime";
+} from "@workflowhub/runtime";
 import type {
   NodeExecution,
   NodeType,
   Parameter,
   Schema,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import {
   type CloudflareModelPricing,
   getCloudflareModelPricing,
@@ -29,7 +29,7 @@ interface ChatMessage {
 
 // Inputs that drive node behavior but aren't forwarded to AI.run as part
 // of the input payload. `model` selects the Workers AI model; `schema` is
-// a Dafthunk-typed shortcut that the runtime translates into the
+// a WorkflowHub-typed shortcut that the runtime translates into the
 // model-native `response_format` field. Editor-only flags (display
 // metadata, picker locks) ride on `node.metadata` instead of `inputs`, so
 // they don't reach the runtime here.
@@ -57,7 +57,7 @@ function decodeBase64(value: string): Uint8Array {
 }
 
 /**
- * Infer the MIME type for a blob-typed output from its Dafthunk parameter
+ * Infer the MIME type for a blob-typed output from its WorkflowHub parameter
  * type. The schema mapper currently doesn't preserve the schema's
  * `contentType` on Parameters, so we rely on the blob subtype (image/audio/
  * video/blob). `format` is intentionally NOT used here — it carries the
@@ -143,7 +143,7 @@ For example: \`@cf/meta/llama-3.2-3b-instruct\`, \`@cf/openai/whisper\`, \`@cf/b
 
       const { input: aiInput, promptBytes } = this.buildAiInput(context);
       const schemaInput = extractSchemaInput(context.inputs.schema);
-      const toolRefs = extractDafthunkToolRefs(aiInput.tools);
+      const toolRefs = extractWorkflowHubToolRefs(aiInput.tools);
 
       if (toolRefs.length > 0) {
         return await this.executeWithTools(
@@ -157,7 +157,7 @@ For example: \`@cf/meta/llama-3.2-3b-instruct\`, \`@cf/openai/whisper\`, \`@cf/b
       }
 
       // Native structured-output path. The catalog only surfaces the
-      // `schema` Dafthunk input on models whose published schema includes
+      // `schema` WorkflowHub input on models whose published schema includes
       // `response_format`, so setting it directly here is safe. Schema
       // wins over a manually-pasted `response_format` JSON value — the
       // schema picker is the friendly path and is checked into the
@@ -181,7 +181,7 @@ For example: \`@cf/meta/llama-3.2-3b-instruct\`, \`@cf/openai/whisper\`, \`@cf/b
   }
 
   /**
-   * Function-calling path. When the user wires Dafthunk tool references into
+   * Function-calling path. When the user wires WorkflowHub tool references into
    * the `tools` input, resolve them via the tool registry and run a multi-turn
    * agent loop with `runWithTools`. The tool calls executed during the loop
    * are surfaced on the `tool_calls` output (when the model schema declares
@@ -503,20 +503,20 @@ function estimateInputTokens(promptBytes: number): number {
 }
 
 /**
- * Detect a non-empty array of Dafthunk-shaped tool references on the `tools`
+ * Detect a non-empty array of WorkflowHub-shaped tool references on the `tools`
  * input. Returns `[]` for any other shape (empty array, raw Cloudflare tool
  * schemas, undefined, etc.) so the node falls through to a plain `AI.run`.
  */
-function extractDafthunkToolRefs(value: unknown): ToolReference[] {
+function extractWorkflowHubToolRefs(value: unknown): ToolReference[] {
   if (!Array.isArray(value) || value.length === 0) return [];
-  const isDafthunkRef = value.every(
+  const isWorkflowHubRef = value.every(
     (item) =>
       item !== null &&
       typeof item === "object" &&
       typeof (item as { type?: unknown }).type === "string" &&
       typeof (item as { identifier?: unknown }).identifier === "string"
   );
-  return isDafthunkRef ? (value as ToolReference[]) : [];
+  return isWorkflowHubRef ? (value as ToolReference[]) : [];
 }
 
 /**
@@ -571,7 +571,7 @@ function estimateOutputTokens(
 }
 
 /**
- * Type guard for a resolved Dafthunk Schema. Picked schemas come through
+ * Type guard for a resolved WorkflowHub Schema. Picked schemas come through
  * the parameter mapper as either a fully hydrated Schema object (from
  * SchemaService) or a raw JSON string the user pasted. Anything else
  * (null/undefined/wired upstream non-schema) falls through to `null`.
@@ -589,7 +589,7 @@ function extractSchemaInput(value: unknown): Schema | null {
 }
 
 /**
- * Wrap a Dafthunk Schema as the `response_format` payload Cloudflare Workers AI
+ * Wrap a WorkflowHub Schema as the `response_format` payload Cloudflare Workers AI
  * expects on Llama 3.x, Mistral and similar models. Note: Workers AI's shape
  * is *not* OpenAI's — `json_schema` is the JSON Schema itself, not a wrapper
  * with `name`/`schema` fields. Passing the OpenAI shape silently makes Workers

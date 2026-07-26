@@ -2,7 +2,7 @@ import type {
   CredentialService,
   NodeContext,
   ObjectStore,
-} from "@dafthunk/runtime";
+} from "@workflowhub/runtime";
 
 import type { Bindings } from "../context";
 import { createCodeModeExecutor } from "./code-mode-executor";

@@ -6,13 +6,13 @@
  * workflows with real-time progress reporting back to the originating Agent.
  */
 
-import { type MonitoringService, WorkflowRuntime } from "@dafthunk/runtime";
-import type { WorkflowExecution } from "@dafthunk/types";
+import { type MonitoringService, WorkflowRuntime } from "@workflowhub/runtime";
+import type { WorkflowExecution } from "@workflowhub/types";
 
 import type { Bindings } from "../context";
 import { buildDependencies } from "./cloudflare-runtime-dependencies";
 
-export { WorkflowRuntime } from "@dafthunk/runtime";
+export { WorkflowRuntime } from "@workflowhub/runtime";
 
 /**
  * Creates a WorkflowRuntime for AgentWorkflow execution.

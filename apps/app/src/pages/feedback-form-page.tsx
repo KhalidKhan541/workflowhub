@@ -1,4 +1,4 @@
-import type { FeedbackSentimentType } from "@dafthunk/types";
+import type { FeedbackSentimentType } from "@workflowhub/types";
 import Check from "lucide-react/icons/check";
 import Download from "lucide-react/icons/download";
 import Loader2 from "lucide-react/icons/loader-2";

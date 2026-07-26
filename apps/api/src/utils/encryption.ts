@@ -51,7 +51,7 @@ async function getOrganizationKey(
     {
       name: "HKDF",
       hash: "SHA-256",
-      salt: new TextEncoder().encode("dafthunk-secrets-v1"), // Domain separator
+      salt: new TextEncoder().encode("WorkflowHub-secrets-v1"), // Domain separator
       info: new TextEncoder().encode(`org:${organizationId}:secrets`), // More specific context
     },
     masterKey,

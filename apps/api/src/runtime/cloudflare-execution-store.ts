@@ -3,11 +3,11 @@ import type {
   ExecutionStore,
   ListExecutionsOptions,
   SaveExecutionRecord,
-} from "@dafthunk/runtime";
+} from "@workflowhub/runtime";
 import type {
   WorkflowExecution,
   WorkflowExecutionStatus,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 import type { Bindings } from "../context";
 import { assertUuid } from "../utils/validation";
@@ -253,8 +253,8 @@ export class CloudflareExecutionStore implements ExecutionStore {
   private getDatasetName(): string {
     const env = this.env.CLOUDFLARE_ENV || "development";
     return env === "production"
-      ? "dafthunk_executions_production"
-      : "dafthunk_executions_development";
+      ? "WorkflowHub_executions_production"
+      : "WorkflowHub_executions_development";
   }
 
   /**

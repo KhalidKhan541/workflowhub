@@ -11,7 +11,10 @@ export type IntegrationProvider =
   | "linkedin"
   | "github"
   | "x"
-  | "wordpress";
+  | "wordpress"
+  | "airtable"
+  | "slack"
+  | "notion";
 
 // Integration status types
 export type IntegrationStatus = "active" | "expired" | "revoked";
@@ -152,5 +155,29 @@ export const OAUTH_PROVIDERS: OAuthProvider[] = [
       "Connect your WordPress.com site to publish posts, manage content, and read media",
     supportsOAuth: true,
     oauthEndpoint: "/oauth/wordpress/connect",
+  },
+  {
+    id: "airtable",
+    name: "Airtable",
+    description:
+      "Connect your Airtable account to create, update, and search records in your bases",
+    supportsOAuth: true,
+    oauthEndpoint: "/oauth/airtable/connect",
+  },
+  {
+    id: "slack",
+    name: "Slack",
+    description:
+      "Connect your Slack workspace to send messages, create channels, and manage communications",
+    supportsOAuth: true,
+    oauthEndpoint: "/oauth/slack/connect",
+  },
+  {
+    id: "notion",
+    name: "Notion",
+    description:
+      "Connect your Notion workspace to manage pages, databases, and content",
+    supportsOAuth: true,
+    oauthEndpoint: "/oauth/notion/connect",
   },
 ];

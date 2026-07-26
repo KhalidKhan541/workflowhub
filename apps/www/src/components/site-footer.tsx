@@ -9,10 +9,10 @@ export function SiteFooter() {
           <a href="/" className="flex items-center gap-3">
             <img
               src="/icon.svg"
-              alt="Dafthunk"
+              alt="WorkflowHub"
               className="h-8 w-8 brightness-0 invert"
             />
-            <span className="text-2xl font-semibold text-white">dafthunk</span>
+            <span className="text-2xl font-semibold text-white">WorkflowHub</span>
           </a>
           <p className="text-base text-gray-400 leading-relaxed">
             Build and deploy serverless workflows by connecting AI models, web
@@ -95,7 +95,7 @@ export function SiteFooter() {
             Blog
           </a>
           <a
-            href="https://github.com/dafthunk-com/dafthunk/issues"
+            href="https://github.com/WorkflowHub-com/WorkflowHub/issues"
             target="_blank"
             rel="noopener noreferrer"
             className="text-base hover:text-white"
@@ -109,11 +109,11 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-white/10 pt-8 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
         <p className="text-base text-gray-400">
-          © {new Date().getFullYear()} Dafthunk. All rights reserved.
+          © {new Date().getFullYear()} WorkflowHub. All rights reserved.
         </p>
         <nav className="flex flex-wrap items-center gap-8">
           <a
-            href="https://github.com/dafthunk-com/dafthunk"
+            href="https://github.com/WorkflowHub-com/WorkflowHub"
             target="_blank"
             rel="noopener noreferrer"
             className="text-base hover:text-white"

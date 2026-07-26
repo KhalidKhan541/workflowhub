@@ -2,7 +2,7 @@
  * Error message contract shared between the runtime (which produces these
  * messages) and clients (which detect and react to them).
  *
- * Lives in `@dafthunk/utils` so the format has a single source of truth that
+ * Lives in `@workflowhub/utils` so the format has a single source of truth that
  * both server-side runtime code and the frontend can import without pulling
  * in the full runtime package.
  */

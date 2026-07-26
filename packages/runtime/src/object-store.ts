@@ -1,4 +1,4 @@
-import type { ObjectReference } from "@dafthunk/types";
+import type { ObjectReference } from "@workflowhub/types";
 
 /**
  * Metadata for a stored object.

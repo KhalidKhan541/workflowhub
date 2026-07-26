@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { PolygonToLineNode } from "./polygon-to-line-node";
 
@@ -83,12 +83,12 @@ describe("PolygonToLineNode", () => {
     const result = await node.execute(context);
     expect(result.status).toBe("completed");
     expect(result.outputs?.line).toBeDefined();
-    // @dafthunk/geo polygonToLine returns FeatureCollection for MultiPolygon
+    // @workflowhub/geo polygonToLine returns FeatureCollection for MultiPolygon
     expect(result.outputs?.line.type).toBe("FeatureCollection");
   });
 
-  it("returns LineString with custom properties (properties option ignored by @dafthunk/geo)", async () => {
-    // @dafthunk/geo polygonToLine does not pass through custom properties
+  it("returns LineString with custom properties (properties option ignored by @workflowhub/geo)", async () => {
+    // @workflowhub/geo polygonToLine does not pass through custom properties
     const context = createMockContext({
       polygon: {
         type: "Feature",

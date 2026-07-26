@@ -1,4 +1,4 @@
-import type { Node } from "@dafthunk/types";
+import type { Node } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 
 import { GetPostRedditNode } from "./get-post-reddit-node";
@@ -11,7 +11,7 @@ import {
 
 describe("GetPostRedditNode", () => {
   it.skipIf(skipIfNoRedditToken())(
-    "should get a specific post from r/dafthunk_test",
+    "should get a specific post from r/WorkflowHub_test",
     async () => {
       // First, get a post ID
       const listNode = new ListPostsRedditNode({

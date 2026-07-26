@@ -10,7 +10,7 @@ import type {
   MultiPolygon,
   Point,
   Polygon,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 export type {
   Coordinate,

@@ -4,7 +4,7 @@ import type {
   WorkflowExecution,
   WorkflowRuntime,
   WorkflowTrigger,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { ReactFlowProvider } from "@xyflow/react";
 import Building2 from "lucide-react/icons/building-2";
 import Hash from "lucide-react/icons/hash";

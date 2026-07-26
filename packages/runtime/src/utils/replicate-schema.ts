@@ -1,4 +1,4 @@
-import type { Parameter } from "@dafthunk/types";
+import type { Parameter } from "@workflowhub/types";
 
 /**
  * JSON Schema property from Replicate's OpenAPI schema
@@ -181,7 +181,7 @@ function collectMetadata(
 }
 
 /**
- * Map a single JSON Schema property to a Dafthunk Parameter.
+ * Map a single JSON Schema property to a WorkflowHub Parameter.
  */
 function mapProperty(
   name: string,
@@ -314,7 +314,7 @@ function mapProperty(
 }
 
 /**
- * Map Replicate's output schema to Dafthunk output parameters.
+ * Map Replicate's output schema to WorkflowHub output parameters.
  *
  * All URI outputs are mapped to "blob" — Cog's schema uses `format: "uri"` for
  * all file types (image, video, audio) with no media type distinction. The actual
@@ -397,10 +397,10 @@ function mapOutputSchema(
 }
 
 /**
- * Convert a Replicate model's OpenAPI schema into Dafthunk Parameters.
+ * Convert a Replicate model's OpenAPI schema into WorkflowHub Parameters.
  *
  * @param openApiSchema - The model's `openapi_schema` from the Replicate API
- * @returns Mapped inputs and outputs as Dafthunk Parameter arrays
+ * @returns Mapped inputs and outputs as WorkflowHub Parameter arrays
  */
 export function mapReplicateSchema(
   openApiSchema: ReplicateOpenApiSchema

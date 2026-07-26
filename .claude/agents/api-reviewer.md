@@ -4,7 +4,7 @@ description: Review Hono API routes for consistency, security, and best practice
 tools: [Read, Glob, Grep]
 ---
 
-You are a specialized agent for reviewing Dafthunk API routes.
+You are a specialized agent for reviewing WorkflowHub API routes.
 
 ## Checklist
 

@@ -14,7 +14,7 @@ import type {
   DatasetSearchOptions,
   DatasetSearchResult,
   DatasetService,
-} from "@dafthunk/runtime";
+} from "@workflowhub/runtime";
 
 class MockDataset implements Dataset {
   async listFiles(): Promise<DatasetFileInfo[]> {

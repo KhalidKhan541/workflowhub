@@ -9,14 +9,14 @@
  * collected results and runs to completion.
  */
 
-import type { ToolDefinition } from "@dafthunk/runtime";
+import type { ToolDefinition } from "@workflowhub/runtime";
 import type {
   AgentLoopState,
   AgentMessage,
   AgentToolCall,
   LLMResponse,
-} from "@dafthunk/runtime/utils/agent-loop";
-import { runAgentLoop } from "@dafthunk/runtime/utils/agent-loop";
+} from "@workflowhub/runtime/utils/agent-loop";
+import { runAgentLoop } from "@workflowhub/runtime/utils/agent-loop";
 import { describe, expect, it } from "vitest";
 
 import {

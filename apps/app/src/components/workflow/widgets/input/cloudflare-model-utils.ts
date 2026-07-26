@@ -1,6 +1,6 @@
-import { type CloudflareModelMeta, cloudflareDocsUrl } from "@dafthunk/types";
+import { type CloudflareModelMeta, cloudflareDocsUrl } from "@workflowhub/types";
 
-export type { CloudflareModelMeta } from "@dafthunk/types";
+export type { CloudflareModelMeta } from "@workflowhub/types";
 export {
   CF_LOCKED_KEY,
   CF_META_KEY,
@@ -8,7 +8,7 @@ export {
   cloudflareDocsUrl,
   encodeCloudflareModelMeta,
   shortName,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 /**
  * Best-effort parse of a stored `_cf_meta` value (from `node.metadata`).

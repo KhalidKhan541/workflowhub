@@ -2,7 +2,7 @@ import type {
   ObjectReference,
   WorkflowRuntime,
   WorkflowTrigger,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import type {
   Connection,
   Edge as ReactFlowEdge,
@@ -406,7 +406,7 @@ export function WorkflowBuilder({
               <DialogDescription>
                 You have run out of compute credits. Thanks for checking out the
                 preview. The code is available at
-                https://github.com/dafthunk-com/dafthunk.
+                https://github.com/WorkflowHub-com/WorkflowHub.
               </DialogDescription>
             </DialogHeader>
             <DialogFooter>

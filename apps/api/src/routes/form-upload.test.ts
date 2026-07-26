@@ -1,5 +1,5 @@
-import type { ObjectStore } from "@dafthunk/runtime";
-import type { Field, ObjectReference } from "@dafthunk/types";
+import type { ObjectStore } from "@workflowhub/runtime";
+import type { Field, ObjectReference } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 
 import {

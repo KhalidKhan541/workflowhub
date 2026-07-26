@@ -1,4 +1,4 @@
-import type { Workflow } from "@dafthunk/types";
+import type { Workflow } from "@workflowhub/types";
 
 /**
  * Computes a deterministic SHA-1 hash of a workflow definition.

@@ -1,6 +1,6 @@
 import { env } from "cloudflare:test";
-import type { NodeContext } from "@dafthunk/runtime";
-import type { Node } from "@dafthunk/types";
+import type { NodeContext } from "@workflowhub/runtime";
+import type { Node } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 import { CloudflareBrowserScreenshotNode } from "./cloudflare-browser-screenshot-node";
 

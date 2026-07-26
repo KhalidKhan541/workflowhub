@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { MultiPointNode } from "./multipoint-node";
 
@@ -95,10 +95,10 @@ describe("MultiPointNode", () => {
     expect(result.status).toBe("completed");
     expect(result.outputs?.multiPoint).toBeDefined();
     expect(result.outputs?.multiPoint.type).toBe("Feature");
-    // @dafthunk/geo multiPoint ignores bbox option
+    // @workflowhub/geo multiPoint ignores bbox option
   });
 
-  it("returns MultiPoint with string ID option (ignored by @dafthunk/geo)", async () => {
+  it("returns MultiPoint with string ID option (ignored by @workflowhub/geo)", async () => {
     const context = createMockContext({
       coordinates: [
         [0, 0],
@@ -113,7 +113,7 @@ describe("MultiPointNode", () => {
     expect(result.outputs?.multiPoint.type).toBe("Feature");
   });
 
-  it("returns MultiPoint with number ID option (ignored by @dafthunk/geo)", async () => {
+  it("returns MultiPoint with number ID option (ignored by @workflowhub/geo)", async () => {
     const context = createMockContext({
       coordinates: [
         [0, 0],
@@ -128,7 +128,7 @@ describe("MultiPointNode", () => {
     expect(result.outputs?.multiPoint.type).toBe("Feature");
   });
 
-  it("returns MultiPoint with properties (bbox and id ignored by @dafthunk/geo)", async () => {
+  it("returns MultiPoint with properties (bbox and id ignored by @workflowhub/geo)", async () => {
     const context = createMockContext({
       coordinates: [
         [0, 0],

@@ -1,4 +1,4 @@
-import type { Workflow, WorkflowExecution } from "@dafthunk/types";
+import type { Workflow, WorkflowExecution } from "@workflowhub/types";
 
 import type { RuntimeParams } from "../base-runtime";
 

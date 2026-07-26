@@ -35,7 +35,7 @@ const STEP_TITLES: Record<Step, string> = {
 };
 
 const STEP_DESCRIPTIONS: Record<Step, string> = {
-  name: "Choose a display name to identify this Discord bot in Dafthunk.",
+  name: "Choose a display name to identify this Discord bot in WorkflowHub.",
   application:
     "Copy the Application ID and Public Key from the General Information page in the Discord Developer Portal.",
   "bot-token":
@@ -184,7 +184,7 @@ export function DiscordBotCreateDialog({
                 placeholder="My Discord Bot"
               />
               <p className="text-xs text-muted-foreground">
-                A display name for this bot in Dafthunk. This is not visible to
+                A display name for this bot in WorkflowHub. This is not visible to
                 your Discord users.
               </p>
             </div>

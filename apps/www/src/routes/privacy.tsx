@@ -3,9 +3,9 @@ import { Layout } from "../components/layout";
 const websiteUrl = import.meta.env.VITE_WEBSITE_URL;
 
 export function meta() {
-  const title = "Privacy Policy - Dafthunk";
+  const title = "Privacy Policy - WorkflowHub";
   const description =
-    "How Dafthunk collects, uses, stores, and protects account data, workflow definitions, execution logs, and third-party integration data you connect.";
+    "How WorkflowHub collects, uses, stores, and protects account data, workflow definitions, execution logs, and third-party integration data you connect.";
   const url = `${websiteUrl}/privacy`;
   const ogImage = `${websiteUrl}/og-image.webp`;
 
@@ -17,7 +17,7 @@ export function meta() {
     { property: "og:title", content: title },
     { property: "og:description", content: description },
     { property: "og:image", content: ogImage },
-    { property: "og:site_name", content: "Dafthunk" },
+    { property: "og:site_name", content: "WorkflowHub" },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:url", content: url },
     { name: "twitter:title", content: title },
@@ -54,7 +54,7 @@ export default function Privacy() {
                 regarding that information.
               </p>
               <p className="text-xl text-gray-600 leading-relaxed">
-                By using Dafthunk, you agree to this Privacy Policy. Please also
+                By using WorkflowHub, you agree to this Privacy Policy. Please also
                 review our{" "}
                 <a
                   href="/terms"
@@ -96,10 +96,10 @@ export default function Privacy() {
                   <strong>Third-Party Integration Data:</strong> When you
                   connect third-party services (such as Google, Slack, or other
                   integrations), data from those services may be processed and
-                  stored by Dafthunk as part of your workflow executions. You
+                  stored by WorkflowHub as part of your workflow executions. You
                   are solely responsible for ensuring you have the appropriate
                   rights and permissions to use and process such data through
-                  Dafthunk.
+                  WorkflowHub.
                   <ul className="list-disc list-outside space-y-2 mt-3 ml-6">
                     <li>
                       <strong>Google Mail:</strong> When you connect your Google
@@ -149,7 +149,7 @@ export default function Privacy() {
               </ul>
               <p className="text-xl text-gray-600 leading-relaxed">
                 We may also collect usage data (such as logs and interactions
-                within Dafthunk) to improve our service.
+                within WorkflowHub) to improve our service.
               </p>
             </div>
 
@@ -161,7 +161,7 @@ export default function Privacy() {
                 We use your personal information to:
               </p>
               <ul className="list-disc list-outside space-y-3 text-xl text-gray-600 leading-relaxed ml-6 mb-6">
-                <li>Provide, maintain, and improve Dafthunk.</li>
+                <li>Provide, maintain, and improve WorkflowHub.</li>
                 <li>Process your subscription and payments.</li>
                 <li>
                   Communicate with you about your account or updates to our
@@ -186,7 +186,7 @@ export default function Privacy() {
               <ul className="list-disc list-outside space-y-3 text-xl text-gray-600 leading-relaxed ml-6">
                 <li>
                   <strong>Contractual necessity:</strong> To provide you with
-                  access to Dafthunk and its functionalities, including the
+                  access to WorkflowHub and its functionalities, including the
                   ability to create and execute workflows.
                 </li>
                 <li>
@@ -260,7 +260,7 @@ export default function Privacy() {
                 access, loss, or misuse.
               </p>
               <p className="text-xl text-gray-600 leading-relaxed">
-                However, as Dafthunk is an{" "}
+                However, as WorkflowHub is an{" "}
                 <strong>alpha-stage service under active development</strong>{" "}
                 and leverages <strong>AI-generated components</strong>, you
                 acknowledge that there may be inherent risks and limitations in
@@ -288,10 +288,10 @@ export default function Privacy() {
               <p className="text-xl text-gray-600 leading-relaxed">
                 You can exercise these rights by contacting us at{" "}
                 <a
-                  href="mailto:contact@dafthunk.com"
+                  href="mailto:contact@workflowhub.com"
                   className="text-gray-900 underline hover:no-underline"
                 >
-                  contact@dafthunk.com
+                  contact@workflowhub.com
                 </a>
                 .
               </p>
@@ -302,7 +302,7 @@ export default function Privacy() {
                 10. Children's Privacy
               </h2>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Dafthunk is not intended for use by children under the age of 13
+                WorkflowHub is not intended for use by children under the age of 13
                 (or 16 in the EU). We do not knowingly collect personal
                 information from children.
               </p>
@@ -333,10 +333,10 @@ export default function Privacy() {
               <p className="text-xl text-gray-600 leading-relaxed mb-2">
                 <strong>Email:</strong>{" "}
                 <a
-                  href="mailto:contact@dafthunk.com"
+                  href="mailto:contact@workflowhub.com"
                   className="text-gray-900 underline hover:no-underline"
                 >
-                  contact@dafthunk.com
+                  contact@workflowhub.com
                 </a>
               </p>
               <p className="text-xl text-gray-600 leading-relaxed">

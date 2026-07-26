@@ -43,7 +43,7 @@ function CurrentRouteHead() {
     }
     return handle.head as React.ReactElement;
   }
-  return <HeadSeo title="Dafthunk" />;
+  return <HeadSeo title="WorkflowHub" />;
 }
 
 function App() {

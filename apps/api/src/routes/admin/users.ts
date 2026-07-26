@@ -1,4 +1,4 @@
-import type { GetBillingResponse } from "@dafthunk/types";
+import type { GetBillingResponse } from "@workflowhub/types";
 import { zValidator } from "@hono/zod-validator";
 import { desc, eq, like, or, sql } from "drizzle-orm";
 import { Hono } from "hono";

@@ -2,7 +2,7 @@ import type {
   DatabaseConnection,
   DatabaseService,
   QueryResult,
-} from "@dafthunk/runtime";
+} from "@workflowhub/runtime";
 
 /**
  * In-memory DatabaseConnection for testing.

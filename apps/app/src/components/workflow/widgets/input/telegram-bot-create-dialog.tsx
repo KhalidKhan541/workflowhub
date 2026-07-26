@@ -23,7 +23,7 @@ const STEP_TITLES: Record<Step, string> = {
 };
 
 const STEP_DESCRIPTIONS: Record<Step, string> = {
-  name: "Choose a display name to identify this Telegram bot in Dafthunk.",
+  name: "Choose a display name to identify this Telegram bot in WorkflowHub.",
   "bot-token":
     "Create a new bot with @BotFather on Telegram, then copy the bot token it gives you.",
   setup:
@@ -125,7 +125,7 @@ export function TelegramBotCreateDialog({
                 placeholder="My Telegram Bot"
               />
               <p className="text-xs text-muted-foreground">
-                A display name for this bot in Dafthunk. This is not visible to
+                A display name for this bot in WorkflowHub. This is not visible to
                 your Telegram users.
               </p>
             </div>

@@ -8,7 +8,7 @@ import type {
   NodeType,
   Workflow,
   WorkflowExecutionStatus,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 import type {
   ExecutableNodeConstructor,

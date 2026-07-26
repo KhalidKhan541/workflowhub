@@ -1,7 +1,7 @@
 import type {
   CloudflareModelInfo,
   CloudflareModelSchema,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 
 import { buildModelNodeType } from "./cloudflare-model-catalog";
@@ -147,7 +147,7 @@ describe("buildModelNodeType", () => {
     expect(modelInputs[0]?.value).toBe("@cf/openai/whisper");
   });
 
-  it("adds a Dafthunk `schema` input to models that publish `response_format`", () => {
+  it("adds a WorkflowHub `schema` input to models that publish `response_format`", () => {
     const llamaWithResponseFormat: CloudflareModelSchema = {
       model: "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
       inputs: [

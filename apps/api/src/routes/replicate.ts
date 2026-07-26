@@ -1,8 +1,8 @@
 import {
   mapReplicateSchema,
   type ReplicateOpenApiSchema,
-} from "@dafthunk/runtime/utils/replicate-schema";
-import type { ReplicateModelSchema } from "@dafthunk/types";
+} from "@workflowhub/runtime/utils/replicate-schema";
+import type { ReplicateModelSchema } from "@workflowhub/types";
 import { Hono } from "hono";
 
 import { jwtMiddleware } from "../auth";
@@ -15,7 +15,7 @@ replicateRoutes.use("*", jwtMiddleware);
 /**
  * GET /replicate/models/:owner/:name/schema
  *
- * Fetches a Replicate model's OpenAPI schema and maps it to Dafthunk Parameters.
+ * Fetches a Replicate model's OpenAPI schema and maps it to WorkflowHub Parameters.
  */
 replicateRoutes.get("/models/:owner/:name/schema", async (c) => {
   const { owner, name } = c.req.param();

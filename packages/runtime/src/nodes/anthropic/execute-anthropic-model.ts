@@ -1,6 +1,6 @@
 import Anthropic, { APIError } from "@anthropic-ai/sdk";
-import type { ExecutableNode, NodeContext } from "@dafthunk/runtime";
-import type { NodeExecution } from "@dafthunk/types";
+import type { ExecutableNode, NodeContext } from "@workflowhub/runtime";
+import type { NodeExecution } from "@workflowhub/types";
 import { getAnthropicConfig } from "../../utils/ai-gateway";
 import { calculateTokenUsage, type TokenPricing } from "../../utils/usage";
 

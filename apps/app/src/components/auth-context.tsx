@@ -2,7 +2,7 @@ import {
   type AuthProvider,
   JWTTokenPayload,
   OrganizationInfo,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import {
   createContext,
   ReactNode,
@@ -85,7 +85,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [selectedOrganization, setSelectedOrganizationState] =
     useState<OrganizationInfo | null>(null);
 
-  const SELECTED_ORG_KEY = "dafthunk-selected-organization" as const;
+  const SELECTED_ORG_KEY = "WorkflowHub-selected-organization" as const;
 
   // Set selected only for non-URL routes (e.g., /settings/organizations)
   useEffect(() => {

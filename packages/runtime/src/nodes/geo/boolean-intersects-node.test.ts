@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { BooleanIntersectsNode } from "./boolean-intersects-node";
 
@@ -466,7 +466,7 @@ describe("BooleanIntersectsNode", () => {
   });
 
   it("returns true for point within line bounding box", async () => {
-    // @dafthunk/geo uses bbox overlap fallback for Point vs LineString
+    // @workflowhub/geo uses bbox overlap fallback for Point vs LineString
     const point = {
       type: "Feature",
       properties: {},

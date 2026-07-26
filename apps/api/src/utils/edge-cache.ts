@@ -6,7 +6,7 @@
  * block on cache population.
  *
  * Cache keys should be stable synthetic URLs that don't collide with real
- * routes — conventionally `https://cache.dafthunk.internal/<feature>/<key>`.
+ * routes — conventionally `https://cache.WorkflowHub.internal/<feature>/<key>`.
  *
  * Notes:
  * - Workers Cache API is per-POP and best-effort; TTLs are upper bounds.

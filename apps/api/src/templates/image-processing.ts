@@ -1,9 +1,9 @@
-import { PhotonAdjustContrastNode } from "@dafthunk/runtime/nodes/image/photon-adjust-contrast-node";
-import { PhotonInvertColorsNode } from "@dafthunk/runtime/nodes/image/photon-invert-colors-node";
-import { PhotonPixelizeNode } from "@dafthunk/runtime/nodes/image/photon-pixelize-node";
-import { WebcamInputNode } from "@dafthunk/runtime/nodes/input/webcam-input-node";
-import { ImageOutputNode } from "@dafthunk/runtime/nodes/output/image-output-node";
-import type { WorkflowTemplate } from "@dafthunk/types";
+import { PhotonAdjustContrastNode } from "@workflowhub/runtime/nodes/image/photon-adjust-contrast-node";
+import { PhotonInvertColorsNode } from "@workflowhub/runtime/nodes/image/photon-invert-colors-node";
+import { PhotonPixelizeNode } from "@workflowhub/runtime/nodes/image/photon-pixelize-node";
+import { WebcamInputNode } from "@workflowhub/runtime/nodes/input/webcam-input-node";
+import { ImageOutputNode } from "@workflowhub/runtime/nodes/output/image-output-node";
+import type { WorkflowTemplate } from "@workflowhub/types";
 
 export const imageProcessingTemplate: WorkflowTemplate = {
   id: "image-processing",

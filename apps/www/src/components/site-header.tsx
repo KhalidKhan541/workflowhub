@@ -18,7 +18,7 @@ const navigation: NavigationItem[] = [
   { href: "/docs", label: "Docs" },
   { href: "/blog", label: "Blog" },
   {
-    href: "https://github.com/dafthunk-com/dafthunk",
+    href: "https://github.com/WorkflowHub-com/WorkflowHub",
     label: "GitHub",
     external: true,
   },
@@ -31,8 +31,8 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full px-6 py-4 bg-neutral-100 border-b border-neutral-200">
       <div className="flex items-center justify-between">
         <a href="/" className="flex items-center gap-3">
-          <img src="/icon.svg" alt="Dafthunk" className="h-8 w-8" />
-          <span className="text-2xl font-semibold text-gray-900">dafthunk</span>
+          <img src="/icon.svg" alt="WorkflowHub" className="h-8 w-8" />
+          <span className="text-2xl font-semibold text-gray-900">WorkflowHub</span>
         </a>
 
         {/* Desktop Navigation */}

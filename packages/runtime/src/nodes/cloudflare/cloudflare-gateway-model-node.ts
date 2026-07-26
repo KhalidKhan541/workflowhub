@@ -4,7 +4,7 @@ import {
   type MultiStepNodeContext,
   type ParameterValue,
   toUint8Array,
-} from "@dafthunk/runtime";
+} from "@workflowhub/runtime";
 import {
   CLOUDFLARE_GATEWAY_MODEL_INPUT_NAME,
   CLOUDFLARE_GATEWAY_MODEL_NODE_TYPE,
@@ -12,7 +12,7 @@ import {
   type NodeExecution,
   type NodeType,
   type ObjectReference,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 const BLOB_TYPES = new Set(["image", "audio", "video", "blob"]);
 
@@ -29,7 +29,7 @@ const MIME_FALLBACKS: Record<string, string> = {
   blob: "application/octet-stream",
 };
 
-// Partner models billed through Cloudflare Unified Billing; the Dafthunk credit
+// Partner models billed through Cloudflare Unified Billing; the WorkflowHub credit
 // here covers metering only — the real spend is deducted from CF credits.
 const GATEWAY_USAGE = 100;
 

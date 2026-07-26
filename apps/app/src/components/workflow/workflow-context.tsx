@@ -1,4 +1,4 @@
-import type { WorkflowTrigger } from "@dafthunk/types";
+import type { WorkflowTrigger } from "@workflowhub/types";
 import type { Edge as ReactFlowEdge } from "@xyflow/react";
 import { createContext, ReactNode, useContext } from "react";
 

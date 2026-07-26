@@ -98,7 +98,7 @@ export function AppHeader() {
             <span>Documentation</span>
           </a>
           <a
-            href="https://github.com/dafthunk-com/dafthunk"
+            href="https://github.com/WorkflowHub-com/WorkflowHub"
             target="_blank"
             rel="noopener noreferrer"
             className={navLinkClasses}

@@ -4,7 +4,7 @@ import type {
   DeleteIntegrationResponse,
   IntegrationProvider,
   UpdateIntegrationResponse,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { useCallback, useState } from "react";
 import { toast } from "sonner";
 

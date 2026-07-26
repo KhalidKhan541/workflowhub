@@ -13,4 +13,4 @@ The repository is organized in a monorepo using pnpm workspaces: [pnpm-workspace
 
 With the root package.json being: [package.json](mdc:package.json)
 
-- When executing command in specific workspaces, use the `--filter @dafthunk/web` for example in order to execute a pnpm command in the web workspace.
+- When executing command in specific workspaces, use the `--filter @workflowhub/web` for example in order to execute a pnpm command in the web workspace.

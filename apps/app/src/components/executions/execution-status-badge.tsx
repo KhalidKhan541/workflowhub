@@ -1,4 +1,4 @@
-import type { WorkflowExecution } from "@dafthunk/types";
+import type { WorkflowExecution } from "@workflowhub/types";
 import type { VariantProps } from "class-variance-authority";
 import AlertCircle from "lucide-react/icons/alert-circle";
 import CheckCircle2 from "lucide-react/icons/check-circle-2";

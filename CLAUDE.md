@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Dafthunk is a visual workflow automation platform built on Cloudflare infrastructure (Workers, D1, R2, AI). Users create workflows by connecting 50+ node types in a visual editor (React Flow).
+WorkflowHub is a visual workflow automation platform built on Cloudflare infrastructure (Workers, D1, R2, AI). Users create workflows by connecting 50+ node types in a visual editor (React Flow).
 
 **Monorepo structure** (pnpm workspaces):
 - `apps/api` - Backend (Hono on Cloudflare Workers)
@@ -22,14 +22,14 @@ pnpm check                                     # Auto-fix linting + format
 pnpm test                                      # Run tests
 
 # Workspace-specific (use --filter)
-pnpm --filter '@dafthunk/api' dev              # API dev server (port 3001)
-pnpm --filter '@dafthunk/web' dev              # Web dev server (port 3000)
-pnpm --filter '@dafthunk/api' test:integration # Integration tests
+pnpm --filter '@workflowhub/api' dev              # API dev server (port 3001)
+pnpm --filter '@workflowhub/web' dev              # Web dev server (port 3000)
+pnpm --filter '@workflowhub/api' test:integration # Integration tests
 
 # Database migrations
-pnpm --filter '@dafthunk/api' db:migrate       # Apply migrations locally
-pnpm --filter '@dafthunk/api' db:generate      # Generate new migrations
-pnpm --filter '@dafthunk/api' db:prod:migrate  # Apply to production
+pnpm --filter '@workflowhub/api' db:migrate       # Apply migrations locally
+pnpm --filter '@workflowhub/api' db:generate      # Generate new migrations
+pnpm --filter '@workflowhub/api' db:prod:migrate  # Apply to production
 ```
 
 ## Architecture
@@ -123,7 +123,7 @@ Components:     PascalCase
 ```tsx
 // ✓ Correct
 import { Link } from 'react-router'           // not react-router-dom
-import type { User } from '@dafthunk/types'
+import type { User } from '@workflowhub/types'
 export function MyComponent() { ... }         // functional component
 
 // Data fetching

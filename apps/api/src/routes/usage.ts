@@ -1,4 +1,4 @@
-import { UsageResponse } from "@dafthunk/types";
+import { UsageResponse } from "@workflowhub/types";
 import { Hono } from "hono";
 
 import { jwtMiddleware } from "../auth";

@@ -9,7 +9,7 @@ import {
   ObjectMetadata,
   ObjectReference,
   UploadObjectResponse,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { useCallback } from "react";
 
 import { useAuth } from "@/components/auth-context";

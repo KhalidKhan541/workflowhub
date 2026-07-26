@@ -1,11 +1,11 @@
-import { BooleanInputNode } from "@dafthunk/runtime/nodes/input/boolean-input-node";
-import { NumberInputNode } from "@dafthunk/runtime/nodes/input/number-input-node";
-import { ConditionalForkNode } from "@dafthunk/runtime/nodes/logic/conditional-fork-node";
-import { ConditionalJoinNode } from "@dafthunk/runtime/nodes/logic/conditional-join-node";
-import { AdditionNode } from "@dafthunk/runtime/nodes/math/addition-node";
-import { SubtractionNode } from "@dafthunk/runtime/nodes/math/subtraction-node";
-import { NumberOutputNode } from "@dafthunk/runtime/nodes/output/number-output-node";
-import type { WorkflowTemplate } from "@dafthunk/types";
+import { BooleanInputNode } from "@workflowhub/runtime/nodes/input/boolean-input-node";
+import { NumberInputNode } from "@workflowhub/runtime/nodes/input/number-input-node";
+import { ConditionalForkNode } from "@workflowhub/runtime/nodes/logic/conditional-fork-node";
+import { ConditionalJoinNode } from "@workflowhub/runtime/nodes/logic/conditional-join-node";
+import { AdditionNode } from "@workflowhub/runtime/nodes/math/addition-node";
+import { SubtractionNode } from "@workflowhub/runtime/nodes/math/subtraction-node";
+import { NumberOutputNode } from "@workflowhub/runtime/nodes/output/number-output-node";
+import type { WorkflowTemplate } from "@workflowhub/types";
 
 export const conditionalBranchingTemplate: WorkflowTemplate = {
   id: "conditional-branching",

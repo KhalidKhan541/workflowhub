@@ -1,4 +1,4 @@
-import type { QueueMessage } from "@dafthunk/types";
+import type { QueueMessage } from "@workflowhub/types";
 import { zValidator } from "@hono/zod-validator";
 import { Hono } from "hono";
 import { z } from "zod";

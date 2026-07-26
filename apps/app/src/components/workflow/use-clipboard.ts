@@ -1,4 +1,4 @@
-import type { ObjectReference } from "@dafthunk/types";
+import type { ObjectReference } from "@workflowhub/types";
 import type {
   Edge as ReactFlowEdge,
   Node as ReactFlowNode,

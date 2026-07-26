@@ -2,7 +2,7 @@
  * Tool system types for function calling and external tool integration
  */
 
-export type { ToolReference } from "@dafthunk/types";
+export type { ToolReference } from "@workflowhub/types";
 
 /**
  * JSON Schema definition for tool parameters

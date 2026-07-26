@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { PolygonSmoothNode } from "./polygon-smooth-node";
 
@@ -49,7 +49,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -73,7 +73,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -97,7 +97,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -122,7 +122,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -147,7 +147,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -172,7 +172,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -198,7 +198,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -223,7 +223,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -248,7 +248,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -279,7 +279,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -314,7 +314,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -337,7 +337,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -362,7 +362,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -386,7 +386,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -410,7 +410,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -434,7 +434,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -458,7 +458,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
   });
@@ -633,7 +633,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -658,7 +658,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -683,7 +683,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -708,7 +708,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -731,7 +731,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -755,7 +755,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -781,7 +781,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
 
@@ -806,7 +806,7 @@ describe("PolygonSmoothNode", () => {
 
       expect(result.status).toBe("completed");
       expect(result.outputs?.smoothed).toBeDefined();
-      // @dafthunk/geo polygonSmooth returns FeatureCollection
+      // @workflowhub/geo polygonSmooth returns FeatureCollection
       expect(result.outputs?.smoothed.type).toBe("FeatureCollection");
     });
   });

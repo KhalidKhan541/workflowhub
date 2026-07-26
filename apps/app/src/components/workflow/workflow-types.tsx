@@ -1,4 +1,4 @@
-import type { NodeType, Parameter, ParameterType } from "@dafthunk/types";
+import type { NodeType, Parameter, ParameterType } from "@workflowhub/types";
 
 // Re-export NodeType for convenience
 export type { NodeType };

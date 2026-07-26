@@ -1,10 +1,10 @@
-// Re-export validation functions from @dafthunk/runtime
+// Re-export validation functions from @workflowhub/runtime
 export {
   detectCycles,
   type ValidationError,
   validateTypeCompatibility,
   validateWorkflow,
-} from "@dafthunk/runtime";
+} from "@workflowhub/runtime";
 
 /**
  * Validates that a workflow has nodes before execution

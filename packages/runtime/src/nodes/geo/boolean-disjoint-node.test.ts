@@ -1,13 +1,13 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { BooleanDisjointNode } from "./boolean-disjoint-node";
 
 // Mock the Turf.js booleanDisjoint function
-vi.mock("@dafthunk/geo", () => ({
+vi.mock("@workflowhub/geo", () => ({
   booleanDisjoint: vi.fn(),
 }));
 
-import { booleanDisjoint } from "@dafthunk/geo";
+import { booleanDisjoint } from "@workflowhub/geo";
 
 describe("BooleanDisjointNode", () => {
   const createMockContext = (inputs: Record<string, any>): NodeContext => ({

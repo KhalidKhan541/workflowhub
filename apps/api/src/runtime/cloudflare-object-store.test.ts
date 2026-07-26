@@ -1,4 +1,4 @@
-import type { ObjectReference } from "@dafthunk/types";
+import type { ObjectReference } from "@workflowhub/types";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 import { CloudflareObjectStore } from "./cloudflare-object-store";

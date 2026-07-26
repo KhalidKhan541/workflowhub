@@ -1,4 +1,4 @@
-import type { Node, NodeType } from "@dafthunk/types";
+import type { Node, NodeType } from "@workflowhub/types";
 
 import type { ExecutableNode } from "./node-types";
 import { MultiStepNode } from "./node-types";

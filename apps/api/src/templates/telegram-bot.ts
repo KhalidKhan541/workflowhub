@@ -1,7 +1,7 @@
-import { AgentClaudeSonnet4Node } from "@dafthunk/runtime/nodes/agent/agent-claude-sonnet-4-node";
-import { BotReceiveTelegramMessageNode } from "@dafthunk/runtime/nodes/telegram/bot-receive-telegram-message-node";
-import { BotSendMessageTelegramNode } from "@dafthunk/runtime/nodes/telegram/bot-send-message-telegram-node";
-import type { WorkflowTemplate } from "@dafthunk/types";
+import { AgentClaudeSonnet4Node } from "@workflowhub/runtime/nodes/agent/agent-claude-sonnet-4-node";
+import { BotReceiveTelegramMessageNode } from "@workflowhub/runtime/nodes/telegram/bot-receive-telegram-message-node";
+import { BotSendMessageTelegramNode } from "@workflowhub/runtime/nodes/telegram/bot-send-message-telegram-node";
+import type { WorkflowTemplate } from "@workflowhub/types";
 
 export const telegramBotTemplate: WorkflowTemplate = {
   id: "telegram-bot",

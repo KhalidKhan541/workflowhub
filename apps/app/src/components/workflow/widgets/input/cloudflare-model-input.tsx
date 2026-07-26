@@ -1,7 +1,7 @@
 import type {
   CloudflareModelInfo,
   CloudflareModelSchema,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import LoaderCircle from "lucide-react/icons/loader-circle";
 import RotateCw from "lucide-react/icons/rotate-cw";
 import Search from "lucide-react/icons/search";

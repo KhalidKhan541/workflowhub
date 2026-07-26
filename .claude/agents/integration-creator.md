@@ -1,6 +1,6 @@
 ---
 name: integration-creator
-description: Generate new OAuth integration providers for Dafthunk
+description: Generate new OAuth integration providers for WorkflowHub
 tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 ---
 

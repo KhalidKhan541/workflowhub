@@ -1,4 +1,4 @@
-import type { GetNodeTypesResponse, NodeType } from "@dafthunk/types";
+import type { GetNodeTypesResponse, NodeType } from "@workflowhub/types";
 import useSWR, { type SWRConfiguration } from "swr";
 
 import { makeRequest } from "./utils";

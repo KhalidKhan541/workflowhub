@@ -17,17 +17,17 @@
  */
 
 import { DurableObject } from "cloudflare:workers";
-import type { ToolDefinition, ToolReference } from "@dafthunk/runtime";
-import type { AgentProvider } from "@dafthunk/runtime/nodes/agent/base-agent-node";
+import type { ToolDefinition, ToolReference } from "@workflowhub/runtime";
+import type { AgentProvider } from "@workflowhub/runtime/nodes/agent/base-agent-node";
 import type {
   AgentLoopState,
   AgentMessage,
   FinishReason,
   ResolvedToolResult,
-} from "@dafthunk/runtime/utils/agent-loop";
-import { runAgentLoop } from "@dafthunk/runtime/utils/agent-loop";
-import type { TokenPricing } from "@dafthunk/runtime/utils/usage";
-import { calculateTokenUsage } from "@dafthunk/runtime/utils/usage";
+} from "@workflowhub/runtime/utils/agent-loop";
+import { runAgentLoop } from "@workflowhub/runtime/utils/agent-loop";
+import type { TokenPricing } from "@workflowhub/runtime/utils/usage";
+import { calculateTokenUsage } from "@workflowhub/runtime/utils/usage";
 
 import type { Bindings } from "../context";
 import { createDatabase, getEmail } from "../db";

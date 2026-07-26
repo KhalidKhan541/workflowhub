@@ -1,4 +1,4 @@
-import type { ObjectReference } from "@dafthunk/types";
+import type { ObjectReference } from "@workflowhub/types";
 import type { Node as ReactFlowNode } from "@xyflow/react";
 import ChevronDownIcon from "lucide-react/icons/chevron-down";
 import { createElement, useState } from "react";

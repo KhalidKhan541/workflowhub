@@ -2,7 +2,7 @@ import type {
   CredentialService,
   IntegrationData,
   IntegrationInfo,
-} from "@dafthunk/runtime";
+} from "@workflowhub/runtime";
 
 import type { Bindings } from "../context";
 import {

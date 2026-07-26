@@ -1,5 +1,5 @@
 // @ts-ignore - https://github.com/lucide-icons/lucide/issues/2867#issuecomment-2847105863
-import type { ToolReference } from "@dafthunk/types";
+import type { ToolReference } from "@workflowhub/types";
 import { Wrench } from "lucide-react";
 import { DynamicIcon } from "lucide-react/dynamic.mjs";
 import { useMemo, useState } from "react";

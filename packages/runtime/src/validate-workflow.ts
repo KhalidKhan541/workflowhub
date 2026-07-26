@@ -1,4 +1,4 @@
-import type { Edge, NodeType, Parameter, Workflow } from "@dafthunk/types";
+import type { Edge, NodeType, Parameter, Workflow } from "@workflowhub/types";
 
 export interface ValidationError {
   type:

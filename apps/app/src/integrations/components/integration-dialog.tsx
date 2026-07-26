@@ -1,4 +1,4 @@
-import type { IntegrationProvider } from "@dafthunk/types";
+import type { IntegrationProvider } from "@workflowhub/types";
 import ExternalLink from "lucide-react/icons/external-link";
 import { useEffect, useMemo, useState } from "react";
 

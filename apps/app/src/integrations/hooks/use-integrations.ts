@@ -1,4 +1,4 @@
-import type { Integration, ListIntegrationsResponse } from "@dafthunk/types";
+import type { Integration, ListIntegrationsResponse } from "@workflowhub/types";
 import useSWR from "swr";
 
 import { useAuth } from "@/components/auth-context";

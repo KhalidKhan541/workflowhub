@@ -1,4 +1,4 @@
-import { JWTTokenPayload } from "@dafthunk/types";
+import { JWTTokenPayload } from "@workflowhub/types";
 
 import { getApiBaseUrl } from "@/config/api";
 

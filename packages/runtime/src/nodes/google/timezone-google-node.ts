@@ -1,5 +1,5 @@
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 
 /**
  * Google Time Zone node implementation
@@ -99,7 +99,7 @@ export class TimezoneGoogleNode extends ExecutableNode {
 
       const response = await fetch(url.toString(), {
         method: "GET",
-        headers: { "User-Agent": "Dafthunk/1.0" },
+        headers: { "User-Agent": "WorkflowHub/1.0" },
       });
 
       if (!response.ok) {

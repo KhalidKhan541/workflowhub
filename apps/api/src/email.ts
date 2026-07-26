@@ -1,4 +1,4 @@
-import type { Workflow } from "@dafthunk/types";
+import type { Workflow } from "@workflowhub/types";
 import { v7 as uuidv7 } from "uuid";
 
 import type { Bindings } from "./context";

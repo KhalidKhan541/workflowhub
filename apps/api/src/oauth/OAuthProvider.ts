@@ -491,7 +491,7 @@ export abstract class OAuthProvider<
   getRedirectUri(env: Bindings): string {
     const base =
       env.CLOUDFLARE_ENV === "production"
-        ? "https://api.dafthunk.com"
+        ? "https://api.workflowhub.com"
         : "http://localhost:3002";
     return `${base}/oauth/${this.name}/connect`;
   }

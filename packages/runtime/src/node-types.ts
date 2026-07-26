@@ -11,7 +11,7 @@ import type {
   SlackMessage,
   TelegramMessage,
   WhatsAppMessage,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import type { BaseToolRegistry } from "./base-tool-registry";
 import type { DatabaseService } from "./database-service";
 import type { DatasetService } from "./dataset-service";

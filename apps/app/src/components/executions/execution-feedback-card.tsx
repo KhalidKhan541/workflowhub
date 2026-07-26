@@ -1,4 +1,4 @@
-import type { FeedbackCriterion, FeedbackSentimentType } from "@dafthunk/types";
+import type { FeedbackCriterion, FeedbackSentimentType } from "@workflowhub/types";
 import MessageCircleIcon from "lucide-react/icons/message-circle";
 import MessageCircleQuestion from "lucide-react/icons/message-circle-question";
 import ThumbsDown from "lucide-react/icons/thumbs-down";

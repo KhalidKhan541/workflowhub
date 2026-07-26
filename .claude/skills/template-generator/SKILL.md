@@ -67,7 +67,7 @@ Grep pattern="compatibility:.*http_request" path="apps/api/src/nodes" glob="*.ts
 **File:** `apps/api/src/templates/{template-id}.ts`
 
 ```typescript
-import type { WorkflowTemplate } from "@dafthunk/types";
+import type { WorkflowTemplate } from "@workflowhub/types";
 import { TextInputNode } from "../nodes/input/text-input-node";
 import { BartLargeCnnNode } from "../nodes/text/bart-large-cnn-node";
 import { TextPreviewNode } from "../nodes/preview/text-preview-node";
@@ -146,7 +146,7 @@ describe("My Template", () => {
 });
 ```
 
-**Run:** `pnpm typecheck && pnpm --filter '@dafthunk/api' test {template-id}`
+**Run:** `pnpm typecheck && pnpm --filter '@workflowhub/api' test {template-id}`
 
 ## Type Compatibility
 

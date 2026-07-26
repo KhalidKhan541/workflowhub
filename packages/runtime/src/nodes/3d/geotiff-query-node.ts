@@ -1,6 +1,6 @@
 import { encode } from "@cf-wasm/png";
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 import { fromUrl } from "geotiff";
 
 type TypedArray = Uint8Array | Uint16Array | Int16Array | Float32Array;

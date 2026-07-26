@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { LineSplitNode } from "./line-split-node";
 
@@ -73,7 +73,7 @@ describe("LineSplitNode", () => {
       },
     });
     const result = await node.execute(context);
-    // @dafthunk/geo lineSplit requires Point as splitter, not LineString
+    // @workflowhub/geo lineSplit requires Point as splitter, not LineString
     expect(result.status).toBe("error");
   });
 

@@ -19,7 +19,7 @@
  * @see {@link Runtime} - Base runtime class
  */
 
-import type { WorkflowExecution } from "@dafthunk/types";
+import type { WorkflowExecution } from "@workflowhub/types";
 
 import { Runtime, type RuntimeParams } from "./base-runtime";
 

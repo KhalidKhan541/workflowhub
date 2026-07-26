@@ -1,7 +1,7 @@
-import { CloudflareBrowserScreenshotNode } from "@dafthunk/runtime/nodes/browser/cloudflare-browser-screenshot-node";
-import { TextInputNode } from "@dafthunk/runtime/nodes/input/text-input-node";
-import { ImageOutputNode } from "@dafthunk/runtime/nodes/output/image-output-node";
-import type { WorkflowTemplate } from "@dafthunk/types";
+import { CloudflareBrowserScreenshotNode } from "@workflowhub/runtime/nodes/browser/cloudflare-browser-screenshot-node";
+import { TextInputNode } from "@workflowhub/runtime/nodes/input/text-input-node";
+import { ImageOutputNode } from "@workflowhub/runtime/nodes/output/image-output-node";
+import type { WorkflowTemplate } from "@workflowhub/types";
 
 export const webScreenshotTemplate: WorkflowTemplate = {
   id: "web-screenshot",

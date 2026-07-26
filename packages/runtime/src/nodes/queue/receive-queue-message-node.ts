@@ -1,5 +1,5 @@
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
-import type { NodeExecution, NodeType, Schema } from "@dafthunk/types";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
+import type { NodeExecution, NodeType, Schema } from "@workflowhub/types";
 import { validateRecord } from "../../utils/schema-validation";
 
 export class ReceiveQueueMessageNode extends ExecutableNode {

@@ -5,7 +5,7 @@ import type {
   ObjectMetadata,
   ObjectReference,
   UploadObjectResponse,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { Hono } from "hono";
 
 import { apiKeyOrJwtMiddleware, jwtMiddleware } from "../auth";
@@ -59,7 +59,7 @@ objectRoutes.get("/", apiKeyOrJwtMiddleware, async (c) => {
     // via POST /:orgId/objects (multipart file.type is trusted) and send
     // the URL to a teammate or to a system admin who is also a member.
     // Without these headers, top-level navigation renders the attacker's
-    // HTML at api.dafthunk.com with the victim's cookies attached.
+    // HTML at api.workflowhub.com with the victim's cookies attached.
     //
     // `Content-Disposition: attachment` forces top-level navigations to
     // download (img/audio/video tags ignore it, so the workflow viewer's

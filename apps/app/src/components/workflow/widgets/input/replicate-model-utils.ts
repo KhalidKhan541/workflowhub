@@ -2,16 +2,16 @@ import {
   type ReplicateModelMeta,
   replicateModelUrl,
   replicateOwnerName,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
-export type { ReplicateModelMeta } from "@dafthunk/types";
+export type { ReplicateModelMeta } from "@workflowhub/types";
 export {
   encodeReplicateModelMeta,
   REPLICATE_MODEL_NODE_TYPE,
   RP_META_KEY,
   replicateModelUrl,
   replicateOwnerName,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 /**
  * Best-effort parse of a stored `_rp_meta` value (from `node.metadata`).

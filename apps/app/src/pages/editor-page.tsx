@@ -2,7 +2,7 @@ import type {
   WorkflowRuntime,
   WorkflowTrigger,
   WorkflowWithMetadata,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { ReactFlowProvider } from "@xyflow/react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router";

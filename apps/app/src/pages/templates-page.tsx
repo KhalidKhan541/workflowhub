@@ -1,4 +1,4 @@
-import type { WorkflowTemplate } from "@dafthunk/types";
+import type { WorkflowTemplate } from "@workflowhub/types";
 // @ts-ignore - https://github.com/lucide-icons/lucide/issues/2867#issuecomment-2847105863
 import { DynamicIcon } from "lucide-react/dynamic.mjs";
 import Wand from "lucide-react/icons/wand";

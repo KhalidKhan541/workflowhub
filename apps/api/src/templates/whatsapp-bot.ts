@@ -1,7 +1,7 @@
-import { AgentClaudeSonnet4Node } from "@dafthunk/runtime/nodes/agent/agent-claude-sonnet-4-node";
-import { BotReceiveWhatsAppMessageNode } from "@dafthunk/runtime/nodes/whatsapp/bot-receive-whatsapp-message-node";
-import { BotSendMessageWhatsAppNode } from "@dafthunk/runtime/nodes/whatsapp/bot-send-message-whatsapp-node";
-import type { WorkflowTemplate } from "@dafthunk/types";
+import { AgentClaudeSonnet4Node } from "@workflowhub/runtime/nodes/agent/agent-claude-sonnet-4-node";
+import { BotReceiveWhatsAppMessageNode } from "@workflowhub/runtime/nodes/whatsapp/bot-receive-whatsapp-message-node";
+import { BotSendMessageWhatsAppNode } from "@workflowhub/runtime/nodes/whatsapp/bot-send-message-whatsapp-node";
+import type { WorkflowTemplate } from "@workflowhub/types";
 
 export const whatsappBotTemplate: WorkflowTemplate = {
   id: "whatsapp-bot",

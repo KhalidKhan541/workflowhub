@@ -1,4 +1,4 @@
-import type { GetBillingResponse } from "@dafthunk/types";
+import type { GetBillingResponse } from "@workflowhub/types";
 import useSWR from "swr";
 
 import { getApiBaseUrl } from "@/config/api";

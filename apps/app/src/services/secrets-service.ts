@@ -4,7 +4,7 @@ import {
   ListSecretsResponse,
   Secret,
   UpdateSecretResponse,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import useSWR from "swr";
 
 import { useAuth } from "@/components/auth-context";

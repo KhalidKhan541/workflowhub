@@ -1,5 +1,5 @@
-import { MultiStepNode, type MultiStepNodeContext } from "@dafthunk/runtime";
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+import { MultiStepNode, type MultiStepNodeContext } from "@workflowhub/runtime";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 import { calculateBrowserUsage } from "../../utils/usage";
 
 interface CrawlJob {

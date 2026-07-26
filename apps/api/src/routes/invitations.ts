@@ -2,7 +2,7 @@ import type {
   AcceptInvitationResponse,
   DeclineInvitationResponse,
   ListUserInvitationsResponse,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { Hono } from "hono";
 
 import { jwtMiddleware } from "../auth";

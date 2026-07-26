@@ -10,7 +10,7 @@ import type {
   TelegramMessage,
   WhatsAppMessage,
   Workflow,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 import type { EmailMessage, FormSubmission, HttpRequest } from "./node-types";
 

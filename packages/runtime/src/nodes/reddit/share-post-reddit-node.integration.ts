@@ -1,4 +1,4 @@
-import type { Node } from "@dafthunk/types";
+import type { Node } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 
 import {
@@ -10,7 +10,7 @@ import { SharePostRedditNode } from "./share-post-reddit-node";
 
 describe("SharePostRedditNode", () => {
   it.skipIf(skipIfNoRedditToken())(
-    "should share a text post to r/dafthunk_test",
+    "should share a text post to r/WorkflowHub_test",
     async () => {
       const node = new SharePostRedditNode({
         nodeId: "share-post-reddit",

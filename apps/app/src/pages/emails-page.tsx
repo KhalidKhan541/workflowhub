@@ -45,14 +45,14 @@ function downloadVCard(email: EmailRow) {
   const rawName = email.name || "Untitled Email";
   const displayName = rawName.charAt(0).toUpperCase() + rawName.slice(1);
   const emailAddress = email.address;
-  const fullName = `Dafthunk (${displayName})`;
+  const fullName = `WorkflowHub (${displayName})`;
   const vcard = [
     "BEGIN:VCARD",
     "VERSION:3.0",
     `FN:${fullName}`,
-    `N:Dafthunk;${displayName};;;`,
+    `N:WorkflowHub;${displayName};;;`,
     `EMAIL:${emailAddress}`,
-    `ORG:Dafthunk`,
+    `ORG:WorkflowHub`,
     "END:VCARD",
   ].join("\r\n");
 

@@ -1,12 +1,12 @@
 import { env } from "cloudflare:test";
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 
 /**
  * Test configuration for Reddit integration tests.
- * Uses r/dafthunk_test as the test subreddit and u/bchapuis as the test user.
+ * Uses r/WorkflowHub_test as the test subreddit and u/bchapuis as the test user.
  */
 export const REDDIT_TEST_CONFIG = {
-  subreddit: "dafthunk_test",
+  subreddit: "WorkflowHub_test",
   username: "bchapuis",
 } as const;
 

@@ -1,7 +1,7 @@
 import type {
   ListWorkflowTemplatesResponse,
   WorkflowTemplate,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import useSWR from "swr";
 
 import { makeRequest } from "./utils";

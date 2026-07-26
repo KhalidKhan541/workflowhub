@@ -1,4 +1,4 @@
-import type { OrganizationInfo } from "@dafthunk/types";
+import type { OrganizationInfo } from "@workflowhub/types";
 import Bot from "lucide-react/icons/bot";
 import CreditCard from "lucide-react/icons/credit-card";
 import Database from "lucide-react/icons/database";

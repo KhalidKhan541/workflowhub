@@ -80,8 +80,8 @@ describe("generateEmailHandle", () => {
 
 describe("formatEmailAddress", () => {
   it("composes handle and domain", () => {
-    expect(formatEmailAddress("cafe-tickets-a7k3p9", "mail.dafthunk.com")).toBe(
-      "cafe-tickets-a7k3p9@mail.dafthunk.com"
+    expect(formatEmailAddress("cafe-tickets-a7k3p9", "mail.workflowhub.com")).toBe(
+      "cafe-tickets-a7k3p9@mail.workflowhub.com"
     );
   });
 });

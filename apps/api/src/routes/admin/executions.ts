@@ -1,4 +1,4 @@
-import type { ExecutionStatusType } from "@dafthunk/types";
+import type { ExecutionStatusType } from "@workflowhub/types";
 import { zValidator } from "@hono/zod-validator";
 import { eq } from "drizzle-orm";
 import { Hono } from "hono";
@@ -56,8 +56,8 @@ adminExecutionsRoutes.get(
       const env = c.env.CLOUDFLARE_ENV || "development";
       const dataset =
         env === "production"
-          ? "dafthunk_executions_production"
-          : "dafthunk_executions_development";
+          ? "WorkflowHub_executions_production"
+          : "WorkflowHub_executions_development";
 
       const whereConditions: string[] = [];
 

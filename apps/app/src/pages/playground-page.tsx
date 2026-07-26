@@ -1,4 +1,4 @@
-import type { NodeType } from "@dafthunk/types";
+import type { NodeType } from "@workflowhub/types";
 import { DynamicIcon, iconNames } from "lucide-react/dynamic.mjs";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router";

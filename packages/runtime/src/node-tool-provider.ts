@@ -1,4 +1,4 @@
-import type { NodeType, Parameter } from "@dafthunk/types";
+import type { NodeType, Parameter } from "@workflowhub/types";
 import type { BaseNodeRegistry } from "./base-node-registry";
 import type { NodeContext } from "./node-types";
 import type {

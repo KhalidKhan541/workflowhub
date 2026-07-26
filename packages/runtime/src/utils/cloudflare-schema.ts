@@ -1,4 +1,4 @@
-import type { Parameter } from "@dafthunk/types";
+import type { Parameter } from "@workflowhub/types";
 
 /**
  * JSON Schema property from Cloudflare Workers AI model schemas.
@@ -154,7 +154,7 @@ function collectMetadata(
 }
 
 /**
- * Map a single property from the input schema to a Dafthunk Parameter.
+ * Map a single property from the input schema to a WorkflowHub Parameter.
  */
 function mapInputProperty(
   name: string,
@@ -394,10 +394,10 @@ function mapOutputSchema(
 }
 
 /**
- * Convert a Cloudflare Workers AI model schema into Dafthunk Parameters.
+ * Convert a Cloudflare Workers AI model schema into WorkflowHub Parameters.
  *
  * @param schema - The model schema returned from the Cloudflare API
- * @returns Mapped inputs and outputs as Dafthunk Parameter arrays
+ * @returns Mapped inputs and outputs as WorkflowHub Parameter arrays
  */
 export function mapCloudflareSchema(
   schema: CloudflareModelOpenApiSchema

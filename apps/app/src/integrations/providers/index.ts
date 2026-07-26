@@ -1,12 +1,15 @@
-import type { IntegrationProvider } from "@dafthunk/types";
+import type { IntegrationProvider } from "@workflowhub/types";
 
 import type { ProviderConfig } from "../types";
+import { airtableProvider } from "./airtable";
 import { discordProvider } from "./discord";
 import { githubProvider } from "./github";
 import { googleCalendarProvider } from "./google-calendar";
 import { googleMailProvider } from "./google-mail";
 import { linkedinProvider } from "./linkedin";
+import { notionProvider } from "./notion";
 import { redditProvider } from "./reddit";
+import { slackProvider } from "./slack";
 import { wordpressProvider } from "./wordpress";
 import { xProvider } from "./x";
 
@@ -23,6 +26,9 @@ export const PROVIDER_REGISTRY: Record<IntegrationProvider, ProviderConfig> = {
   github: githubProvider,
   x: xProvider,
   wordpress: wordpressProvider,
+  airtable: airtableProvider,
+  slack: slackProvider,
+  notion: notionProvider,
 };
 
 /**

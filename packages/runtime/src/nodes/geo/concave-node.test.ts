@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { ConcaveNode } from "./concave-node";
 
@@ -61,7 +61,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -96,7 +96,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -139,7 +139,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -183,7 +183,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -227,7 +227,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -272,7 +272,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -302,7 +302,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -353,7 +353,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -396,7 +396,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -439,7 +439,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -482,7 +482,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -525,7 +525,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -732,7 +732,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -760,7 +760,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -788,7 +788,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -816,7 +816,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -844,7 +844,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -872,7 +872,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -903,7 +903,7 @@ describe("ConcaveNode", () => {
         const result = await node.execute(context);
 
         expect(result.status).toBe("completed");
-        // @dafthunk/geo concave may return null for collinear/insufficient points
+        // @workflowhub/geo concave may return null for collinear/insufficient points
         if (result.outputs?.concave !== null) {
           expect(result.outputs?.concave.type).toBe("Feature");
           expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -931,7 +931,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");
@@ -966,7 +966,7 @@ describe("ConcaveNode", () => {
       const result = await node.execute(context);
 
       expect(result.status).toBe("completed");
-      // @dafthunk/geo concave may return null for collinear/insufficient points
+      // @workflowhub/geo concave may return null for collinear/insufficient points
       if (result.outputs?.concave !== null) {
         expect(result.outputs?.concave.type).toBe("Feature");
         expect(result.outputs?.concave.geometry.type).toBe("Polygon");

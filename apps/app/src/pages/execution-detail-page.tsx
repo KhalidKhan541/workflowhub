@@ -1,4 +1,4 @@
-import type { NodeExecution, WorkflowExecution } from "@dafthunk/types";
+import type { NodeExecution, WorkflowExecution } from "@workflowhub/types";
 import { ReactFlowProvider } from "@xyflow/react";
 import { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router";

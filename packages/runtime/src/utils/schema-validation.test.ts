@@ -1,4 +1,4 @@
-import type { Schema } from "@dafthunk/types";
+import type { Schema } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 import { validateRecord, validateRecords } from "./schema-validation";
 

@@ -1,8 +1,8 @@
-import type { Parameter } from "@dafthunk/types";
+import type { Parameter } from "@workflowhub/types";
 
 /**
  * Maps the static JSON Schema documents Cloudflare publishes for unified
- * (`author/model`) gateway models onto Dafthunk Parameters. These schemas are
+ * (`author/model`) gateway models onto WorkflowHub Parameters. These schemas are
  * plain JSON Schema (draft 2020-12) fetched from
  * `developers.cloudflare.com/ai/models/<author>/<model>/schema-input.json`
  * (and `schema-output.json`) — not the OpenAPI envelope Workers AI uses, so

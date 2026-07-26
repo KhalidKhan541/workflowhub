@@ -1,4 +1,4 @@
-import type { Node, Schema } from "@dafthunk/types";
+import type { Node, Schema } from "@workflowhub/types";
 import { describe, expect, it, vi } from "vitest";
 import type { NodeContext } from "../../node-types";
 import { DatabaseGetRowNode } from "./database-get-row-node";

@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { FeatureCollectionNode } from "./feature-collection-node";
 
@@ -130,8 +130,8 @@ describe("FeatureCollectionNode", () => {
     expect(result.outputs?.featureCollection.features.length).toBe(3);
   });
 
-  it("returns FeatureCollection with bbox option (ignored by @dafthunk/geo)", async () => {
-    // @dafthunk/geo featureCollection ignores options (bbox, id)
+  it("returns FeatureCollection with bbox option (ignored by @workflowhub/geo)", async () => {
+    // @workflowhub/geo featureCollection ignores options (bbox, id)
     const context = createMockContext({
       features: [
         {
@@ -151,8 +151,8 @@ describe("FeatureCollectionNode", () => {
     expect(result.outputs?.featureCollection.type).toBe("FeatureCollection");
   });
 
-  it("returns FeatureCollection with string ID option (ignored by @dafthunk/geo)", async () => {
-    // @dafthunk/geo featureCollection ignores options (bbox, id)
+  it("returns FeatureCollection with string ID option (ignored by @workflowhub/geo)", async () => {
+    // @workflowhub/geo featureCollection ignores options (bbox, id)
     const context = createMockContext({
       features: [
         {
@@ -172,8 +172,8 @@ describe("FeatureCollectionNode", () => {
     expect(result.outputs?.featureCollection.type).toBe("FeatureCollection");
   });
 
-  it("returns FeatureCollection with number ID option (ignored by @dafthunk/geo)", async () => {
-    // @dafthunk/geo featureCollection ignores options (bbox, id)
+  it("returns FeatureCollection with number ID option (ignored by @workflowhub/geo)", async () => {
+    // @workflowhub/geo featureCollection ignores options (bbox, id)
     const context = createMockContext({
       features: [
         {
@@ -193,8 +193,8 @@ describe("FeatureCollectionNode", () => {
     expect(result.outputs?.featureCollection.type).toBe("FeatureCollection");
   });
 
-  it("returns FeatureCollection with bbox and ID options (ignored by @dafthunk/geo)", async () => {
-    // @dafthunk/geo featureCollection ignores options (bbox, id)
+  it("returns FeatureCollection with bbox and ID options (ignored by @workflowhub/geo)", async () => {
+    // @workflowhub/geo featureCollection ignores options (bbox, id)
     const context = createMockContext({
       features: [
         {

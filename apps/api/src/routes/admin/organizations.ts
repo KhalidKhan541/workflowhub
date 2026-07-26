@@ -238,8 +238,8 @@ async function fetchExecutionCount(
 
   const dataset =
     (env.CLOUDFLARE_ENV || "development") === "production"
-      ? "dafthunk_executions_production"
-      : "dafthunk_executions_development";
+      ? "WorkflowHub_executions_production"
+      : "WorkflowHub_executions_development";
 
   // CF Analytics Engine SQL requires `COUNT()` with zero arguments — `COUNT(*)`
   // is rejected with `COUNT() function must have 0 arguments`.

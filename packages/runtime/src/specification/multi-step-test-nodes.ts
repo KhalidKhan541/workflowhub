@@ -1,4 +1,4 @@
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 
 import type { MultiStepNodeContext } from "../node-types";
 import { MultiStepNode } from "../node-types";

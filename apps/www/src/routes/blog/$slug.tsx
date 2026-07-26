@@ -45,10 +45,10 @@ export function loader({ params }: LoaderFunctionArgs) {
 }
 
 export const meta: MetaFunction<typeof loader> = ({ loaderData }) => {
-  if (!loaderData) return [{ title: "Not Found - Dafthunk" }];
+  if (!loaderData) return [{ title: "Not Found - WorkflowHub" }];
 
   const { post } = loaderData;
-  const title = `${post.title} - Dafthunk Blog`;
+  const title = `${post.title} - WorkflowHub Blog`;
   const description = post.description;
   const url = `${websiteUrl}/blog/${post.id}`;
   const ogImage = `${websiteUrl}/og-image.webp`;
@@ -61,7 +61,7 @@ export const meta: MetaFunction<typeof loader> = ({ loaderData }) => {
     { property: "og:title", content: title },
     { property: "og:description", content: description },
     { property: "og:image", content: ogImage },
-    { property: "og:site_name", content: "Dafthunk" },
+    { property: "og:site_name", content: "WorkflowHub" },
     { property: "article:published_time", content: post.date },
     { property: "article:author", content: post.author },
     ...post.tags.map((tag) => ({ property: "article:tag", content: tag })),
@@ -98,11 +98,11 @@ export default function BlogPostPage({
     author: {
       "@type": "Organization",
       name: post.author,
-      url: "https://github.com/dafthunk-com",
+      url: "https://github.com/WorkflowHub-com",
     },
     publisher: {
       "@type": "Organization",
-      name: "Dafthunk",
+      name: "WorkflowHub",
       logo: {
         "@type": "ImageObject",
         url: `${websiteUrl}/logo-black.png`,

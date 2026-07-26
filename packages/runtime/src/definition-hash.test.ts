@@ -1,4 +1,4 @@
-import type { Workflow } from "@dafthunk/types";
+import type { Workflow } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 
 import { computeDefinitionHash } from "./definition-hash";

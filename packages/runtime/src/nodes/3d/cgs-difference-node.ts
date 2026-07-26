@@ -1,5 +1,5 @@
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 import { type Brush, Evaluator, SUBTRACTION } from "three-bvh-csg";
 import { z } from "zod";
 import type { GLTFMaterialData } from "./csg-utils";

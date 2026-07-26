@@ -1,4 +1,4 @@
-import type { WorkflowRuntime, WorkflowTrigger } from "@dafthunk/types";
+import type { WorkflowRuntime, WorkflowTrigger } from "@workflowhub/types";
 import ClipboardList from "lucide-react/icons/clipboard-list";
 import Clock from "lucide-react/icons/clock";
 import FileText from "lucide-react/icons/file-text";

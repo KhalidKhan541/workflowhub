@@ -1,4 +1,4 @@
-import type { WorkflowExecution } from "@dafthunk/types";
+import type { WorkflowExecution } from "@workflowhub/types";
 
 /**
  * Receives execution progress updates from the runtime.

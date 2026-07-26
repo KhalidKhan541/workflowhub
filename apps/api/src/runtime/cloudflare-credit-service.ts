@@ -1,5 +1,5 @@
-import type { CreditParams, CreditService } from "@dafthunk/runtime";
-import { isUsageExhausted } from "@dafthunk/runtime";
+import type { CreditParams, CreditService } from "@workflowhub/runtime";
+import { isUsageExhausted } from "@workflowhub/runtime";
 import { and, eq } from "drizzle-orm";
 
 import { createDatabase } from "../db";

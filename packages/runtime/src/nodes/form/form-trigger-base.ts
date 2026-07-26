@@ -1,5 +1,5 @@
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
-import type { FieldType, NodeExecution, Schema } from "@dafthunk/types";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
+import type { FieldType, NodeExecution, Schema } from "@workflowhub/types";
 
 /**
  * Maps a schema FieldType to a workflow Parameter type string. Shared with the

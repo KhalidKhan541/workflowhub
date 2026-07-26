@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "dafthunk-www",
+  "name": "workflowhub-www",
   "main": "./workers/app.ts",
   "compatibility_date": "2025-11-17",
   "observability": {

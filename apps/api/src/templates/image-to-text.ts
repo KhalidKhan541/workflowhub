@@ -1,7 +1,7 @@
-import { Gemini25FlashImageUnderstandingNode } from "@dafthunk/runtime/nodes/gemini/gemini-2-5-flash-image-understanding-node";
-import { Gemini25FlashTtsNode } from "@dafthunk/runtime/nodes/gemini/gemini-2-5-flash-tts-node";
-import { HttpRequestNode } from "@dafthunk/runtime/nodes/http/http-request-node";
-import type { WorkflowTemplate } from "@dafthunk/types";
+import { Gemini25FlashImageUnderstandingNode } from "@workflowhub/runtime/nodes/gemini/gemini-2-5-flash-image-understanding-node";
+import { Gemini25FlashTtsNode } from "@workflowhub/runtime/nodes/gemini/gemini-2-5-flash-tts-node";
+import { HttpRequestNode } from "@workflowhub/runtime/nodes/http/http-request-node";
+import type { WorkflowTemplate } from "@workflowhub/types";
 
 export const imageToTextTemplate: WorkflowTemplate = {
   id: "image-to-text",

@@ -1,4 +1,4 @@
-import type { Integration } from "@dafthunk/types";
+import type { Integration } from "@workflowhub/types";
 import type { ColumnDef } from "@tanstack/react-table";
 
 import { DataTable } from "@/components/ui/data-table";

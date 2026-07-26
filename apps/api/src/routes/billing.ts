@@ -5,7 +5,7 @@ import type {
   GetBillingResponse,
   UpdateOverageLimitRequest,
   UpdateOverageLimitResponse,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { zValidator } from "@hono/zod-validator";
 import { eq } from "drizzle-orm";
 import { Hono } from "hono";

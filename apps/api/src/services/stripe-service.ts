@@ -92,7 +92,7 @@ export class StripeService {
     }
 
     await this.stripe.billing.meterEvents.create({
-      event_name: "dafthunk_compute_credits",
+      event_name: "WorkflowHub_compute_credits",
       payload: {
         stripe_customer_id: stripeCustomerId,
         value: String(usage),
@@ -166,8 +166,8 @@ export class StripeService {
   private getDatasetName(): string {
     const env = this.env.CLOUDFLARE_ENV || "development";
     return env === "production"
-      ? "dafthunk_executions_production"
-      : "dafthunk_executions_development";
+      ? "WorkflowHub_executions_production"
+      : "WorkflowHub_executions_development";
   }
 }
 

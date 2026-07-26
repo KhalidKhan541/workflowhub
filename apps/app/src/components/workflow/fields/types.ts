@@ -1,4 +1,4 @@
-import type { ObjectReference } from "@dafthunk/types";
+import type { ObjectReference } from "@workflowhub/types";
 
 import type { WorkflowParameter } from "@/components/workflow/workflow-types";
 

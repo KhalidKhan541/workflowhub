@@ -1,4 +1,4 @@
-import type { UserInvitation } from "@dafthunk/types";
+import type { UserInvitation } from "@workflowhub/types";
 import type { ColumnDef } from "@tanstack/react-table";
 import Check from "lucide-react/icons/check";
 import X from "lucide-react/icons/x";

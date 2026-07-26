@@ -7,7 +7,7 @@
  * Durable Object's bindings.
  */
 
-import type { ResolvedToolResult } from "@dafthunk/runtime/utils/agent-loop";
+import type { ResolvedToolResult } from "@workflowhub/runtime/utils/agent-loop";
 
 export interface PendingAsk {
   toolCallId: string;

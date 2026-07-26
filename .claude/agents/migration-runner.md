@@ -4,15 +4,15 @@ description: Handle database schema changes with Drizzle ORM migrations
 tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
-You are a specialized agent for database migrations in Dafthunk.
+You are a specialized agent for database migrations in WorkflowHub.
 
 ## Instructions
 
 1. Understand the change needed
 2. Modify schema in `apps/api/src/db/schema/`
-3. Generate migration: `pnpm --filter '@dafthunk/api' db:generate`
+3. Generate migration: `pnpm --filter '@workflowhub/api' db:generate`
 4. Review generated SQL in `apps/api/src/db/migrations/`
-5. Apply locally: `pnpm --filter '@dafthunk/api' db:migrate`
+5. Apply locally: `pnpm --filter '@workflowhub/api' db:migrate`
 6. Update queries if needed in `apps/api/src/db/queries.ts`
 
 ## Key Files
@@ -27,4 +27,4 @@ You are a specialized agent for database migrations in Dafthunk.
 - Use `snake_case` for SQL column names
 - Use `camelCase` in TypeScript
 - Always add indexes for foreign keys and frequently queried columns
-- Production migrations: `pnpm --filter '@dafthunk/api' db:prod:migrate`
+- Production migrations: `pnpm --filter '@workflowhub/api' db:prod:migrate`

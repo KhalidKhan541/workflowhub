@@ -4,7 +4,7 @@ import {
   type FieldType,
   IDENTIFIER_PATTERN,
   type SchemaEntity,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import ArrowUp01 from "lucide-react/icons/arrow-up-0-1";
 import Asterisk from "lucide-react/icons/asterisk";
 import Hash from "lucide-react/icons/hash";

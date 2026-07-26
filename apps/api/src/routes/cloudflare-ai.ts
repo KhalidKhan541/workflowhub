@@ -1,4 +1,4 @@
-import type { CloudflareModelInfo } from "@dafthunk/types";
+import type { CloudflareModelInfo } from "@workflowhub/types";
 import { Hono } from "hono";
 
 import { jwtMiddleware } from "../auth";
@@ -37,7 +37,7 @@ function handleCloudflareError(
 /**
  * GET /cloudflare-ai/models/schema?model=@cf/...
  *
- * Fetches a Cloudflare Workers AI model's JSON schema, mapped to Dafthunk
+ * Fetches a Cloudflare Workers AI model's JSON schema, mapped to WorkflowHub
  * Parameters and cached in the Workers runtime cache.
  */
 cloudflareAiRoutes.get("/models/schema", async (c) => {

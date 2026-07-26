@@ -1,4 +1,4 @@
-import type { Node } from "@dafthunk/types";
+import type { Node } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 
 import { ListCommentsRedditNode } from "./list-comments-reddit-node";
@@ -11,7 +11,7 @@ import {
 
 describe("ListCommentsRedditNode", () => {
   it.skipIf(skipIfNoRedditToken())(
-    "should list comments on a post in r/dafthunk_test",
+    "should list comments on a post in r/WorkflowHub_test",
     async () => {
       // First, get a post ID
       const listNode = new ListPostsRedditNode({

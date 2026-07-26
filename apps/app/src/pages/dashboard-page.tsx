@@ -2,7 +2,7 @@ import type {
   CreateWorkflowRequest,
   WorkflowRuntime,
   WorkflowTrigger,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import FileDown from "lucide-react/icons/file-down";
 import Logs from "lucide-react/icons/logs";
 import MapIcon from "lucide-react/icons/map";

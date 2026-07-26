@@ -98,7 +98,7 @@ export function EmailCreateDialog({
                 placeholder="My Email"
               />
               <p className="text-xs text-muted-foreground">
-                A display name for this email in Dafthunk.
+                A display name for this email in WorkflowHub.
               </p>
             </div>
 

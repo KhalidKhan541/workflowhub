@@ -8,17 +8,17 @@
  */
 
 import Anthropic from "@anthropic-ai/sdk";
-import type { ToolDefinition } from "@dafthunk/runtime";
-import type { AgentProvider } from "@dafthunk/runtime/nodes/agent/base-agent-node";
+import type { ToolDefinition } from "@workflowhub/runtime";
+import type { AgentProvider } from "@workflowhub/runtime/nodes/agent/base-agent-node";
 import type {
   AgentMessage,
   LLMResponse,
-} from "@dafthunk/runtime/utils/agent-loop";
+} from "@workflowhub/runtime/utils/agent-loop";
 import {
   getAnthropicConfig,
   getGoogleAIConfig,
   getOpenAIConfig,
-} from "@dafthunk/runtime/utils/ai-gateway";
+} from "@workflowhub/runtime/utils/ai-gateway";
 import { GoogleGenAI } from "@google/genai";
 import OpenAI from "openai";
 

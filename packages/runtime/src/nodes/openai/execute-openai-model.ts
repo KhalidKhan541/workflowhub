@@ -1,5 +1,5 @@
-import type { NodeContext } from "@dafthunk/runtime";
-import type { NodeExecution, Schema } from "@dafthunk/types";
+import type { NodeContext } from "@workflowhub/runtime";
+import type { NodeExecution, Schema } from "@workflowhub/types";
 import OpenAI from "openai";
 import { getOpenAIConfig } from "../../utils/ai-gateway";
 import { schemaToJsonSchema } from "../../utils/schema-to-json-schema";

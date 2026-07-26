@@ -5,7 +5,7 @@
  * the WorkerLoader binding. Tool calls from the sandbox are dispatched back
  * to the host via Workers RPC (ToolDispatcher → RpcTarget).
  *
- * Implements the CodeModeExecutor interface from @dafthunk/runtime so the
+ * Implements the CodeModeExecutor interface from @workflowhub/runtime so the
  * runtime package stays dependency-free.
  *
  * Returns null from the factory when the LOADER binding is unavailable
@@ -20,7 +20,7 @@ import {
   type CodeModeResult,
   LOG_PREFIX_ERROR,
   LOG_PREFIX_WARN,
-} from "@dafthunk/runtime/utils/code-mode";
+} from "@workflowhub/runtime/utils/code-mode";
 
 import type { Bindings } from "../context";
 

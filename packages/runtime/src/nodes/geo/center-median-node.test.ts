@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { CenterMedianNode } from "./center-median-node";
 
@@ -25,7 +25,7 @@ describe("CenterMedianNode", () => {
   });
 
   it("returns error for single point (requires FeatureCollection)", async () => {
-    // @dafthunk/geo centerMedian requires FeatureCollection<Point>, not a single Feature
+    // @workflowhub/geo centerMedian requires FeatureCollection<Point>, not a single Feature
     const point = {
       type: "Feature",
       properties: {},
@@ -121,7 +121,7 @@ describe("CenterMedianNode", () => {
   });
 
   it("returns center for feature collection of polygons (getCoord extracts first coordinate)", async () => {
-    // @dafthunk/geo getCoord extracts coordinates from any geometry
+    // @workflowhub/geo getCoord extracts coordinates from any geometry
     const featureCollection = {
       type: "FeatureCollection",
       features: [
@@ -170,7 +170,7 @@ describe("CenterMedianNode", () => {
   });
 
   it("returns center for feature collection of mixed geometries (getCoord extracts first coordinate)", async () => {
-    // @dafthunk/geo getCoord extracts coordinates from any geometry
+    // @workflowhub/geo getCoord extracts coordinates from any geometry
     const featureCollection = {
       type: "FeatureCollection",
       features: [

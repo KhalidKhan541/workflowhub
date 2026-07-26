@@ -1,4 +1,4 @@
-import type { NodeType } from "@dafthunk/types";
+import type { NodeType } from "@workflowhub/types";
 
 import { BaseSandboxNode, buildSandboxNodeType } from "./base-sandbox-node";
 

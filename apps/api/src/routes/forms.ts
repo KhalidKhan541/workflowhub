@@ -6,8 +6,8 @@
  * via a shareable URL.
  */
 
-import { verifyFormToken } from "@dafthunk/runtime";
-import type { Field } from "@dafthunk/types";
+import { verifyFormToken } from "@workflowhub/runtime";
+import type { Field } from "@workflowhub/types";
 import { Hono } from "hono";
 
 import type { ApiContext } from "../context";

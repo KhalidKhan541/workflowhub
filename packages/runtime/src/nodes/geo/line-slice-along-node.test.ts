@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { LineSliceAlongNode } from "./line-slice-along-node";
 
@@ -147,7 +147,7 @@ describe("LineSliceAlongNode", () => {
       units: "radians",
     });
     const result = await node.execute(context);
-    // @dafthunk/geo does not support "radians" units
+    // @workflowhub/geo does not support "radians" units
     expect(result.status).toBe("error");
   });
 

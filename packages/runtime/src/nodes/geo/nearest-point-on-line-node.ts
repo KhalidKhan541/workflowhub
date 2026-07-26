@@ -1,7 +1,7 @@
-import type { Units } from "@dafthunk/geo";
-import { nearestPointOnLine } from "@dafthunk/geo";
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
-import type { NodeExecution, NodeType } from "@dafthunk/types";
+import type { Units } from "@workflowhub/geo";
+import { nearestPointOnLine } from "@workflowhub/geo";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
+import type { NodeExecution, NodeType } from "@workflowhub/types";
 
 export class NearestPointOnLineNode extends ExecutableNode {
   public static readonly nodeType: NodeType = {

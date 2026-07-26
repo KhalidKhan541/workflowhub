@@ -1,4 +1,4 @@
-import type { ObjectReference } from "@dafthunk/types";
+import type { ObjectReference } from "@workflowhub/types";
 import Box from "lucide-react/icons/box";
 
 import { isObjectReference } from "@/services/object-service";

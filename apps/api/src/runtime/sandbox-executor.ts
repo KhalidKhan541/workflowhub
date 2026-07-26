@@ -18,7 +18,7 @@ import {
   type SandboxLanguage,
   type SandboxOptions,
   type SandboxResult,
-} from "@dafthunk/runtime/utils/sandbox-mode";
+} from "@workflowhub/runtime/utils/sandbox-mode";
 
 import type { Bindings } from "../context";
 

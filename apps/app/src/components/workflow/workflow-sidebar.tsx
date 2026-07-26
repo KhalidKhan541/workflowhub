@@ -2,7 +2,7 @@ import type {
   ObjectReference,
   WorkflowRuntime,
   WorkflowTrigger,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import type {
   Edge as ReactFlowEdge,
   Node as ReactFlowNode,

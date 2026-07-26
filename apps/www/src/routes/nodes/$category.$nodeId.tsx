@@ -77,10 +77,10 @@ export function loader({ params }: LoaderFunctionArgs) {
 const nodeMetaMap = nodeMetaDescriptions as Record<string, string>;
 
 export const meta: MetaFunction<typeof loader> = ({ loaderData }) => {
-  if (!loaderData) return [{ title: "Not Found - Dafthunk" }];
+  if (!loaderData) return [{ title: "Not Found - WorkflowHub" }];
 
   const { category, node } = loaderData;
-  const title = `${node.name} ${category.name} Node | Dafthunk`;
+  const title = `${node.name} ${category.name} Node | WorkflowHub`;
   const description = nodeMetaMap[node.id] ?? node.description ?? "";
   // Not the requested URL: a node listed in two categories is reachable at two
   // paths, and both must point at the same canonical one.
@@ -95,7 +95,7 @@ export const meta: MetaFunction<typeof loader> = ({ loaderData }) => {
     { property: "og:title", content: title },
     { property: "og:description", content: description },
     { property: "og:image", content: ogImage },
-    { property: "og:site_name", content: "Dafthunk" },
+    { property: "og:site_name", content: "WorkflowHub" },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:url", content: url },
     { name: "twitter:title", content: title },

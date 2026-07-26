@@ -1,4 +1,4 @@
-import { EmailMessage } from "@dafthunk/runtime";
+import { EmailMessage } from "@workflowhub/runtime";
 
 export interface EmailAttachment {
   filename: string;

@@ -14,7 +14,7 @@ import {
   UpdateWorkflowResponse,
   WorkflowExecution,
   WorkflowWithMetadata,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import {
   Connection,
   Edge as ReactFlowEdge,

@@ -4,7 +4,7 @@
  * Extracts authentication context from JWT or API key authentication.
  */
 
-import type { JWTTokenPayload } from "@dafthunk/types";
+import type { JWTTokenPayload } from "@workflowhub/types";
 import type { Context } from "hono";
 
 export interface AuthContext {

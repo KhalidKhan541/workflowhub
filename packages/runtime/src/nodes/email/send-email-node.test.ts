@@ -1,5 +1,5 @@
-import type { MailboxService, NodeContext } from "@dafthunk/runtime";
-import type { Node } from "@dafthunk/types";
+import type { MailboxService, NodeContext } from "@workflowhub/runtime";
+import type { Node } from "@workflowhub/types";
 import { describe, expect, it, vi } from "vitest";
 
 import { SendEmailNode } from "./send-email-node";
@@ -30,7 +30,7 @@ describe("SendEmailNode", () => {
       mailboxService,
       emailMessage: {
         from: "user@example.com",
-        to: "bot@mail.dafthunk.com",
+        to: "bot@mail.workflowhub.com",
         raw: "",
         emailId: "email-1",
         threadId: "thread-1",
@@ -76,7 +76,7 @@ describe("SendEmailNode", () => {
       },
       env: {
         SEND_EMAIL: { send },
-        SEND_EMAIL_FROM: "noreply@mail.dafthunk.com",
+        SEND_EMAIL_FROM: "noreply@mail.workflowhub.com",
       },
       getIntegration: async () => {
         throw new Error("no integrations");
@@ -90,7 +90,7 @@ describe("SendEmailNode", () => {
     expect(send).toHaveBeenCalledTimes(1);
     expect(send).toHaveBeenCalledWith(
       expect.objectContaining({
-        from: "noreply@mail.dafthunk.com",
+        from: "noreply@mail.workflowhub.com",
         to: "user@example.com",
         subject: "Hello",
       })
@@ -111,7 +111,7 @@ describe("SendEmailNode", () => {
       mailboxService,
       emailMessage: {
         from: "user@example.com",
-        to: "bot@mail.dafthunk.com",
+        to: "bot@mail.workflowhub.com",
         raw: "",
         emailId: "email-1",
         threadId: "thread-1",

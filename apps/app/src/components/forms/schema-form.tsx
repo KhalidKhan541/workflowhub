@@ -1,4 +1,4 @@
-import { type FieldType, isBlobFieldType } from "@dafthunk/types";
+import { type FieldType, isBlobFieldType } from "@workflowhub/types";
 
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";

@@ -1,6 +1,6 @@
-import { AudioRecorderInputNode } from "@dafthunk/runtime/nodes/input/audio-recorder-input-node";
-import { TextOutputNode } from "@dafthunk/runtime/nodes/output/text-output-node";
-import type { WorkflowTemplate } from "@dafthunk/types";
+import { AudioRecorderInputNode } from "@workflowhub/runtime/nodes/input/audio-recorder-input-node";
+import { TextOutputNode } from "@workflowhub/runtime/nodes/output/text-output-node";
+import type { WorkflowTemplate } from "@workflowhub/types";
 
 import { createCloudflareModelNode } from "./cloudflare-model-template";
 

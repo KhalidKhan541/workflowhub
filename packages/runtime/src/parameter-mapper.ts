@@ -2,7 +2,7 @@ import type {
   ParameterValue as ApiParameterValue,
   ObjectReference,
   Schema,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import {
   isObjectReference,
   type AudioParameter as NodeAudioParameter,

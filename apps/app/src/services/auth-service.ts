@@ -1,4 +1,4 @@
-import { AuthProvider, JWTTokenPayload } from "@dafthunk/types";
+import { AuthProvider, JWTTokenPayload } from "@workflowhub/types";
 import { mutate } from "swr";
 
 import { AUTH_USER_KEY } from "@/components/auth-context";

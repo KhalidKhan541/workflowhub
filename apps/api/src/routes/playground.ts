@@ -1,10 +1,10 @@
-import type { NodeContext, WorkflowExecutionContext } from "@dafthunk/runtime";
-import { apiToNodeParameter, nodeToApiParameter } from "@dafthunk/runtime";
+import type { NodeContext, WorkflowExecutionContext } from "@workflowhub/runtime";
+import { apiToNodeParameter, nodeToApiParameter } from "@workflowhub/runtime";
 import type {
   ExecuteNodeResponse,
   Node,
   ParameterValue,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { Hono } from "hono";
 import { jwtMiddleware } from "../auth";
 import type { ApiContext } from "../context";

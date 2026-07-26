@@ -1,4 +1,4 @@
-import type { Node, NodeType, WorkflowTrigger } from "@dafthunk/types";
+import type { Node, NodeType, WorkflowTrigger } from "@workflowhub/types";
 
 /**
  * Maps workflow trigger types to the node type(s) that should be auto-added.

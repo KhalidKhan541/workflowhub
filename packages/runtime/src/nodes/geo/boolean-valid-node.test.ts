@@ -1,4 +1,4 @@
-import type { NodeContext } from "@dafthunk/runtime";
+import type { NodeContext } from "@workflowhub/runtime";
 import { describe, expect, it } from "vitest";
 import { BooleanValidNode } from "./boolean-valid-node";
 
@@ -262,7 +262,7 @@ describe("BooleanValidNode", () => {
   });
 
   it("returns error for point with missing coordinates", async () => {
-    // @dafthunk/geo throws when accessing coordinates of a Point without them
+    // @workflowhub/geo throws when accessing coordinates of a Point without them
     const invalidPoint = {
       type: "Point",
     };
@@ -330,7 +330,7 @@ describe("BooleanValidNode", () => {
   });
 
   it("returns true for multi point with empty array", async () => {
-    // @dafthunk/geo: Array.every() on empty array returns true
+    // @workflowhub/geo: Array.every() on empty array returns true
     const invalidMultiPoint = {
       type: "MultiPoint",
       coordinates: [],
@@ -345,7 +345,7 @@ describe("BooleanValidNode", () => {
   });
 
   it("returns true for multi line string with empty array", async () => {
-    // @dafthunk/geo: Array.every() on empty array returns true
+    // @workflowhub/geo: Array.every() on empty array returns true
     const invalidMultiLineString = {
       type: "MultiLineString",
       coordinates: [],
@@ -360,7 +360,7 @@ describe("BooleanValidNode", () => {
   });
 
   it("returns true for multi polygon with empty array", async () => {
-    // @dafthunk/geo: Array.every() on empty array returns true
+    // @workflowhub/geo: Array.every() on empty array returns true
     const invalidMultiPolygon = {
       type: "MultiPolygon",
       coordinates: [],
@@ -375,7 +375,7 @@ describe("BooleanValidNode", () => {
   });
 
   it("returns true for geometry collection with empty geometries", async () => {
-    // @dafthunk/geo: Array.every() on empty array returns true
+    // @workflowhub/geo: Array.every() on empty array returns true
     const invalidGeometryCollection = {
       type: "GeometryCollection",
       geometries: [],
@@ -390,7 +390,7 @@ describe("BooleanValidNode", () => {
   });
 
   it("returns error for null feature", async () => {
-    // @dafthunk/geo throws on null input
+    // @workflowhub/geo throws on null input
     const context = createMockContext({
       feature: null,
     });
@@ -399,7 +399,7 @@ describe("BooleanValidNode", () => {
   });
 
   it("returns error for undefined feature", async () => {
-    // @dafthunk/geo throws on undefined input
+    // @workflowhub/geo throws on undefined input
     const context = createMockContext({
       feature: undefined,
     });
@@ -435,7 +435,7 @@ describe("BooleanValidNode", () => {
   });
 
   it("returns error for missing feature input", async () => {
-    // @dafthunk/geo throws on undefined input
+    // @workflowhub/geo throws on undefined input
     const context = createMockContext({});
     const result = await node.execute(context);
     expect(result.status).toBe("error");

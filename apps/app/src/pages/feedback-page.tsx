@@ -1,4 +1,4 @@
-import type { ExecutionFeedback } from "@dafthunk/types";
+import type { ExecutionFeedback } from "@workflowhub/types";
 import { ColumnDef } from "@tanstack/react-table";
 import { format } from "date-fns";
 import CalendarIcon from "lucide-react/icons/calendar";

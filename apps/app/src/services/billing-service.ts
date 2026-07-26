@@ -3,7 +3,7 @@ import type {
   CreateCheckoutSessionResponse,
   GetBillingResponse,
   UpdateOverageLimitResponse,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import useSWR from "swr";
 
 import { useAuth } from "@/components/auth-context";

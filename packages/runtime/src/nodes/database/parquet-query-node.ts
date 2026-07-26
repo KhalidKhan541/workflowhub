@@ -1,12 +1,12 @@
 import { getSandbox } from "@cloudflare/sandbox";
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
 import type {
   Field,
   FieldType,
   NodeExecution,
   NodeType,
   Schema,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 function inferFieldType(value: unknown): FieldType {
   if (typeof value === "boolean") return "boolean";

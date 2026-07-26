@@ -1,4 +1,4 @@
-import { WorkflowExecutionStatus } from "@dafthunk/types";
+import { WorkflowExecutionStatus } from "@workflowhub/types";
 import AlertCircle from "lucide-react/icons/alert-circle";
 import Clock from "lucide-react/icons/clock";
 import IdCard from "lucide-react/icons/id-card";

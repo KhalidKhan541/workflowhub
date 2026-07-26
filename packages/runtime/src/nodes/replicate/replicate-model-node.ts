@@ -4,12 +4,12 @@ import {
   type MultiStepNodeContext,
   type ParameterValue,
   toUint8Array,
-} from "@dafthunk/runtime";
+} from "@workflowhub/runtime";
 import {
   type NodeExecution,
   type NodeType,
   replicateOwnerName,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 type ReplicateOutput =
   | string

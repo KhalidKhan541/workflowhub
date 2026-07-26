@@ -6,7 +6,7 @@ import {
   ListExecutionsResponse,
   WorkflowExecution,
   WorkflowExecutionStatus,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { eq } from "drizzle-orm";
 import { Hono } from "hono";
 

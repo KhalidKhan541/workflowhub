@@ -1,4 +1,4 @@
-import type { Workflow, WorkflowTrigger } from "@dafthunk/types";
+import type { Workflow, WorkflowTrigger } from "@workflowhub/types";
 import { Hono } from "hono";
 
 import type { ApiContext } from "../context";

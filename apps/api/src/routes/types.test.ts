@@ -1,5 +1,5 @@
 import { env } from "cloudflare:test";
-import type { GetNodeTypesResponse } from "@dafthunk/types";
+import type { GetNodeTypesResponse } from "@workflowhub/types";
 import { Hono } from "hono";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 

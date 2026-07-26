@@ -33,7 +33,7 @@ const STEP_TITLES: Record<Step, string> = {
 };
 
 const STEP_DESCRIPTIONS: Record<Step, string> = {
-  name: "Choose a display name to identify this Slack bot in Dafthunk.",
+  name: "Choose a display name to identify this Slack bot in WorkflowHub.",
   "signing-secret":
     "Copy the Signing Secret from the Basic Information page of your Slack app.",
   "bot-token":
@@ -150,7 +150,7 @@ export function SlackBotCreateDialog({
                 placeholder="My Slack Bot"
               />
               <p className="text-xs text-muted-foreground">
-                A display name for this bot in Dafthunk. This is not visible to
+                A display name for this bot in WorkflowHub. This is not visible to
                 your Slack users.
               </p>
             </div>

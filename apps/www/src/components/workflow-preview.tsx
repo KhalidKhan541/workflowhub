@@ -20,7 +20,7 @@ interface WorkflowPreviewProps {
 }
 
 // App URL - in production this would point to the app domain
-const APP_URL = import.meta.env.VITE_APP_URL || "https://app.dafthunk.com";
+const APP_URL = import.meta.env.VITE_APP_URL || "https://app.workflowhub.com";
 
 /**
  * Workflow preview component that embeds the actual workflow builder from apps/app

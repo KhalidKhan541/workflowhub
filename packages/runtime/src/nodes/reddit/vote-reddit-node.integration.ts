@@ -1,4 +1,4 @@
-import type { Node } from "@dafthunk/types";
+import type { Node } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 
 import { ListPostsRedditNode } from "./list-posts-reddit-node";
@@ -11,7 +11,7 @@ import { VoteRedditNode } from "./vote-reddit-node";
 
 describe("VoteRedditNode", () => {
   it.skipIf(skipIfNoRedditToken())(
-    "should upvote and then unvote a post in r/dafthunk_test",
+    "should upvote and then unvote a post in r/WorkflowHub_test",
     async () => {
       // First, get a post to vote on
       const listNode = new ListPostsRedditNode({

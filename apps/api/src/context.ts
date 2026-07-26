@@ -1,5 +1,5 @@
-import type { RuntimeParams } from "@dafthunk/runtime";
-import { JWTTokenPayload } from "@dafthunk/types";
+import type { RuntimeParams } from "@workflowhub/runtime";
+import { JWTTokenPayload } from "@workflowhub/types";
 import type { FFmpegContainer } from "./containers/ffmpeg-container";
 import type { LanguageSandbox } from "./containers/language-sandbox";
 import type { AgentRunner } from "./durable-objects/agent-runner";
@@ -63,6 +63,12 @@ export interface Bindings {
   INTEGRATION_X_CLIENT_SECRET?: string;
   INTEGRATION_WORDPRESS_CLIENT_ID?: string;
   INTEGRATION_WORDPRESS_CLIENT_SECRET?: string;
+  INTEGRATION_AIRTABLE_CLIENT_ID?: string;
+  INTEGRATION_AIRTABLE_CLIENT_SECRET?: string;
+  INTEGRATION_SLACK_CLIENT_ID?: string;
+  INTEGRATION_SLACK_CLIENT_SECRET?: string;
+  INTEGRATION_NOTION_CLIENT_ID?: string;
+  INTEGRATION_NOTION_CLIENT_SECRET?: string;
   TWILIO_ACCOUNT_SID?: string;
   TWILIO_AUTH_TOKEN?: string;
   TWILIO_PHONE_NUMBER?: string;

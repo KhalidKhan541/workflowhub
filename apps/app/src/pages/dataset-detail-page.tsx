@@ -1,4 +1,4 @@
-import { DatasetFile } from "@dafthunk/types";
+import { DatasetFile } from "@workflowhub/types";
 import { useEffect, useRef } from "react";
 import { useParams } from "react-router";
 import { toast } from "sonner";

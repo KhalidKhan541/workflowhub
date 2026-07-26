@@ -1,4 +1,4 @@
-import { type FieldType, isBlobFieldType, type Schema } from "@dafthunk/types";
+import { type FieldType, isBlobFieldType, type Schema } from "@workflowhub/types";
 
 /**
  * Maps internal FieldType to JSON Schema type. Blob field types are absent on

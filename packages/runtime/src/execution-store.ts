@@ -3,7 +3,7 @@ import type {
   Workflow,
   WorkflowExecution,
   WorkflowExecutionStatus,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 /**
  * Execution metadata row structure

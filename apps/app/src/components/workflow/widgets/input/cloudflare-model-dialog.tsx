@@ -1,4 +1,4 @@
-import type { CloudflareModelInfo } from "@dafthunk/types";
+import type { CloudflareModelInfo } from "@workflowhub/types";
 import { Wand } from "lucide-react";
 import { DynamicIcon, type IconName } from "lucide-react/dynamic.mjs";
 import { useMemo, useState } from "react";

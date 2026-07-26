@@ -6,7 +6,7 @@ import {
   ListQueuesResponse,
   UpdateQueueRequest,
   UpdateQueueResponse,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import useSWR from "swr";
 
 import { useAuth } from "@/components/auth-context";

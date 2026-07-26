@@ -17,7 +17,7 @@
  */
 
 import type { WorkflowStep, WorkflowStepConfig } from "cloudflare:workers";
-import type { WorkflowExecution } from "@dafthunk/types";
+import type { WorkflowExecution } from "@workflowhub/types";
 
 import { Runtime, type RuntimeParams } from "./base-runtime";
 

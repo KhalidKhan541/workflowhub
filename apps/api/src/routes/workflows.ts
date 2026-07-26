@@ -18,7 +18,7 @@ import {
   type UpsertQueueTriggerRequest,
   type UpsertQueueTriggerResponse,
   type WorkflowWithMetadata,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 import { zValidator } from "@hono/zod-validator";
 import { and, eq } from "drizzle-orm";
 import type { Context } from "hono";

@@ -3,7 +3,7 @@ import {
   type FieldType,
   isBlobFieldType,
   type Schema,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 /**
  * A blob field holds an `ObjectReference` ({ id, mimeType, filename? }). It is

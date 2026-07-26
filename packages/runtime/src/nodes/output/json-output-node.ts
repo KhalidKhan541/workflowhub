@@ -1,5 +1,5 @@
-import { ExecutableNode, type NodeContext } from "@dafthunk/runtime";
-import type { JsonObject, NodeExecution, NodeType } from "@dafthunk/types";
+import { ExecutableNode, type NodeContext } from "@workflowhub/runtime";
+import type { JsonObject, NodeExecution, NodeType } from "@workflowhub/types";
 
 /**
  * JsonOutput node implementation

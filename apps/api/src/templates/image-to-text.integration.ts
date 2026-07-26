@@ -1,7 +1,7 @@
 import { env } from "cloudflare:test";
-import { Gemini25FlashImageUnderstandingNode } from "@dafthunk/runtime/nodes/gemini/gemini-2-5-flash-image-understanding-node";
-import { Gemini25FlashTtsNode } from "@dafthunk/runtime/nodes/gemini/gemini-2-5-flash-tts-node";
-import { HttpRequestNode } from "@dafthunk/runtime/nodes/http/http-request-node";
+import { Gemini25FlashImageUnderstandingNode } from "@workflowhub/runtime/nodes/gemini/gemini-2-5-flash-image-understanding-node";
+import { Gemini25FlashTtsNode } from "@workflowhub/runtime/nodes/gemini/gemini-2-5-flash-tts-node";
+import { HttpRequestNode } from "@workflowhub/runtime/nodes/http/http-request-node";
 import { describe, expect, it, vi } from "vitest";
 import type { Bindings } from "../context";
 import { imageToTextTemplate } from "./image-to-text";

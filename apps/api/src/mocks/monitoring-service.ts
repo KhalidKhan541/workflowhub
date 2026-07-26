@@ -5,8 +5,8 @@
  * Captures all updates sent during test execution for verification.
  */
 
-import type { MonitoringService } from "@dafthunk/runtime";
-import type { WorkflowExecution } from "@dafthunk/types";
+import type { MonitoringService } from "@workflowhub/runtime";
+import type { WorkflowExecution } from "@workflowhub/types";
 
 export class MockMonitoringService implements MonitoringService {
   public readonly updates: WorkflowExecution[] = [];

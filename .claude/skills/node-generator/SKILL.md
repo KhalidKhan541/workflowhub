@@ -5,7 +5,7 @@ description: Generate new workflow nodes with implementation, tests, and registr
 
 # Node Generator Skill
 
-Generate workflow nodes for Dafthunk: research requirements, create implementation and tests, register in the node registry.
+Generate workflow nodes for WorkflowHub: research requirements, create implementation and tests, register in the node registry.
 
 ## Step 1: Research and Define Requirements
 
@@ -59,7 +59,7 @@ Only ask for information you cannot reasonably infer or research. The goal is to
 **File:** `packages/runtime/src/nodes/<category>/<node-id>.ts`
 
 ```typescript
-import { NodeExecution, NodeType } from "@dafthunk/types";
+import { NodeExecution, NodeType } from "@workflowhub/types";
 import { ExecutableNode, NodeContext } from "../../runtime/node-types";
 
 export class [NodeClassName]Node extends ExecutableNode {
@@ -141,7 +141,7 @@ export class [NodeClassName]Node extends ExecutableNode {
 **File:** `packages/runtime/src/nodes/<category>/<node-id>.test.ts`
 
 ```typescript
-import { Node } from "@dafthunk/types";
+import { Node } from "@workflowhub/types";
 import { describe, expect, it } from "vitest";
 import { NodeContext } from "../../runtime/node-types";
 import { [NodeClassName]Node } from "./<node-id>";
@@ -222,7 +222,7 @@ this.registerImplementation([NodeClassName]Node);
 
 ```bash
 pnpm typecheck
-pnpm --filter '@dafthunk/api' test <node-id>
+pnpm --filter '@workflowhub/api' test <node-id>
 ```
 
 ## Step 6: Summary

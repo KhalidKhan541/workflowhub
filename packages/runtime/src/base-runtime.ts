@@ -10,7 +10,7 @@ import type {
   WhatsAppMessage,
   Workflow,
   WorkflowExecution,
-} from "@dafthunk/types";
+} from "@workflowhub/types";
 
 import type { BaseNodeRegistry } from "./base-node-registry";
 import type { BaseToolRegistry } from "./base-tool-registry";
@@ -1051,7 +1051,7 @@ export abstract class Runtime<Env = unknown> {
    */
   private async executeAndTransformOutputs(
     executable: ExecutableNode,
-    nodeType: import("@dafthunk/types").NodeType,
+    nodeType: import("@workflowhub/types").NodeType,
     node: Node,
     context: WorkflowExecutionContext,
     objectStore: ObjectStore,
@@ -1252,7 +1252,7 @@ export abstract class Runtime<Env = unknown> {
     workflow: Workflow,
     context: WorkflowExecutionContext,
     state: ExecutionState,
-    overrideStatus?: import("@dafthunk/types").WorkflowExecutionStatus,
+    overrideStatus?: import("@workflowhub/types").WorkflowExecutionStatus,
     pendingNodes?: Map<string, { type: string; timeout: string }>
   ) {
     // Determine if workflow is still running

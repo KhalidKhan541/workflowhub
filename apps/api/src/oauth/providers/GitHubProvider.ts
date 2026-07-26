@@ -40,7 +40,7 @@ export class GitHubProvider extends OAuthProvider<GitHubToken, GitHubUser> {
     return {
       Authorization: `Bearer ${accessToken}`,
       Accept: "application/vnd.github.v3+json",
-      "User-Agent": "Dafthunk/1.0",
+      "User-Agent": "WorkflowHub/1.0",
     };
   }
 

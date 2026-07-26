@@ -1,6 +1,6 @@
-import { HttpRequestNode } from "@dafthunk/runtime/nodes/http/http-request-node";
-import { HttpResponseNode } from "@dafthunk/runtime/nodes/http/http-response-node";
-import type { WorkflowTemplate } from "@dafthunk/types";
+import { HttpRequestNode } from "@workflowhub/runtime/nodes/http/http-request-node";
+import { HttpResponseNode } from "@workflowhub/runtime/nodes/http/http-response-node";
+import type { WorkflowTemplate } from "@workflowhub/types";
 
 export const httpEchoTemplate: WorkflowTemplate = {
   id: "http-echo",
